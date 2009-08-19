@@ -1,0 +1,21 @@
+{% extends 'base.html' %}	
+
+{% block conteudo %}
+  <center>
+  <form action="." name="login" id="frmLogin" method="post" onsubmit="return Validar(this)">
+  <div id="divLogin" align="center">
+    <br />Usuario: {{form.username}}
+    <br />Senha: {{form.password}}
+    <input type="hidden" name="next" value="{{ next }}" />
+    <br /><br />
+    <input type="submit" name="btOk" value="Ok" />
+  </div>
+  </form>
+  {% if form.errors %}
+     <div align="center" style="padding-top:50px;font-size:16px;color:red;">
+     Erro: Usuario ou senha incorretos.
+     </div>
+  {% endif %}
+  </center>
+
+{% endblock %}
