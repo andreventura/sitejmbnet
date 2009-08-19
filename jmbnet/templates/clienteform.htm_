@@ -29,12 +29,8 @@
 	        {% endfor %}
 	     </select>
 	  </label>
-	  <label> Endereco: <select name="logradouro">
-	                       {% for l in logradouros %}
-                                  <option value="{{l.id}}">{{l.logradouro}}</option>
-			       {% endfor %}
-	                    </select>
-          </label>
+	  <label> Endereco: <select name="logradouro" id="id_logradouro">
+	          </select></label>
 	  <label> Numero: {{form.numero}}</label>
 	  <label> CEP: {{form.cep}}</label>
 	  <label> Referencia: {{form.referencia}}</label>

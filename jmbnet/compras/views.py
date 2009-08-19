@@ -12,9 +12,23 @@ from jmbnet.compras.forms import *
 def compras(request):
   return render_to_response('compras.html', locals(),context_instance=RequestContext(request)) 
 
+def insert(request):
+  clienteform = ClienteForm()
+  clientes = Cliente.objects.all()
+  bairros = Bairro.objects.all()
+  logradouros = Logradouro.objects.all()
+  return render_to_response('clienteform.html',
+      {'form':clienteform,
+       'clientes':clientes,
+       'bairros':bairros,
+       'logradouros':logradouros,
+       'operacao':'Cadastrar',
+      },
+      context_instance=RequestContext(request))
+
 '''
 Exibe os clientes cadastrados e um formulario para cadastrar novo cliente. 
-Na realidade o template exibido eh o clienteform que por sua vez extende o template clientes.html, 
+Na realidade o template exibido eh o clienteform que por sua vez extende o template clientes.html 
 resultando na exibicao dos 2 ao mesmo tempo.
 '''
 def list(request):

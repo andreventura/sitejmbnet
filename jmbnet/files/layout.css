@@ -11,6 +11,35 @@ font-variant:normal;
 font-weight:normal;
 line-height:1.8em;
 }
+
+/* Formatacoes para forms -------------------------------------------*/
+fieldset{
+width:850px;
+}
+
+legend{
+font:bold 12px verdana , arial, tahoma, sans-serif;
+}
+
+label{
+display:block;
+float:left;
+width:200px;
+padding-bottom:10px
+position:relative;
+
+}
+
+label span{
+font:10px verdana, arial, tahoma, sans-serif;
+color:red;
+float:right;
+position:absolute;
+right:1;
+}
+
+/*-------------------------------------------------------------------*/
+
 /* Gera div representando a area de toda pagina ---------------------*/
 #todo {
 background:#FFFFFF none repeat scroll 0 0;

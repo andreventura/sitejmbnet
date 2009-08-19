@@ -18,6 +18,7 @@ urlpatterns = patterns('',
     (r'^auth/logout/$','django.contrib.auth.views.logout_then_login'),
     (r'^menuprincipal/$','jmbnet.menuprincipal.views.menuprincipal'),
     (r'^menuprincipal/compras$','jmbnet.compras.views.compras'),
+    (r'^compras/cliente$','jmbnet.compras.views.insert'),
     (r'^files/(.*)','django.views.static.serve',{'document_root':'/home/ventura/sitejmbnet/jmbnet/files'}),
 )
     # (r'^auth/login/$','django.contrib.auth.views.login', {'template_name': 'loginform.html'}),
