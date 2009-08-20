@@ -23,13 +23,13 @@
 	  <legend>Endereco</legend>
 	  <label>
 	     Bairro:
-             <select name="bairro">
+             <select name="bairro" id=id_bairro onchange="comboAjax('/compras/getlogradouros','sel_logradouro',this.value);">
                 {% for b in bairros %}
                    <option value="{{b.id}}">{{b.bairro}}</option>
 	        {% endfor %}
 	     </select>
 	  </label>
-	  <label> Endereco: <select name="logradouro">
+	  <label> Endereco: <select id="sel_logradouro">
 	                       {% for l in logradouros %}
                                   <option value="{{l.id}}">{{l.logradouro}}</option>
 			       {% endfor %}

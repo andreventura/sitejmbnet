@@ -170,10 +170,18 @@ def getlogradouros(request):
      id = request.POST.get('id');
      lista = Logradouro.objects.filter(bairro=id)
      if lista.count() > 0:
-        json = serializers.serialize("json",lista)
+	html_option = ""
+	for x in lista:
+	   html_option += "<option>"+ str(x) +"</option>"
+	dc ={}
+	dc['html']=html_option
+	lt=[]
+	lt.append(dc)
      else:
         lista = [{"pk":"0","fields":{'logradouro':"Nenhum registro"}}]
         json = simplejson.dumps(lista)
-     return HttpResponse(json,mimetype="application/json")	
+     lista = dc
+     json = simplejson.dumps(lista)
+     return HttpResponse(json,mimetype="application/json")
 getlogradouros = login_required(getlogradouros)
 
