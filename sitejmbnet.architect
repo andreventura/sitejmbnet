@@ -203,8 +203,7 @@
   <table id="TAB157" populated="true" name="natureza_operacao" objectType="TABLE" physicalName="natureza_operacao" remarks="" >
    <folder id="FOL158" populated="true" name="Columns" physicalName="Columns" type="1" >
     <column id="COL159" populated="true" autoIncrement="false" autoIncrementSequenceName="natureza_operacao_codigo_operacao_seq" defaultValue="" name="codigo_operacao" nullable="0" physicalName="codigo_operacao" precision="8" referenceCount="1" remarks="" scale="0" type="4" />
-    <column id="COL160" populated="true" autoIncrement="false" autoIncrementSequenceName="natureza_operacao_codigo_natureza_seq" defaultValue="" name="codigo_natureza" nullable="0" physicalName="codigo_natureza" precision="7" referenceCount="1" remarks="- Ver com Batista prq este campo é texto e não número.
-" scale="0" type="12" />
+    <column id="COL160" populated="true" autoIncrement="false" autoIncrementSequenceName="natureza_operacao_codigo_natureza_seq" defaultValue="" name="codigo_natureza" nullable="0" physicalName="codigo_natureza" precision="7" referenceCount="1" remarks="- Ver com Batista prq este campo é texto e não número. " scale="0" type="12" />
     <column id="COL161" populated="true" autoIncrement="false" autoIncrementSequenceName="natureza_operacao_descricao_natureza_seq" defaultValue="" name="descricao_natureza" nullable="0" physicalName="descricao_natureza" precision="25" referenceCount="1" remarks="" scale="0" type="12" />
     <column id="COL162" populated="true" autoIncrement="false" autoIncrementSequenceName="natureza_operacao_incidencia_icms_seq" defaultValue="" name="incidencia_icms" nullable="0" physicalName="incidencia_icms" precision="6" referenceCount="1" remarks="- Pegar explicacao com Batista sobre este campo." scale="0" type="12" />
     <column id="COL163" populated="true" autoIncrement="false" autoIncrementSequenceName="natureza_operacao_incidencia_ipi_seq" defaultValue="" name="incidencia_ipi" nullable="0" physicalName="incidencia_ipi" precision="6" referenceCount="1" remarks="- Pegar explicacao com Batista sobre este campo." scale="0" type="12" />
@@ -215,8 +214,7 @@
     <column id="COL168" populated="true" autoIncrement="false" autoIncrementSequenceName="natureza_operacao_codigo_movimento_seq" defaultValue="" name="codigo_movimento" nullable="0" physicalName="codigo_movimento" precision="8" referenceCount="1" remarks="- Este campo é chave estrangeira para alguma tabela tipo &quot;movimento&quot; ?" scale="0" type="4" />
     <column id="COL169" populated="true" autoIncrement="false" autoIncrementSequenceName="natureza_operacao_codigo_operacao_devolucao_seq" defaultValue="" name="codigo_operacao_devolucao" nullable="0" physicalName="codigo_operacao_devolucao" precision="8" referenceCount="1" remarks="- Este campo é chave estrangeira para alguma tabela tipo &quot;operacao_devolucao&quot; ?" scale="0" type="4" />
     <column id="COL170" populated="true" autoIncrement="false" autoIncrementSequenceName="natureza_operacao_observacao_seq" defaultValue="" name="obervacao" nullable="0" physicalName="observacao" precision="100" referenceCount="1" remarks="" scale="0" type="12" />
-    <column id="COL171" populated="true" autoIncrement="false" autoIncrementSequenceName="natureza_operacao_status_operacao_seq" defaultValue="" name="status_operacao" nullable="0" physicalName="status_operacao" precision="2" referenceCount="1" remarks="- Verificar com Batista do que se trata este campo.
-- Verificar se deveria ser uma tabela." scale="0" type="4" />
+    <column id="COL171" populated="true" autoIncrement="false" autoIncrementSequenceName="natureza_operacao_status_operacao_seq" defaultValue="" name="status_operacao" nullable="0" physicalName="status_operacao" precision="2" referenceCount="1" remarks="- Verificar com Batista do que se trata este campo. - Verificar se deveria ser uma tabela." scale="0" type="4" />
     <column id="COL172" populated="true" autoIncrement="false" autoIncrementSequenceName="natureza_operacao_natureza_liberada_seq" defaultValue="" name="natureza_liberada" nullable="0" physicalName="natureza_liberada" precision="3" referenceCount="1" remarks="- Verificar com Batista do que se trata este campo." scale="0" type="12" />
     <column id="COL173" populated="true" autoIncrement="false" autoIncrementSequenceName="natureza_operacao_situacao_tributaria_seq" defaultValue="" name="situacao_tributaria" nullable="0" physicalName="situacao_tributaria" precision="3" referenceCount="1" remarks="- Verificar com Batista do que se trata este campo." scale="0" type="12" />
     <column id="COL174" populated="true" autoIncrement="false" autoIncrementSequenceName="natureza_operacao_natureza_dipi_seq" defaultValue="" name="natureza_dipi" nullable="0" physicalName="natureza_dipi" precision="3" referenceCount="1" remarks="- Verificar com Batista do que se trata este campo." scale="0" type="12" />
@@ -274,8 +272,7 @@
     <column id="COL206" populated="true" autoIncrement="false" autoIncrementSequenceName="clientes_bairro_seq" defaultValue="" name="bairro" nullable="0" physicalName="bairro" precision="25" referenceCount="1" remarks="- Este campo deverá ser chave estrangeira para a tabela bairro." scale="0" type="12" />
     <column id="COL207" populated="true" autoIncrement="false" autoIncrementSequenceName="clientes_cidade_seq" defaultValue="" name="cidade" nullable="0" physicalName="cidade" precision="20" referenceCount="1" remarks="- Deverá ser chave estrangeira para tabela cidade." scale="0" type="12" />
     <column id="COL208" populated="true" autoIncrement="false" autoIncrementSequenceName="clientes_uf_seq" defaultValue="" name="uf" nullable="0" physicalName="uf" precision="2" referenceCount="1" remarks="- Deverá ser uma tabela tipo &quot;uf&quot;." scale="0" type="12" />
-    <column id="COL209" populated="true" autoIncrement="false" autoIncrementSequenceName="clientes_cep_seq" defaultValue="" name="cep" nullable="0" physicalName="cep" precision="9" referenceCount="1" remarks="- Deverá ser uma tabela tipo &quot;cep&quot;.
-- Batista já comentou sobre ele possuir um banco de ceps. Voltar a falar com ele sobre isto." scale="0" type="12" />
+    <column id="COL209" populated="true" autoIncrement="false" autoIncrementSequenceName="clientes_cep_seq" defaultValue="" name="cep" nullable="0" physicalName="cep" precision="9" referenceCount="1" remarks="- Deverá ser uma tabela tipo &quot;cep&quot;. - Batista já comentou sobre ele possuir um banco de ceps. Voltar a falar com ele sobre isto." scale="0" type="12" />
     <column id="COL210" populated="true" autoIncrement="false" autoIncrementSequenceName="clientes_telefone_seq" defaultValue="" name="telefone" nullable="0" physicalName="telefone" precision="50" referenceCount="1" remarks="" scale="0" type="12" />
     <column id="COL211" populated="true" autoIncrement="false" autoIncrementSequenceName="clientes_fax_seq" defaultValue="" name="fax" nullable="0" physicalName="fax" precision="20" referenceCount="1" remarks="" scale="0" type="12" />
     <column id="COL212" populated="true" autoIncrement="false" autoIncrementSequenceName="clientes_email_seq" defaultValue="" name="email" nullable="0" physicalName="email" precision="30" referenceCount="1" remarks="" scale="0" type="12" />
@@ -290,10 +287,8 @@
     <column id="COL221" populated="true" autoIncrement="false" autoIncrementSequenceName="clientes_limite_credito_seq" defaultValue="" name="limite_credito" nullable="0" physicalName="limite_credito" precision="8" referenceCount="1" remarks="- Chave estrangeira." scale="0" type="4" />
     <column id="COL222" populated="true" autoIncrement="false" autoIncrementSequenceName="clientes_valor_receber_seq" defaultValue="" name="valor_receber" nullable="0" physicalName="valor_receber" precision="10" referenceCount="1" remarks="- Este campo deverá ser um consulta sql ? Comentar com o Batista." scale="2" type="3" />
     <column id="COL223" populated="true" autoIncrement="false" autoIncrementSequenceName="clientes_valor_recebido_seq" defaultValue="" name="valor_recebido" nullable="0" physicalName="valor_recebido" precision="10" referenceCount="1" remarks="- Este campo deverá ser um consulta sql ? Comentar com o Batista." scale="2" type="3" />
-    <column id="COL224" populated="true" autoIncrement="false" autoIncrementSequenceName="clientes_valor_total_seq" defaultValue="" name="valor_total" nullable="0" physicalName="valor_total" precision="10" referenceCount="1" remarks="- Valor total de que ? É a diferenca entre receber e recebido ?
-Falar com Batista." scale="2" type="3" />
-    <column id="COL225" populated="true" autoIncrement="false" autoIncrementSequenceName="clientes_prazo_cliente_seq" defaultValue="" name="prazo_cliente" nullable="0" physicalName="prazo_cliente" precision="10" referenceCount="1" remarks="- Este campo deverá ser uma chave estrangeira para uma tabela tipo &quot;prazo_cliente&quot; ? Comentar com Batista. 
-" scale="0" type="12" />
+    <column id="COL224" populated="true" autoIncrement="false" autoIncrementSequenceName="clientes_valor_total_seq" defaultValue="" name="valor_total" nullable="0" physicalName="valor_total" precision="10" referenceCount="1" remarks="- Valor total de que ? É a diferenca entre receber e recebido ? Falar com Batista." scale="2" type="3" />
+    <column id="COL225" populated="true" autoIncrement="false" autoIncrementSequenceName="clientes_prazo_cliente_seq" defaultValue="" name="prazo_cliente" nullable="0" physicalName="prazo_cliente" precision="10" referenceCount="1" remarks="- Este campo deverá ser uma chave estrangeira para uma tabela tipo &quot;prazo_cliente&quot; ? Comentar com Batista.  " scale="0" type="12" />
     <column id="COL226" populated="true" autoIncrement="false" autoIncrementSequenceName="clientes_observacao_seq" defaultValue="" name="observacao" nullable="0" physicalName="observacao" precision="160" referenceCount="1" remarks="- Já houve um caso parecido. Talvez fosse melhor uma tabela tipo &quot;cliente_observacao&quot;, pois muitos campos vazios de 160 pode compromter o desempenho como já comentado em outra tabela (se não me engano, a de fornecedor)." scale="0" type="12" />
     <column id="COL227" populated="true" autoIncrement="false" autoIncrementSequenceName="clientes_status_cliente_seq" defaultValue="" name="status_cliente" nullable="0" physicalName="status_cliente" precision="10" referenceCount="1" remarks="- Deverá ser uma tabela tipo &quot;cliente_status&quot;" scale="0" type="12" />
     <column id="COL228" populated="true" autoIncrement="false" autoIncrementSequenceName="clientes_preferencia_pagamento_seq" defaultValue="" name="preferencia_pagamento" nullable="0" physicalName="preferencia_pagamento" precision="15" referenceCount="1" remarks="- Ver com Batista do que se trata este campo." scale="0" type="12" />
@@ -313,24 +308,43 @@ Falar com Batista." scale="2" type="3" />
    <folder id="FOL239" populated="true" name="Indices" physicalName="Indices" type="4" >
    </folder>
   </table>
+  <table id="TAB240" populated="true" name="clientes_contatos" objectType="TABLE" physicalName="clientes_contatos" remarks="&gt;&gt;&gt; Esta tabela possue o nome ContatosCliente no mdb do Batista." >
+   <folder id="FOL241" populated="true" name="Columns" physicalName="Columns" type="1" >
+    <column id="COL242" populated="true" autoIncrement="false" autoIncrementSequenceName="clientes_contatos_codigo_seq" defaultValue="" name="codigo" nullable="0" physicalName="codigo" precision="8" referenceCount="1" remarks="" scale="0" type="4" />
+    <column id="COL243" populated="true" autoIncrement="false" autoIncrementSequenceName="clientes_contatos_atendente_seq" defaultValue="" name="atendente" nullable="0" physicalName="atendente" precision="15" referenceCount="1" remarks="&gt;&gt;&gt; Verificar com Batista para que serve ?" scale="0" type="12" />
+    <column id="COL244" populated="true" autoIncrement="false" autoIncrementSequenceName="clientes_contatos_contato_cliente_seq" defaultValue="" name="contato_cliente" nullable="0" physicalName="contato_cliente" precision="15" referenceCount="1" remarks="&gt;&gt;&gt; Este campo é o nome do contato ? Ver com Batista." scale="0" type="12" />
+    <column id="COL245" populated="true" autoIncrement="false" autoIncrementSequenceName="clientes_contatos_dt_contato_seq" defaultValue="" name="dt_contato" nullable="0" physicalName="dt_contato" precision="10" referenceCount="1" remarks="" scale="0" type="91" />
+    <column id="COL246" populated="true" autoIncrement="false" autoIncrementSequenceName="clientes_contatos_hora_inicio_seq" defaultValue="" name="hora_inicio" nullable="0" physicalName="hora_inicio" precision="10" referenceCount="1" remarks="" scale="0" type="92" />
+    <column id="COL247" populated="true" autoIncrement="false" autoIncrementSequenceName="clientes_contatos_hora_fim_seq" defaultValue="" name="hora_fim" nullable="0" physicalName="hora_fim" precision="10" referenceCount="1" remarks="" scale="0" type="92" />
+    <column id="COL248" populated="true" autoIncrement="false" autoIncrementSequenceName="clientes_contatos_assuntos_seq" defaultValue="" name="assuntos" nullable="0" physicalName="assuntos" precision="150" referenceCount="1" remarks="&gt;&gt;&gt; Este campo é memo no mdb do Batista. Verificar como utilizar no Django e no Postgres.
+" scale="0" type="12" />
+    <column id="COL249" populated="true" autoIncrement="false" autoIncrementSequenceName="clientes_contatos_sequencia_seq" defaultValue="" name="sequencia" nullable="0" physicalName="sequencia" precision="10" referenceCount="1" remarks="" scale="0" type="4" />
+   </folder>
+   <folder id="FOL250" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3" >
+   </folder>
+   <folder id="FOL251" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2" >
+   </folder>
+   <folder id="FOL252" populated="true" name="Indices" physicalName="Indices" type="4" >
+   </folder>
+  </table>
   <relationships>
-   <relationship id="REL240" populated="true" deferrability="7" deleteRule="3" fk-table-ref="TAB48" fkCardinality="7" identifying="true" name="item_nota_fiscal_entrada_nota_fiscal_entrada_fk" physicalName="item_nota_fiscal_entrada_nota_fiscal_entrada_fk" pk-table-ref="TAB1" pkCardinality="2" updateRule="3" >
-    <column-mapping id="CMP241" populated="true" fk-column-ref="COL50" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL3" />
+   <relationship id="REL253" populated="true" deferrability="7" deleteRule="3" fk-table-ref="TAB48" fkCardinality="7" identifying="true" name="item_nota_fiscal_entrada_nota_fiscal_entrada_fk" physicalName="item_nota_fiscal_entrada_nota_fiscal_entrada_fk" pk-table-ref="TAB1" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP254" populated="true" fk-column-ref="COL50" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL3" />
    </relationship>
-   <relationship id="REL242" populated="true" deferrability="7" deleteRule="3" fk-table-ref="TAB1" fkCardinality="7" identifying="true" name="tipo_servico_notafiscal_entrada_fk" physicalName="tipo_servico_notafiscal_entrada_fk" pk-table-ref="TAB72" pkCardinality="2" updateRule="3" >
-    <column-mapping id="CMP243" populated="true" fk-column-ref="COL4" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL74" />
+   <relationship id="REL255" populated="true" deferrability="7" deleteRule="3" fk-table-ref="TAB1" fkCardinality="7" identifying="true" name="tipo_servico_notafiscal_entrada_fk" physicalName="tipo_servico_notafiscal_entrada_fk" pk-table-ref="TAB72" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP256" populated="true" fk-column-ref="COL4" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL74" />
    </relationship>
-   <reference ref-id="REL240" />
-   <reference ref-id="REL242" />
-   <relationship id="REL244" populated="true" deferrability="7" deleteRule="3" fk-table-ref="TAB129" fkCardinality="7" identifying="true" name="pedido_venda_itens_pedido_fk" physicalName="pedido_venda_itens_pedido_fk" pk-table-ref="TAB81" pkCardinality="2" updateRule="3" >
-    <column-mapping id="CMP245" populated="true" fk-column-ref="COL131" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL83" />
+   <reference ref-id="REL253" />
+   <reference ref-id="REL255" />
+   <relationship id="REL257" populated="true" deferrability="7" deleteRule="3" fk-table-ref="TAB129" fkCardinality="7" identifying="true" name="pedido_venda_itens_pedido_fk" physicalName="pedido_venda_itens_pedido_fk" pk-table-ref="TAB81" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP258" populated="true" fk-column-ref="COL131" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL83" />
    </relationship>
-   <reference ref-id="REL244" />
+   <reference ref-id="REL257" />
   </relationships>
  </target-database>
  <ddl-generator type="ca.sqlpower.architect.ddl.GenericDDLGenerator" allow-connection="true"> </ddl-generator>
  <create-kettle-job-settings filePath="" jobName="" schemaName="" kettleJoinType="0" savingToFile="true" />
- <play-pen zoom="0.6564022418484124" viewportX="0" viewportY="0" relationship-style="rectilinear" names-displayLogicalNames="true" showPrimaryTag="true" showForeignTag="true" showAlternateTag="true" columnVisibility="ALL" relationshipLabelVisibility="true">
+ <play-pen zoom="0.780598216309869" viewportX="213" viewportY="0" relationship-style="rectilinear" names-displayLogicalNames="true" showPrimaryTag="true" showForeignTag="true" showAlternateTag="true" columnVisibility="ALL" relationshipLabelVisibility="true">
   <table-pane table-ref="TAB1" x="28" y="23" bgColor="0xf0f0f0" fgColor="0x000000" rounded="true" dashed="false"/>
   <table-pane table-ref="TAB48" x="351" y="206" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
   <table-pane table-ref="TAB72" x="338" y="32" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
@@ -342,9 +356,10 @@ Falar com Batista." scale="2" type="3" />
   <table-pane table-ref="TAB185" x="1323" y="38" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
   <table-pane table-ref="TAB191" x="1328" y="152" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
   <table-pane table-ref="TAB197" x="1322" y="266" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
-  <table-link relationship-ref="REL240" pk-x="247" pk-y="506" fk-x="0" fk-y="289" rLineColor="0x333333" pkLabelText="" fkLabelText="" orientation="33"/>
-  <table-link relationship-ref="REL242" pk-x="83" pk-y="96" fk-x="247" fk-y="135" rLineColor="0x333333" pkLabelText="" fkLabelText="" orientation="20"/>
-  <table-link relationship-ref="REL244" pk-x="221" pk-y="507" fk-x="0" fk-y="284" rLineColor="0x333333" pkLabelText="" fkLabelText="" orientation="33"/>
+  <table-pane table-ref="TAB240" x="1637" y="289" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-link relationship-ref="REL253" pk-x="289" pk-y="506" fk-x="0" fk-y="289" rLineColor="0x333333" pkLabelText="" fkLabelText="" orientation="33"/>
+  <table-link relationship-ref="REL255" pk-x="83" pk-y="96" fk-x="289" fk-y="135" rLineColor="0x333333" pkLabelText="" fkLabelText="" orientation="20"/>
+  <table-link relationship-ref="REL257" pk-x="257" pk-y="507" fk-x="0" fk-y="284" rLineColor="0x333333" pkLabelText="" fkLabelText="" orientation="33"/>
  </play-pen>
  <profiles topNCount="10">
   </profiles>
