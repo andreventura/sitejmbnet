@@ -557,16 +557,14 @@
   <table id="TAB430" populated="true" name="documento_contas_pagar_baixado" objectType="TABLE" physicalName="documento_contas_pagar_baixado" remarks="" >
    <folder id="FOL431" populated="true" name="Columns" physicalName="Columns" type="1" >
     <column id="COL432" populated="true" autoIncrement="false" autoIncrementSequenceName="documento_contas_pagar_baixado_numero_nota_fiscal_seq" defaultValue="" name="numero_nota_fiscal" nullable="0" physicalName="numero_nota_fiscal" precision="8" referenceCount="1" remarks="&gt;&gt;&gt; Chave estrangeira." scale="0" type="4" />
-    <column id="COL433" populated="true" autoIncrement="false" autoIncrementSequenceName="documento_contas_pagar_baixado_codigo_documento_seq" defaultValue="" name="codigo_documento" nullable="0" physicalName="codigo_documento" precision="8" referenceCount="1" remarks="&gt;&gt;&gt; Chave estrangeira.
-&gt;&gt;&gt; Verificar se é chave estrangeira para a tabela documento_contas_pagar&quot; ???" scale="0" type="4" />
+    <column id="COL433" populated="true" autoIncrement="false" autoIncrementSequenceName="documento_contas_pagar_baixado_codigo_documento_seq" defaultValue="" name="codigo_documento" nullable="0" physicalName="codigo_documento" precision="8" referenceCount="1" remarks="&gt;&gt;&gt; Chave estrangeira. &gt;&gt;&gt; Verificar se é chave estrangeira para a tabela documento_contas_pagar&quot; ???" scale="0" type="4" />
     <column id="COL434" populated="true" autoIncrement="false" autoIncrementSequenceName="documento_contas_pagar_baixado_codigo_fornecedor_seq" defaultValue="" name="codigo_fornecedor" nullable="0" physicalName="codigo_fornecedor" precision="8" referenceCount="1" remarks="&gt;&gt;&gt; Chave estrangeira." scale="0" type="4" />
     <column id="COL435" populated="true" autoIncrement="false" autoIncrementSequenceName="documento_contas_pagar_baixado_nome_fornecedor_seq" defaultValue="" name="nome_fornecedor" nullable="0" physicalName="nome_fornecedor" precision="40" referenceCount="1" remarks="&gt;&gt;&gt; Deverá vir de uma tabela." scale="0" type="12" />
     <column id="COL436" populated="true" autoIncrement="false" autoIncrementSequenceName="documento_contas_pagar_baixado_dt_pagamento_seq" defaultValue="" name="dt_pagamento" nullable="0" physicalName="dt_pagamento" precision="20" referenceCount="1" remarks="" scale="0" type="93" />
     <column id="COL437" populated="true" autoIncrement="false" autoIncrementSequenceName="documento_contas_pagar_baixado_valor_pagamento_seq" defaultValue="" name="valor_pagamento" nullable="0" physicalName="valor_pagamento" precision="10" referenceCount="1" remarks="" scale="2" type="3" />
     <column id="COL438" populated="true" autoIncrement="false" autoIncrementSequenceName="documento_contas_pagar_baixado_tipo_pagamento_seq" defaultValue="" name="tipo_pagamento" nullable="0" physicalName="tipo_pagamento" precision="10" referenceCount="1" remarks="&gt;&gt;&gt; Existe uma tabela &quot;tipo_pagamento&quot; ???" scale="0" type="12" />
     <column id="COL439" populated="true" autoIncrement="false" autoIncrementSequenceName="documento_contas_pagar_baixado_forma_pagamento_seq" defaultValue="" name="forma_pagamento" nullable="0" physicalName="forma_pagamento" precision="15" referenceCount="1" remarks="&gt;&gt;&gt; Existe uma tabela &quot;forma_pagamento&quot; ???" scale="0" type="12" />
-    <column id="COL440" populated="true" autoIncrement="false" autoIncrementSequenceName="documento_contas_pagar_baixado_local_pagamento_seq" defaultValue="" name="local_pagamento" nullable="0" physicalName="local_pagamento" precision="25" referenceCount="1" remarks="&gt;&gt;&gt; Ver como funciona este campo com Batista.
-&gt;&gt;&gt; Será que tem/precisa de uma tabela ???" scale="0" type="12" />
+    <column id="COL440" populated="true" autoIncrement="false" autoIncrementSequenceName="documento_contas_pagar_baixado_local_pagamento_seq" defaultValue="" name="local_pagamento" nullable="0" physicalName="local_pagamento" precision="25" referenceCount="1" remarks="&gt;&gt;&gt; Ver como funciona este campo com Batista. &gt;&gt;&gt; Será que tem/precisa de uma tabela ???" scale="0" type="12" />
     <column id="COL441" populated="true" autoIncrement="false" autoIncrementSequenceName="documento_contas_pagar_baixado_observacao_seq" defaultValue="" name="observacao" nullable="0" physicalName="observacao" precision="100" referenceCount="1" remarks="" scale="0" type="12" />
     <column id="COL442" populated="true" autoIncrement="false" autoIncrementSequenceName="documento_contas_pagar_baixado_status_gravacao_seq" defaultValue="" name="status_gravacao" nullable="0" physicalName="status_gravacao" precision="4" referenceCount="1" remarks="&gt;&gt;&gt; Existe  uma tabela para este campo ???" scale="0" type="12" />
     <column id="COL443" populated="true" autoIncrement="false" autoIncrementSequenceName="documento_contas_pagar_baixado_despesas_seq" defaultValue="" name="despesas" nullable="0" physicalName="despesas" precision="4" referenceCount="1" remarks="&gt;&gt;&gt; Ver como funciona este campo ???" scale="0" type="12" />
@@ -591,8 +589,7 @@
   </table>
   <table id="TAB453" populated="true" name="documento_contas_receber" objectType="TABLE" physicalName="documento_contas_receber" remarks="" >
    <folder id="FOL454" populated="true" name="Columns" physicalName="Columns" type="1" >
-    <column id="COL455" populated="true" autoIncrement="false" autoIncrementSequenceName="documento_contas_receber_codigo_documento_seq" defaultValue="" name="codigo_documento" nullable="0" physicalName="codigo_documento" precision="15" referenceCount="1" remarks="&gt;&gt;&gt; Este campo é o id da tabela ??? 
-&gt;&gt;&gt; Seria numérico ???" scale="0" type="12" />
+    <column id="COL455" populated="true" autoIncrement="false" autoIncrementSequenceName="documento_contas_receber_codigo_documento_seq" defaultValue="" name="codigo_documento" nullable="0" physicalName="codigo_documento" precision="15" referenceCount="1" remarks="&gt;&gt;&gt; Este campo é o id da tabela ???  &gt;&gt;&gt; Seria numérico ???" scale="0" type="12" />
     <column id="COL456" populated="true" autoIncrement="false" autoIncrementSequenceName="documento_contas_receber_numero_pedido_seq" defaultValue="" name="numero_pedido" nullable="0" physicalName="numero_pedido" precision="10" referenceCount="1" remarks="&gt;&gt;&gt; Chave estrangeira ???" scale="0" type="12" />
     <column id="COL457" populated="true" autoIncrement="false" autoIncrementSequenceName="documento_contas_receber_codigo_cliente_seq" defaultValue="" name="codigo_cliente" nullable="0" physicalName="codigo_cliente" precision="8" referenceCount="1" remarks="&gt;&gt;&gt; Chave estrangeira." scale="0" type="4" />
     <column id="COL458" populated="true" autoIncrement="false" autoIncrementSequenceName="documento_contas_receber_nome_cliente_seq" defaultValue="" name="nome_cliente" nullable="0" physicalName="nome_cliente" precision="40" referenceCount="1" remarks="&gt;&gt;&gt; Virá de uma tabela." scale="0" type="12" />
@@ -602,11 +599,9 @@
     <column id="COL462" populated="true" autoIncrement="false" autoIncrementSequenceName="documento_contas_receber_dt_vencimento_seq" defaultValue="" name="dt_vencimento" nullable="0" physicalName="dt_vencimento" precision="20" referenceCount="1" remarks="" scale="0" type="93" />
     <column id="COL463" populated="true" autoIncrement="false" autoIncrementSequenceName="documento_contas_receber_valor_documento_seq" defaultValue="" name="valor_documento" nullable="0" physicalName="valor_documento" precision="10" referenceCount="1" remarks="" scale="2" type="3" />
     <column id="COL464" populated="true" autoIncrement="false" autoIncrementSequenceName="documento_contas_receber_valor_juros_dia_seq" defaultValue="" name="valor_juros_dia" nullable="0" physicalName="valor_juros_dia" precision="10" referenceCount="1" remarks="" scale="2" type="3" />
-    <column id="COL465" populated="true" autoIncrement="false" autoIncrementSequenceName="documento_contas_receber_forma_recebimento_seq" defaultValue="" name="forma_recebimento" nullable="0" physicalName="forma_recebimento" precision="15" referenceCount="1" remarks="&gt;&gt;&gt; Existe uma tabela &quot;forma_recebimento&quot; ???
-&gt;&gt;&gt; Deveria haver ??? Conversar com Batista." scale="0" type="12" />
+    <column id="COL465" populated="true" autoIncrement="false" autoIncrementSequenceName="documento_contas_receber_forma_recebimento_seq" defaultValue="" name="forma_recebimento" nullable="0" physicalName="forma_recebimento" precision="15" referenceCount="1" remarks="&gt;&gt;&gt; Existe uma tabela &quot;forma_recebimento&quot; ??? &gt;&gt;&gt; Deveria haver ??? Conversar com Batista." scale="0" type="12" />
     <column id="COL466" populated="true" autoIncrement="false" autoIncrementSequenceName="documento_contas_receber_portador_seq" defaultValue="" name="portador" nullable="0" physicalName="portador" precision="25" referenceCount="1" remarks="&gt;&gt;&gt; Verificar com o Batista do que se trata este campo." scale="0" type="12" />
-    <column id="COL467" populated="true" autoIncrement="false" autoIncrementSequenceName="documento_contas_receber_tipo_cobranca_seq" defaultValue="" name="tipo_cobranca" nullable="0" physicalName="tipo_cobranca" precision="15" referenceCount="1" remarks="&gt;&gt;&gt; Existe uma tabela &quot;tipo_cobranca&quot; ???
-" scale="0" type="12" />
+    <column id="COL467" populated="true" autoIncrement="false" autoIncrementSequenceName="documento_contas_receber_tipo_cobranca_seq" defaultValue="" name="tipo_cobranca" nullable="0" physicalName="tipo_cobranca" precision="15" referenceCount="1" remarks="&gt;&gt;&gt; Existe uma tabela &quot;tipo_cobranca&quot; ??? " scale="0" type="12" />
     <column id="COL468" populated="true" autoIncrement="false" autoIncrementSequenceName="documento_contas_receber_observacao_seq" defaultValue="" name="observacao" nullable="0" physicalName="observacao" precision="100" referenceCount="1" remarks="" scale="0" type="12" />
     <column id="COL469" populated="true" autoIncrement="false" autoIncrementSequenceName="documento_contas_receber_status_gravacao_seq" defaultValue="" name="status_gravacao" nullable="0" physicalName="status_gravacao" precision="4" referenceCount="1" remarks="&gt;&gt;&gt; Verificar com Batista como funciona este campo." scale="0" type="12" />
     <column id="COL470" populated="true" autoIncrement="false" autoIncrementSequenceName="documento_contas_receber_situacao_seq" defaultValue="" name="situacao" nullable="0" physicalName="situacao" precision="10" referenceCount="1" remarks="&gt;&gt;&gt; Ver com Batista como funciona este campo." scale="0" type="12" />
@@ -625,8 +620,7 @@
   <table id="TAB478" populated="true" name="documento_contas_receber_baixado" objectType="TABLE" physicalName="documento_contas_receber_baixado" remarks="" >
    <folder id="FOL479" populated="true" name="Columns" physicalName="Columns" type="1" >
     <column id="COL480" populated="true" autoIncrement="false" autoIncrementSequenceName="documento_contas_receber_baixado_codigo_documento_seq" defaultValue="" name="codigo_documento" nullable="0" physicalName="codigo_documento" precision="15" referenceCount="1" remarks="&gt;&gt;&gt; Chave estrangeira ??? ou id da tabela ???" scale="0" type="12" />
-    <column id="COL481" populated="true" autoIncrement="false" autoIncrementSequenceName="documento_contas_receber_baixado_numero_pedido_seq" defaultValue="" name="numero_pedido" nullable="0" physicalName="numero_pedido" precision="10" referenceCount="1" remarks="&gt;&gt;&gt; Chave estrangeira estrangeira de que tabela ???
-" scale="0" type="12" />
+    <column id="COL481" populated="true" autoIncrement="false" autoIncrementSequenceName="documento_contas_receber_baixado_numero_pedido_seq" defaultValue="" name="numero_pedido" nullable="0" physicalName="numero_pedido" precision="10" referenceCount="1" remarks="&gt;&gt;&gt; Chave estrangeira estrangeira de que tabela ??? " scale="0" type="12" />
     <column id="COL482" populated="true" autoIncrement="false" autoIncrementSequenceName="documento_contas_receber_baixado_codigo_cliente_seq" defaultValue="" name="codigo_cliente" nullable="0" physicalName="codigo_cliente" precision="8" referenceCount="1" remarks="&gt;&gt;&gt; Chave estrangeira." scale="0" type="4" />
     <column id="COL483" populated="true" autoIncrement="false" autoIncrementSequenceName="documento_contas_receber_baixado_nome_cliente_seq" defaultValue="" name="nome_cliente" nullable="0" physicalName="nome_cliente" precision="40" referenceCount="1" remarks="&gt;&gt;&gt; Virá de uma tabela." scale="0" type="12" />
     <column id="COL484" populated="true" autoIncrement="false" autoIncrementSequenceName="documento_contas_receber_baixado_codigo_vendedor_seq" defaultValue="" name="codigo_vendedor" nullable="0" physicalName="codigo_vendedor" precision="8" referenceCount="1" remarks="&gt;&gt;&gt; Chave estrangeira." scale="0" type="4" />
@@ -656,24 +650,127 @@
    <folder id="FOL500" populated="true" name="Indices" physicalName="Indices" type="4" >
    </folder>
   </table>
+  <table id="TAB501" populated="true" name="periodo_tipo_comissao" objectType="TABLE" physicalName="periodo_tipo_comissao" remarks="&gt;&gt;&gt; Ver com Batista como funciona esta tabela." >
+   <folder id="FOL502" populated="true" name="Columns" physicalName="Columns" type="1" >
+    <column id="COL503" populated="true" autoIncrement="false" autoIncrementSequenceName="periodo_tipo_comissao_codigo_vendedor_seq" defaultValue="" name="codigo_vendedor" nullable="0" physicalName="codigo_vendedor" precision="8" referenceCount="1" remarks="&gt;&gt;&gt; Chave estrangeira." scale="0" type="4" />
+    <column id="COL504" populated="true" autoIncrement="false" autoIncrementSequenceName="periodo_tipo_comissao_tipo_comissao_seq" defaultValue="" name="tipo_comissao" nullable="0" physicalName="tipo_comissao" precision="15" referenceCount="1" remarks="&gt;&gt;&gt; Existe uma tabela &quot;tipo_de_comissao&quot; ???" scale="0" type="12" />
+    <column id="COL505" populated="true" autoIncrement="false" autoIncrementSequenceName="periodo_tipo_comissao_dt_inicial_seq" defaultValue="" name="dt_inicial" nullable="0" physicalName="dt_inicial" precision="20" referenceCount="1" remarks="" scale="0" type="93" />
+    <column id="COL506" populated="true" autoIncrement="false" autoIncrementSequenceName="periodo_tipo_comissao_dt_final_seq" defaultValue="" name="dt_final" nullable="0" physicalName="dt_final" precision="20" referenceCount="1" remarks="" scale="0" type="93" />
+   </folder>
+   <folder id="FOL507" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3" >
+   </folder>
+   <folder id="FOL508" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2" >
+   </folder>
+   <folder id="FOL509" populated="true" name="Indices" physicalName="Indices" type="4" >
+   </folder>
+  </table>
+  <table id="TAB510" populated="true" name="cliente_regiao" objectType="TABLE" physicalName="cliente_regiao" remarks="&gt;&gt;&gt; Esta tabela tem o nome de RegiaoCliente no mdb do Batista." >
+   <folder id="FOL511" populated="true" name="Columns" physicalName="Columns" type="1" >
+    <column id="COL512" populated="true" autoIncrement="false" autoIncrementSequenceName="cliente_regiao_codigo_regiao_seq" defaultValue="" name="codigo_regiao" nullable="0" physicalName="codigo_regiao" precision="8" primaryKeySeq="0" referenceCount="1" remarks="&gt;&gt;&gt; Este campo seria o id da tabela ???" scale="0" type="4" />
+    <column id="COL513" populated="true" autoIncrement="false" autoIncrementSequenceName="cliente_regiao_nome_seq" defaultValue="" name="nome" nullable="0" physicalName="nome" precision="30" referenceCount="1" remarks="" scale="0" type="12" />
+   </folder>
+   <folder id="FOL514" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3" >
+   </folder>
+   <folder id="FOL515" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2" >
+   </folder>
+   <folder id="FOL516" populated="true" name="Indices" physicalName="Indices" type="4" >
+    <index id="IDX517" populated="true" clustered="false" name="cliente_regiao_pk" physicalName="cliente_regiao_pk" primaryKeyIndex="true" unique="true" >
+     <index-column id="IDC518" populated="true" ascendingOrDescending="UNSPECIFIED" column-ref="COL512" name="codigo_regiao" physicalName="codigo_regiao" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB519" populated="true" name="portadores" objectType="TABLE" physicalName="portadores" remarks="" >
+   <folder id="FOL520" populated="true" name="Columns" physicalName="Columns" type="1" >
+    <column id="COL521" populated="true" autoIncrement="false" autoIncrementSequenceName="portadores_nome_portador_seq" defaultValue="" name="nome_portador" nullable="0" physicalName="nome_portador" precision="25" referenceCount="1" remarks="" scale="0" type="12" />
+    <column id="COL522" populated="true" autoIncrement="false" autoIncrementSequenceName="portadores_conta_contabil_seq" defaultValue="" name="conta_contabil" nullable="0" physicalName="conta_contabil" precision="8" referenceCount="1" remarks="&gt;&gt;&gt; Chave estrangeira ???" scale="0" type="4" />
+    <column id="COL523" populated="true" autoIncrement="false" autoIncrementSequenceName="portadores_taxa_cobranca_seq" defaultValue="" name="taxa_cobranca" nullable="0" physicalName="taxa_cobranca" precision="10" referenceCount="1" remarks="" scale="2" type="3" />
+   </folder>
+   <folder id="FOL524" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3" >
+   </folder>
+   <folder id="FOL525" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2" >
+   </folder>
+   <folder id="FOL526" populated="true" name="Indices" physicalName="Indices" type="4" >
+   </folder>
+  </table>
+  <table id="TAB527" populated="true" name="rota_vendedor" objectType="TABLE" physicalName="rota_vendedor" remarks="" >
+   <folder id="FOL528" populated="true" name="Columns" physicalName="Columns" type="1" >
+    <column id="COL529" populated="true" autoIncrement="false" autoIncrementSequenceName="rota_vendedor_codigo_seq" defaultValue="" name="codigo" nullable="0" physicalName="codigo" precision="8" referenceCount="1" remarks="&gt;&gt;&gt; id da tabela ??? Se for,  pode ser &quot;auto increment&quot; ???" scale="0" type="4" />
+    <column id="COL530" populated="true" autoIncrement="false" autoIncrementSequenceName="rota_vendedor_nome_seq" defaultValue="" name="nome" nullable="0" physicalName="nome" precision="50" referenceCount="1" remarks="&gt;&gt;&gt; Nome da rota ???" scale="0" type="12" />
+    <column id="COL531" populated="true" autoIncrement="false" autoIncrementSequenceName="rota_vendedor_codigo_vendedor_seq" defaultValue="" name="codigo_vendedor" nullable="0" physicalName="codigo_vendedor" precision="4" referenceCount="1" remarks="&gt;&gt;&gt; Este campo é chave estrangeira para a tabela de vendedor ??? Se for, confirmar tipo e tamanho." scale="0" type="5" />
+    <column id="COL532" populated="true" autoIncrement="false" autoIncrementSequenceName="rota_vendedor_nome_fantasia_vendedor_seq" defaultValue="" name="nome_fantasia_vendedor" nullable="0" physicalName="nome_fantasia_vendedor" precision="25" referenceCount="1" remarks="&gt;&gt;&gt; Este campo não estaria na tabela de vendedores ???" scale="0" type="12" />
+   </folder>
+   <folder id="FOL533" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3" >
+   </folder>
+   <folder id="FOL534" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2" >
+   </folder>
+   <folder id="FOL535" populated="true" name="Indices" physicalName="Indices" type="4" >
+   </folder>
+  </table>
+  <table id="TAB536" populated="true" name="saldo_conta_corrente" objectType="TABLE" physicalName="saldo_conta_corrente" remarks="&gt;&gt;&gt; Ver com Batista como funciona esta tabela.
+&gt;&gt;&gt; Importante conversar com Batista sobre esta tabela porque ela fala de valor conciliado (não sei o que é isso mas me paresse importante ), valor empresa." >
+   <folder id="FOL537" populated="true" name="Columns" physicalName="Columns" type="1" >
+    <column id="COL538" populated="true" autoIncrement="false" autoIncrementSequenceName="saldo_conta_corrente_codigo_empresa_seq" defaultValue="" name="codigo_empresa" nullable="0" physicalName="codigo_empresa" precision="8" referenceCount="1" remarks="&gt;&gt;&gt; Chave estrangeira ???
+" scale="0" type="4" />
+    <column id="COL539" populated="true" autoIncrement="false" autoIncrementSequenceName="saldo_conta_corrente_codigo_banco_seq" defaultValue="" name="codigo_banco" nullable="0" physicalName="codigo_banco" precision="8" referenceCount="1" remarks="&gt;&gt;&gt; Chave estrangeira." scale="0" type="4" />
+    <column id="COL540" populated="true" autoIncrement="false" autoIncrementSequenceName="saldo_conta_corrente_valor_conciliado_seq" defaultValue="" name="valor_conciliado" nullable="0" physicalName="valor_conciliado" precision="10" referenceCount="1" remarks="&gt;&gt;&gt; Não sei do que se trata. Falar com Batista." scale="2" type="3" />
+    <column id="COL541" populated="true" autoIncrement="false" autoIncrementSequenceName="saldo_conta_corrente_valor_empresa_seq" defaultValue="" name="valor_empresa" nullable="0" physicalName="valor_empresa" precision="10" referenceCount="1" remarks="&gt;&gt;&gt; Ver com Batista." scale="2" type="3" />
+    <column id="COL542" populated="true" autoIncrement="false" autoIncrementSequenceName="saldo_conta_corrente_dt_lancamento_seq" defaultValue="" name="dt_lancamento" nullable="0" physicalName="dt_lancamento" precision="20" referenceCount="1" remarks="" scale="0" type="93" />
+   </folder>
+   <folder id="FOL543" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3" >
+   </folder>
+   <folder id="FOL544" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2" >
+   </folder>
+   <folder id="FOL545" populated="true" name="Indices" physicalName="Indices" type="4" >
+   </folder>
+  </table>
+  <table id="TAB546" populated="true" name="suframa" objectType="TABLE" physicalName="suframa" remarks="&gt;&gt;&gt; Ver com Batista do que se trata esta tabela." >
+   <folder id="FOL547" populated="true" name="Columns" physicalName="Columns" type="1" >
+    <column id="COL548" populated="true" autoIncrement="false" autoIncrementSequenceName="suframa_codigo_suframa_seq" defaultValue="" name="codigo_suframa" nullable="0" physicalName="codigo_suframa" precision="8" referenceCount="1" remarks="&gt;&gt;&gt; Este campo é o id da tabela ???" scale="0" type="4" />
+    <column id="COL549" populated="true" autoIncrement="false" autoIncrementSequenceName="suframa_descricao_seq" defaultValue="" name="descricao" nullable="0" physicalName="descricao" precision="160" referenceCount="1" remarks="" scale="0" type="12" />
+   </folder>
+   <folder id="FOL550" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3" >
+   </folder>
+   <folder id="FOL551" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2" >
+   </folder>
+   <folder id="FOL552" populated="true" name="Indices" physicalName="Indices" type="4" >
+   </folder>
+  </table>
+  <table id="TAB553" populated="true" name="tipo_lancamento_conta_corrente" objectType="TABLE" physicalName="tipo_lancamento_conta_corrente" remarks="" >
+   <folder id="FOL554" populated="true" name="Columns" physicalName="Columns" type="1" >
+    <column id="COL555" populated="true" autoIncrement="false" autoIncrementSequenceName="tipo_lancamento_conta_corrente_codigo_tipo_seq" defaultValue="" name="codigo_tipo" nullable="0" physicalName="codigo_tipo" precision="8" referenceCount="1" remarks="&gt;&gt;&gt; É o id da tabela ???" scale="0" type="4" />
+    <column id="COL556" populated="true" autoIncrement="false" autoIncrementSequenceName="tipo_lancamento_conta_corrente_descricao_seq" defaultValue="" name="descricao" nullable="0" physicalName="descricao" precision="20" referenceCount="1" remarks="" scale="0" type="12" />
+    <column id="COL557" populated="true" autoIncrement="false" autoIncrementSequenceName="tipo_lancamento_conta_corrente_descricao_historico_seq" defaultValue="" name="descricao_historico" nullable="0" physicalName="descricao_historico" precision="20" referenceCount="1" remarks="&gt;&gt;&gt; Ver com Batista como funciona este campo." scale="0" type="12" />
+    <column id="COL558" populated="true" autoIncrement="false" autoIncrementSequenceName="tipo_lancamento_conta_corrente_incide_contabilidade_seq" defaultValue="" name="incide_contabilidade" nullable="0" physicalName="incide_contabilidade" precision="3" referenceCount="1" remarks="&gt;&gt;&gt; Vero como funciona este campo com o Batista." scale="0" type="12" />
+    <column id="COL559" populated="true" autoIncrement="false" autoIncrementSequenceName="tipo_lancamento_conta_corrente_tipo_lancamento_seq" defaultValue="" name="tipo_lancamento" nullable="0" physicalName="tipo_lancamento" precision="10" referenceCount="1" remarks="&gt;&gt;&gt; Ver se esse campo nao poderá ser uma tabela aparte com o Batista." scale="0" type="12" />
+    <column id="COL560" populated="true" autoIncrement="false" autoIncrementSequenceName="tipo_lancamento_conta_corrente_conta_debito_seq" defaultValue="" name="conta_debito" nullable="0" physicalName="conta_debito" precision="5" referenceCount="1" remarks="&gt;&gt;&gt; Ver com o Batista do se trata. " scale="0" type="12" />
+    <column id="COL561" populated="true" autoIncrement="false" autoIncrementSequenceName="tipo_lancamento_conta_corrente_conta_credito_seq" defaultValue="" name="conta_credito" nullable="0" physicalName="conta_credito" precision="5" referenceCount="1" remarks="&gt;&gt;&gt; Ver com o Batista." scale="0" type="12" />
+    <column id="COL562" populated="true" autoIncrement="false" autoIncrementSequenceName="tipo_lancamento_conta_corrente_alterar_valor_seq" defaultValue="" name="alterar_valor" nullable="0" physicalName="alterar_valor" precision="1" referenceCount="1" remarks="&gt;&gt;&gt; Ver com o Batista." scale="0" type="16" />
+   </folder>
+   <folder id="FOL563" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3" >
+   </folder>
+   <folder id="FOL564" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2" >
+   </folder>
+   <folder id="FOL565" populated="true" name="Indices" physicalName="Indices" type="4" >
+   </folder>
+  </table>
   <relationships>
-   <relationship id="REL501" populated="true" deferrability="7" deleteRule="3" fk-table-ref="TAB48" fkCardinality="7" identifying="true" name="item_nota_fiscal_entrada_nota_fiscal_entrada_fk" physicalName="item_nota_fiscal_entrada_nota_fiscal_entrada_fk" pk-table-ref="TAB1" pkCardinality="2" updateRule="3" >
-    <column-mapping id="CMP502" populated="true" fk-column-ref="COL50" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL3" />
+   <relationship id="REL566" populated="true" deferrability="7" deleteRule="3" fk-table-ref="TAB48" fkCardinality="7" identifying="true" name="item_nota_fiscal_entrada_nota_fiscal_entrada_fk" physicalName="item_nota_fiscal_entrada_nota_fiscal_entrada_fk" pk-table-ref="TAB1" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP567" populated="true" fk-column-ref="COL50" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL3" />
    </relationship>
-   <relationship id="REL503" populated="true" deferrability="7" deleteRule="3" fk-table-ref="TAB1" fkCardinality="7" identifying="true" name="tipo_servico_notafiscal_entrada_fk" physicalName="tipo_servico_notafiscal_entrada_fk" pk-table-ref="TAB72" pkCardinality="2" updateRule="3" >
-    <column-mapping id="CMP504" populated="true" fk-column-ref="COL4" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL74" />
+   <relationship id="REL568" populated="true" deferrability="7" deleteRule="3" fk-table-ref="TAB1" fkCardinality="7" identifying="true" name="tipo_servico_notafiscal_entrada_fk" physicalName="tipo_servico_notafiscal_entrada_fk" pk-table-ref="TAB72" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP569" populated="true" fk-column-ref="COL4" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL74" />
    </relationship>
-   <reference ref-id="REL501" />
-   <reference ref-id="REL503" />
-   <relationship id="REL505" populated="true" deferrability="7" deleteRule="3" fk-table-ref="TAB129" fkCardinality="7" identifying="true" name="pedido_venda_itens_pedido_fk" physicalName="pedido_venda_itens_pedido_fk" pk-table-ref="TAB81" pkCardinality="2" updateRule="3" >
-    <column-mapping id="CMP506" populated="true" fk-column-ref="COL131" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL83" />
+   <reference ref-id="REL566" />
+   <reference ref-id="REL568" />
+   <relationship id="REL570" populated="true" deferrability="7" deleteRule="3" fk-table-ref="TAB129" fkCardinality="7" identifying="true" name="pedido_venda_itens_pedido_fk" physicalName="pedido_venda_itens_pedido_fk" pk-table-ref="TAB81" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP571" populated="true" fk-column-ref="COL131" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL83" />
    </relationship>
-   <reference ref-id="REL505" />
+   <reference ref-id="REL570" />
   </relationships>
  </target-database>
  <ddl-generator type="ca.sqlpower.architect.ddl.GenericDDLGenerator" allow-connection="true"> </ddl-generator>
  <create-kettle-job-settings filePath="" jobName="" schemaName="" kettleJoinType="0" savingToFile="true" />
- <play-pen zoom="0.5946035575013612" viewportX="467" viewportY="351" relationship-style="rectilinear" names-displayLogicalNames="true" showPrimaryTag="true" showForeignTag="true" showAlternateTag="true" columnVisibility="ALL" relationshipLabelVisibility="true">
+ <play-pen zoom="0.5946035575013612" viewportX="500" viewportY="0" relationship-style="rectilinear" names-displayLogicalNames="true" showPrimaryTag="true" showForeignTag="true" showAlternateTag="true" columnVisibility="ALL" relationshipLabelVisibility="true">
   <table-pane table-ref="TAB1" x="28" y="23" bgColor="0xf0f0f0" fgColor="0x000000" rounded="true" dashed="false"/>
   <table-pane table-ref="TAB48" x="351" y="206" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
   <table-pane table-ref="TAB72" x="338" y="32" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
@@ -685,25 +782,32 @@
   <table-pane table-ref="TAB185" x="1323" y="38" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
   <table-pane table-ref="TAB191" x="1328" y="152" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
   <table-pane table-ref="TAB197" x="1322" y="266" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
-  <table-pane table-ref="TAB240" x="1637" y="289" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
-  <table-pane table-ref="TAB253" x="1628" y="601" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
-  <table-pane table-ref="TAB269" x="1639" y="987" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
-  <table-pane table-ref="TAB285" x="1623" y="150" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
-  <table-pane table-ref="TAB292" x="1949" y="47" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
-  <table-pane table-ref="TAB320" x="2223" y="61" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
-  <table-pane table-ref="TAB342" x="2459" y="58" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
-  <table-pane table-ref="TAB365" x="2709" y="93" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
-  <table-pane table-ref="TAB380" x="2013" y="786" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
-  <table-pane table-ref="TAB391" x="2287" y="627" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
-  <table-pane table-ref="TAB409" x="2045" y="1002" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
-  <table-pane table-ref="TAB430" x="2347" y="1083" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
-  <table-pane table-ref="TAB448" x="2342" y="1515" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
-  <table-pane table-ref="TAB453" x="2598" y="627" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
-  <table-pane table-ref="TAB478" x="2606" y="1330" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
-  <table-pane table-ref="TAB496" x="2600" y="1252" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
-  <table-link relationship-ref="REL501" pk-x="273" pk-y="506" fk-x="0" fk-y="289" rLineColor="0x333333" pkLabelText="" fkLabelText="" orientation="33"/>
-  <table-link relationship-ref="REL503" pk-x="83" pk-y="96" fk-x="273" fk-y="135" rLineColor="0x333333" pkLabelText="" fkLabelText="" orientation="20"/>
-  <table-link relationship-ref="REL505" pk-x="244" pk-y="507" fk-x="0" fk-y="284" rLineColor="0x333333" pkLabelText="" fkLabelText="" orientation="33"/>
+  <table-pane table-ref="TAB240" x="1604" y="269" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB253" x="1597" y="581" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB269" x="1607" y="968" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB285" x="1590" y="131" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB292" x="1917" y="26" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB320" x="2189" y="43" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB342" x="2428" y="40" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB365" x="2677" y="40" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB380" x="1930" y="763" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB391" x="2209" y="608" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB409" x="1927" y="975" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB430" x="2213" y="1066" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB448" x="2230" y="1493" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB453" x="2452" y="622" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB478" x="2465" y="1331" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB496" x="2458" y="1241" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB501" x="1940" y="1500" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB510" x="1634" y="1352" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB519" x="2243" y="1570" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB527" x="1947" y="1688" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB536" x="1654" y="1500" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB546" x="1695" y="1722" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB553" x="2680" y="396" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-link relationship-ref="REL566" pk-x="273" pk-y="506" fk-x="0" fk-y="289" rLineColor="0x333333" pkLabelText="" fkLabelText="" orientation="33"/>
+  <table-link relationship-ref="REL568" pk-x="83" pk-y="96" fk-x="273" fk-y="135" rLineColor="0x333333" pkLabelText="" fkLabelText="" orientation="20"/>
+  <table-link relationship-ref="REL570" pk-x="244" pk-y="507" fk-x="0" fk-y="284" rLineColor="0x333333" pkLabelText="" fkLabelText="" orientation="33"/>
  </play-pen>
  <profiles topNCount="10">
   </profiles>
