@@ -926,24 +926,255 @@
    <folder id="FOL699" populated="true" name="Indices" physicalName="Indices" type="4" >
    </folder>
   </table>
+  <table id="TAB700" populated="true" name="ferramentas" objectType="TABLE" physicalName="ferramentas" remarks="&gt;&gt;&gt; Estudar toda esta tabela com o Batista." >
+   <folder id="FOL701" populated="true" name="Columns" physicalName="Columns" type="1" >
+    <column id="COL702" populated="true" autoIncrement="false" autoIncrementSequenceName="ferramentas_codigo_ferramenta_seq" defaultValue="" name="codigo_ferramenta" nullable="0" physicalName="codigo_ferramenta" precision="30" referenceCount="1" remarks="" scale="0" type="12" />
+    <column id="COL703" populated="true" autoIncrement="false" autoIncrementSequenceName="ferramentas_descricao_ferramenta_seq" defaultValue="" name="descricao_ferramenta" nullable="0" physicalName="descricao_ferramenta" precision="6" referenceCount="1" remarks="" scale="0" type="12" />
+    <column id="COL704" populated="true" autoIncrement="false" autoIncrementSequenceName="ferramentas_numero_pecas_seq" defaultValue="" name="numero_pecas" nullable="0" physicalName="numero_pecas" precision="8" referenceCount="1" remarks="" scale="0" type="4" />
+    <column id="COL705" populated="true" autoIncrement="false" autoIncrementSequenceName="ferramentas_redimento_ferramenta_seq" defaultValue="" name="redimento_ferramenta" nullable="0" physicalName="redimento_ferramenta" precision="8" referenceCount="1" remarks="" scale="0" type="4" />
+    <column id="COL706" populated="true" autoIncrement="false" autoIncrementSequenceName="ferramentas_centro_custo_seq" defaultValue="" name="centro_custo" nullable="0" physicalName="centro_custo" precision="5" referenceCount="1" remarks="" scale="0" type="12" />
+    <column id="COL707" populated="true" autoIncrement="false" autoIncrementSequenceName="ferramentas_codigo_produto_seq" defaultValue="" name="codigo_produto" nullable="0" physicalName="codigo_produto" precision="8" referenceCount="1" remarks="" scale="0" type="4" />
+   </folder>
+   <folder id="FOL708" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3" >
+   </folder>
+   <folder id="FOL709" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2" >
+   </folder>
+   <folder id="FOL710" populated="true" name="Indices" physicalName="Indices" type="4" >
+   </folder>
+  </table>
+  <table id="TAB711" populated="true" name="funcionario" objectType="TABLE" physicalName="funcionario" remarks="" >
+   <folder id="FOL712" populated="true" name="Columns" physicalName="Columns" type="1" >
+    <column id="COL713" populated="true" autoIncrement="false" autoIncrementSequenceName="funcionario_matricula_funcionario_seq" defaultValue="" name="matricula_funcionario" nullable="0" physicalName="matricula_funcionario" precision="8" referenceCount="1" remarks="" scale="0" type="4" />
+    <column id="COL714" populated="true" autoIncrement="false" autoIncrementSequenceName="funcionario_nome_funcionario_seq" defaultValue="" name="nome_funcionario" nullable="0" physicalName="nome_funcionario" precision="30" referenceCount="1" remarks="" scale="0" type="12" />
+    <column id="COL715" populated="true" autoIncrement="false" autoIncrementSequenceName="funcionario_centro_custo_seq" defaultValue="" name="centro_custo" nullable="0" physicalName="centro_custo" precision="5" referenceCount="1" remarks="" scale="0" type="12" />
+    <column id="COL716" populated="true" autoIncrement="false" autoIncrementSequenceName="funcionario_hora_entrada_seq" defaultValue="" name="hora_entrada" nullable="0" physicalName="hora_entrada" precision="20" referenceCount="1" remarks="" scale="0" type="93" />
+    <column id="COL717" populated="true" autoIncrement="false" autoIncrementSequenceName="funcionario_hora_saida_seq" defaultValue="" name="hora_saida" nullable="0" physicalName="hora_saida" precision="20" referenceCount="1" remarks="" scale="0" type="93" />
+    <column id="COL718" populated="true" autoIncrement="false" autoIncrementSequenceName="funcionario_codigo_turno_seq" defaultValue="" name="codigo_turno" nullable="0" physicalName="codigo_turno" precision="8" referenceCount="1" remarks="" scale="0" type="4" />
+    <column id="COL719" populated="true" autoIncrement="false" autoIncrementSequenceName="funcionario_status_seq" defaultValue="" name="status" nullable="0" physicalName="status" precision="10" referenceCount="1" remarks="" scale="0" type="4" />
+   </folder>
+   <folder id="FOL720" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3" >
+   </folder>
+   <folder id="FOL721" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2" >
+   </folder>
+   <folder id="FOL722" populated="true" name="Indices" physicalName="Indices" type="4" >
+   </folder>
+  </table>
+  <table id="TAB723" populated="true" name="grupo_produto" objectType="TABLE" physicalName="grupo_produto" remarks="Estudar toda esta tabela com o Batista." >
+   <folder id="FOL724" populated="true" name="Columns" physicalName="Columns" type="1" >
+    <column id="COL725" populated="true" autoIncrement="false" autoIncrementSequenceName="grupo_produto_codigo_grupo_seq" defaultValue="" name="codigo_grupo" nullable="0" physicalName="codigo_grupo" precision="10" referenceCount="1" remarks="" scale="0" type="4" />
+    <column id="COL726" populated="true" autoIncrement="false" autoIncrementSequenceName="grupo_produto_nome_grupo_seq" defaultValue="" name="nome_grupo" nullable="0" physicalName="nome_grupo" precision="40" referenceCount="1" remarks="" scale="0" type="12" />
+    <column id="COL727" populated="true" autoIncrement="false" autoIncrementSequenceName="grupo_produto_codigo_tipo_seq" defaultValue="" name="codigo_tipo" nullable="0" physicalName="codigo_tipo" precision="8" referenceCount="1" remarks="" scale="0" type="4" />
+   </folder>
+   <folder id="FOL728" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3" >
+   </folder>
+   <folder id="FOL729" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2" >
+   </folder>
+   <folder id="FOL730" populated="true" name="Indices" physicalName="Indices" type="4" >
+   </folder>
+  </table>
+  <table id="TAB731" populated="true" name="lancamento_contabil" objectType="TABLE" physicalName="lancamento_contabil" remarks="&gt;&gt;&gt; Estudar toda esta tabela com o Batista." >
+   <folder id="FOL732" populated="true" name="Columns" physicalName="Columns" type="1" >
+    <column id="COL733" populated="true" autoIncrement="false" autoIncrementSequenceName="lancamento_contabil_codigo_operacao_seq" defaultValue="" name="codigo_operacao" nullable="0" physicalName="codigo_operacao" precision="8" referenceCount="1" remarks="" scale="0" type="4" />
+    <column id="COL734" populated="true" autoIncrement="false" autoIncrementSequenceName="lancamento_contabil_conta_contabil_seq" defaultValue="" name="conta_contabil" nullable="0" physicalName="conta_contabil" precision="8" referenceCount="1" remarks="" scale="0" type="4" />
+    <column id="COL735" populated="true" autoIncrement="false" autoIncrementSequenceName="lancamento_contabil_conta_credito_seq" defaultValue="" name="conta_credito" nullable="0" physicalName="conta_credito" precision="8" referenceCount="1" remarks="" scale="0" type="4" />
+    <column id="COL736" populated="true" autoIncrement="false" autoIncrementSequenceName="lancamento_contabil_valor_lancamento_seq" defaultValue="" name="valor_lancamento" nullable="0" physicalName="valor_lancamento" precision="10" referenceCount="1" remarks="" scale="2" type="3" />
+    <column id="COL737" populated="true" autoIncrement="false" autoIncrementSequenceName="lancamento_contabil_descricao_historico_seq" defaultValue="" name="descricao_historico" nullable="0" physicalName="descricao_historico" precision="50" referenceCount="1" remarks="" scale="0" type="12" />
+    <column id="COL738" populated="true" autoIncrement="false" autoIncrementSequenceName="lancamento_contabil_centro_custo_seq" defaultValue="" name="centro_custo" nullable="0" physicalName="centro_custo" precision="8" referenceCount="1" remarks="" scale="0" type="4" />
+    <column id="COL739" populated="true" autoIncrement="false" autoIncrementSequenceName="lancamento_contabil_dt_lancamento_seq" defaultValue="" name="dt_lancamento" nullable="0" physicalName="dt_lancamento" precision="20" referenceCount="1" remarks="" scale="0" type="93" />
+    <column id="COL740" populated="true" autoIncrement="false" autoIncrementSequenceName="lancamento_contabil_numero_nota_fiscal_seq" defaultValue="" name="numero_nota_fiscal" nullable="0" physicalName="numero_nota_fiscal" precision="7" referenceCount="1" remarks="&gt;&gt;&gt; Esse campo é chave estrangeira ??? &gt;&gt;&gt; Prq o tipo é text de 7." scale="0" type="12" />
+    <column id="COL741" populated="true" autoIncrement="false" autoIncrementSequenceName="lancamento_contabil_codigo_fornecedor_seq" defaultValue="" name="codigo_fornecedor" nullable="0" physicalName="codigo_fornecedor" precision="8" referenceCount="1" remarks="&gt;&gt;&gt; Chave estrangeira." scale="0" type="4" />
+    <column id="COL742" populated="true" autoIncrement="false" autoIncrementSequenceName="lancamento_contabil_sequencial_seq" defaultValue="" name="sequencial" nullable="0" physicalName="sequencial" precision="4" referenceCount="1" remarks="" scale="0" type="4" />
+   </folder>
+   <folder id="FOL743" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3" >
+   </folder>
+   <folder id="FOL744" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2" >
+   </folder>
+   <folder id="FOL745" populated="true" name="Indices" physicalName="Indices" type="4" >
+   </folder>
+  </table>
+  <table id="TAB746" populated="true" name="lancamento_producao" objectType="TABLE" physicalName="lancamento_producao" remarks="&gt;&gt;&gt; Estudar com o Batista toda esta tabela." >
+   <folder id="FOL747" populated="true" name="Columns" physicalName="Columns" type="1" >
+    <column id="COL748" populated="true" autoIncrement="false" autoIncrementSequenceName="lancamento_producao_ordem_servico_seq" defaultValue="" name="ordem_servico" nullable="0" physicalName="ordem_servico" precision="10" referenceCount="1" remarks="" scale="0" type="12" />
+    <column id="COL749" populated="true" autoIncrement="false" autoIncrementSequenceName="lancamento_producao_codigo_produto_seq" defaultValue="" name="codigo_produto" nullable="0" physicalName="codigo_produto" precision="8" referenceCount="1" remarks="" scale="0" type="4" />
+    <column id="COL750" populated="true" autoIncrement="false" autoIncrementSequenceName="lancamento_producao_nome_cliente_seq" defaultValue="" name="nome_cliente" nullable="0" physicalName="nome_cliente" precision="30" referenceCount="1" remarks="" scale="0" type="12" />
+    <column id="COL751" populated="true" autoIncrement="false" autoIncrementSequenceName="lancamento_producao_codigo_maquina_seq" defaultValue="" name="codigo_maquina" nullable="0" physicalName="codigo_maquina" precision="10" referenceCount="1" remarks="&gt;&gt;&gt; Nemerico ???" scale="0" type="12" />
+    <column id="COL752" populated="true" autoIncrement="false" autoIncrementSequenceName="lancamento_producao_dt_lancamento_seq" defaultValue="" name="dt_lancamento" nullable="0" physicalName="dt_lancamento" precision="20" referenceCount="1" remarks="" scale="0" type="93" />
+    <column id="COL753" populated="true" autoIncrement="false" autoIncrementSequenceName="lancamento_producao_codigo_turno_seq" defaultValue="" name="codigo_turno" nullable="0" physicalName="codigo_turno" precision="8" referenceCount="1" remarks="&gt;&gt;&gt; Chave estrangeira ???" scale="0" type="4" />
+    <column id="COL754" populated="true" autoIncrement="false" autoIncrementSequenceName="lancamento_producao_matricula_operador_seq" defaultValue="" name="matricula_operador" nullable="0" physicalName="matricula_operador" precision="6" referenceCount="1" remarks="" scale="0" type="12" />
+    <column id="COL755" populated="true" autoIncrement="false" autoIncrementSequenceName="lancamento_producao_matricula_auxiliar_seq" defaultValue="" name="matricula_auxiliar" nullable="0" physicalName="matricula_auxiliar" precision="6" referenceCount="1" remarks="" scale="0" type="12" />
+    <column id="COL756" populated="true" autoIncrement="false" autoIncrementSequenceName="lancamento_producao_descricao_servico_seq" defaultValue="" name="descricao_servico" nullable="0" physicalName="descricao_servico" precision="30" referenceCount="1" remarks="" scale="0" type="12" />
+    <column id="COL757" populated="true" autoIncrement="false" autoIncrementSequenceName="lancamento_producao_limpar_maquina_seq" defaultValue="" name="limpar_maquina" nullable="0" physicalName="limpar_maquina" precision="20" referenceCount="1" remarks="" scale="0" type="93" />
+    <column id="COL758" populated="true" autoIncrement="false" autoIncrementSequenceName="lancamento_producao_preparar_maquina_seq" defaultValue="" name="preparar_maquina" nullable="0" physicalName="preparar_maquina" precision="20" referenceCount="1" remarks="&gt;&gt;&gt; Pdir explicação ao Batista." scale="0" type="93" />
+    <column id="COL759" populated="true" autoIncrement="false" autoIncrementSequenceName="lancamento_producao_desmontar_maquina_seq" defaultValue="" name="desmontar_maquina" nullable="0" physicalName="desmontar_maquina" precision="20" referenceCount="1" remarks="&gt;&gt;&gt; Pedir explicacao ao Batista." scale="0" type="93" />
+    <column id="COL760" populated="true" autoIncrement="false" autoIncrementSequenceName="lancamento_producao_observacao_seq" defaultValue="" name="observacao" nullable="0" physicalName="observacao" precision="150" referenceCount="1" remarks="" scale="0" type="12" />
+    <column id="COL761" populated="true" autoIncrement="false" autoIncrementSequenceName="lancamento_producao_numero_acesso_seq" defaultValue="" name="numero_acesso" nullable="0" physicalName="numero_acesso" precision="4" referenceCount="1" remarks="" scale="0" type="4" />
+   </folder>
+   <folder id="FOL762" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3" >
+   </folder>
+   <folder id="FOL763" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2" >
+   </folder>
+   <folder id="FOL764" populated="true" name="Indices" physicalName="Indices" type="4" >
+   </folder>
+  </table>
+  <table id="TAB765" populated="true" name="lacamento_producao_01" objectType="TABLE" physicalName="lacamento_producao_01" remarks="" >
+   <folder id="FOL766" populated="true" name="Columns" physicalName="Columns" type="1" >
+    <column id="COL767" populated="true" autoIncrement="false" autoIncrementSequenceName="lacamento_producao_01_numero_acesso_seq" defaultValue="" name="numero_acesso" nullable="0" physicalName="numero_acesso" precision="8" referenceCount="1" remarks="" scale="0" type="4" />
+    <column id="COL768" populated="true" autoIncrement="false" autoIncrementSequenceName="lacamento_producao_01_numero_sequencia_seq" defaultValue="" name="numero_sequencia" nullable="0" physicalName="numero_sequencia" precision="8" referenceCount="1" remarks="" scale="0" type="4" />
+    <column id="COL769" populated="true" autoIncrement="false" autoIncrementSequenceName="lacamento_producao_01_codigo_produto_seq" defaultValue="" name="codigo_produto" nullable="0" physicalName="codigo_produto" precision="8" referenceCount="1" remarks="" scale="0" type="4" />
+    <column id="COL770" populated="true" autoIncrement="false" autoIncrementSequenceName="lacamento_producao_01_qtd_produto_seq" defaultValue="" name="qtd_produto" nullable="0" physicalName="qtd_produto" precision="10" referenceCount="1" remarks="" scale="0" type="4" />
+    <column id="COL771" populated="true" autoIncrement="false" autoIncrementSequenceName="lacamento_producao_01_codigo_movimento_seq" defaultValue="" name="codigo_movimento" nullable="0" physicalName="codigo_movimento" precision="8" referenceCount="1" remarks="" scale="0" type="4" />
+    <column id="COL772" populated="true" autoIncrement="false" autoIncrementSequenceName="lacamento_producao_01_sequencia_seq" defaultValue="" name="sequencia" nullable="0" physicalName="sequencia" precision="4" referenceCount="1" remarks="" scale="0" type="4" />
+   </folder>
+   <folder id="FOL773" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3" >
+   </folder>
+   <folder id="FOL774" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2" >
+   </folder>
+   <folder id="FOL775" populated="true" name="Indices" physicalName="Indices" type="4" >
+   </folder>
+  </table>
+  <table id="TAB776" populated="true" name="lancamento_producao_02" objectType="TABLE" physicalName="lancamento_producao_02" remarks="" >
+   <folder id="FOL777" populated="true" name="Columns" physicalName="Columns" type="1" >
+    <column id="COL778" populated="true" autoIncrement="false" autoIncrementSequenceName="lancamento_producao_02_numero_acesso_seq" defaultValue="" name="numero_acesso" nullable="0" physicalName="numero_acesso" precision="8" referenceCount="1" remarks="" scale="0" type="4" />
+    <column id="COL779" populated="true" autoIncrement="false" autoIncrementSequenceName="lancamento_producao_02_codigo_ferramenta_seq" defaultValue="" name="codigo_ferramenta" nullable="0" physicalName="codigo_ferramenta" precision="6" referenceCount="1" remarks="" scale="0" type="12" />
+    <column id="COL780" populated="true" autoIncrement="false" autoIncrementSequenceName="lancamento_producao_02_numero_sequencia_seq" defaultValue="" name="numero_sequencia" nullable="0" physicalName="numero_sequencia" precision="8" referenceCount="1" remarks="" scale="0" type="4" />
+    <column id="COL781" populated="true" autoIncrement="false" autoIncrementSequenceName="lancamento_producao_02_codigo_produto_seq" defaultValue="" name="codigo_produto" nullable="0" physicalName="codigo_produto" precision="8" referenceCount="1" remarks="" scale="0" type="4" />
+    <column id="COL782" populated="true" autoIncrement="false" autoIncrementSequenceName="lancamento_producao_02_marcador_inicial_seq" defaultValue="" name="marcador_inicial" nullable="0" physicalName="marcador_inicial" precision="8" referenceCount="1" remarks="" scale="0" type="4" />
+    <column id="COL783" populated="true" autoIncrement="false" autoIncrementSequenceName="lancamento_producao_02_marcador_final_seq" defaultValue="" name="marcador_final" nullable="0" physicalName="marcador_final" precision="8" referenceCount="1" remarks="" scale="0" type="4" />
+    <column id="COL784" populated="true" autoIncrement="false" autoIncrementSequenceName="lancamento_producao_02_qtd_produto_seq" defaultValue="" name="qtd_produto" nullable="0" physicalName="qtd_produto" precision="8" referenceCount="1" remarks="" scale="0" type="4" />
+    <column id="COL785" populated="true" autoIncrement="false" autoIncrementSequenceName="lancamento_producao_02_hora_inicial_seq" defaultValue="" name="hora_inicial" nullable="0" physicalName="hora_inicial" precision="20" referenceCount="1" remarks="" scale="0" type="93" />
+    <column id="COL786" populated="true" autoIncrement="false" autoIncrementSequenceName="lancamento_producao_02_hora_final_seq" defaultValue="" name="hora_final" nullable="0" physicalName="hora_final" precision="20" referenceCount="1" remarks="" scale="0" type="93" />
+    <column id="COL787" populated="true" autoIncrement="false" autoIncrementSequenceName="lancamento_producao_02_codigo_final_seq" defaultValue="" name="codigo_final" nullable="0" physicalName="codigo_final" precision="8" referenceCount="1" remarks="" scale="0" type="4" />
+    <column id="COL788" populated="true" autoIncrement="false" autoIncrementSequenceName="lancamento_producao_02_sequencia_seq" defaultValue="" name="sequencia" nullable="0" physicalName="sequencia" precision="4" referenceCount="1" remarks="" scale="0" type="4" />
+   </folder>
+   <folder id="FOL789" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3" >
+   </folder>
+   <folder id="FOL790" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2" >
+   </folder>
+   <folder id="FOL791" populated="true" name="Indices" physicalName="Indices" type="4" >
+   </folder>
+  </table>
+  <table id="TAB792" populated="true" name="lancamento_producao_03" objectType="TABLE" physicalName="lancamento_producao_03" remarks="" >
+   <folder id="FOL793" populated="true" name="Columns" physicalName="Columns" type="1" >
+    <column id="COL794" populated="true" autoIncrement="false" autoIncrementSequenceName="lancamento_producao_03_numero_acesso_seq" defaultValue="" name="numero_acesso" nullable="0" physicalName="numero_acesso" precision="8" referenceCount="1" remarks="" scale="0" type="4" />
+    <column id="COL795" populated="true" autoIncrement="false" autoIncrementSequenceName="lancamento_producao_03_numero_sequencia_seq" defaultValue="" name="numero_sequencia" nullable="0" physicalName="numero_sequencia" precision="8" referenceCount="1" remarks="" scale="0" type="4" />
+    <column id="COL796" populated="true" autoIncrement="false" autoIncrementSequenceName="lancamento_producao_03_codigo_produto_seq" defaultValue="" name="codigo_produto" nullable="0" physicalName="codigo_produto" precision="8" referenceCount="1" remarks="" scale="0" type="4" />
+    <column id="COL797" populated="true" autoIncrement="false" autoIncrementSequenceName="lancamento_producao_03_qtd_produto_seq" defaultValue="" name="qtd_produto" nullable="0" physicalName="qtd_produto" precision="8" referenceCount="1" remarks="" scale="0" type="4" />
+    <column id="COL798" populated="true" autoIncrement="false" autoIncrementSequenceName="lancamento_producao_03_codigo_movimento_seq" defaultValue="" name="codigo_movimento" nullable="0" physicalName="codigo_movimento" precision="8" referenceCount="1" remarks="" scale="0" type="4" />
+    <column id="COL799" populated="true" autoIncrement="false" autoIncrementSequenceName="lancamento_producao_03_sequencia_seq" defaultValue="" name="sequencia" nullable="0" physicalName="sequencia" precision="4" referenceCount="1" remarks="" scale="0" type="4" />
+   </folder>
+   <folder id="FOL800" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3" >
+   </folder>
+   <folder id="FOL801" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2" >
+   </folder>
+   <folder id="FOL802" populated="true" name="Indices" physicalName="Indices" type="4" >
+   </folder>
+  </table>
+  <table id="TAB803" populated="true" name="lancamento_produto" objectType="TABLE" physicalName="lancamento_produto" remarks="&gt;&gt;&gt; Qula a diferenca entre esta tabela e a lancamento_producao ???" >
+   <folder id="FOL804" populated="true" name="Columns" physicalName="Columns" type="1" >
+    <column id="COL805" populated="true" autoIncrement="false" autoIncrementSequenceName="lancamento_produto_numero_sequencia_seq" defaultValue="" name="numero_sequencia" nullable="0" physicalName="numero_sequencia" precision="8" referenceCount="1" remarks="" scale="0" type="4" />
+    <column id="COL806" populated="true" autoIncrement="false" autoIncrementSequenceName="lancamento_produto_numero_nota_fiscal_seq" defaultValue="" name="numero_nota_fiscal" nullable="0" physicalName="numero_nota_fiscal" precision="8" referenceCount="1" remarks="" scale="0" type="4" />
+    <column id="COL807" populated="true" autoIncrement="false" autoIncrementSequenceName="lancamento_produto_codigo_produto_seq" defaultValue="" name="codigo_produto" nullable="0" physicalName="codigo_produto" precision="8" referenceCount="1" remarks="" scale="0" type="4" />
+    <column id="COL808" populated="true" autoIncrement="false" autoIncrementSequenceName="lancamento_produto_descriacao_produto_seq" defaultValue="" name="descriacao_produto" nullable="0" physicalName="descriacao_produto" precision="40" referenceCount="1" remarks="" scale="0" type="12" />
+    <column id="COL809" populated="true" autoIncrement="false" autoIncrementSequenceName="lancamento_produto_unidade_produto_seq" defaultValue="" name="unidade_produto" nullable="0" physicalName="unidade_produto" precision="4" referenceCount="1" remarks="" scale="0" type="12" />
+    <column id="COL810" populated="true" autoIncrement="false" autoIncrementSequenceName="lancamento_produto_qtd_produto_seq" defaultValue="" name="qtd_produto" nullable="0" physicalName="qtd_produto" precision="8" referenceCount="1" remarks="" scale="0" type="4" />
+    <column id="COL811" populated="true" autoIncrement="false" autoIncrementSequenceName="lancamento_produto_dt_movimento_seq" defaultValue="" name="dt_movimento" nullable="0" physicalName="dt_movimento" precision="20" referenceCount="1" remarks="" scale="0" type="93" />
+    <column id="COL812" populated="true" autoIncrement="false" autoIncrementSequenceName="lancamento_produto_codigo_turno_seq" defaultValue="" name="codigo_turno" nullable="0" physicalName="codigo_turno" precision="8" referenceCount="1" remarks="" scale="0" type="4" />
+    <column id="COL813" populated="true" autoIncrement="false" autoIncrementSequenceName="lancamento_produto_codigo_movimento_seq" defaultValue="" name="codigo_movimento" nullable="0" physicalName="codigo_movimento" precision="8" referenceCount="1" remarks="" scale="0" type="4" />
+    <column id="COL814" populated="true" autoIncrement="false" autoIncrementSequenceName="lancamento_produto_nome_movimento_seq" defaultValue="" name="nome_movimento" nullable="0" physicalName="nome_movimento" precision="20" referenceCount="1" remarks="" scale="0" type="12" />
+    <column id="COL815" populated="true" autoIncrement="false" autoIncrementSequenceName="lancamento_produto_tipo_movimento_seq" defaultValue="" name="tipo_movimento" nullable="0" physicalName="tipo_movimento" precision="8" referenceCount="1" remarks="" scale="0" type="12" />
+    <column id="COL816" populated="true" autoIncrement="false" autoIncrementSequenceName="lancamento_produto_sequencia_seq" defaultValue="" name="sequencia" nullable="0" physicalName="sequencia" precision="4" referenceCount="1" remarks="" scale="0" type="4" />
+    <column id="COL817" populated="true" autoIncrement="false" autoIncrementSequenceName="lancamento_produto_observacao_seq" defaultValue="" name="observacao" nullable="0" physicalName="observacao" precision="100" referenceCount="1" remarks="" scale="0" type="12" />
+   </folder>
+   <folder id="FOL818" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3" >
+   </folder>
+   <folder id="FOL819" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2" >
+   </folder>
+   <folder id="FOL820" populated="true" name="Indices" physicalName="Indices" type="4" >
+   </folder>
+  </table>
+  <table id="TAB821" populated="true" name="maquinas" objectType="TABLE" physicalName="maquinas" remarks="&gt;&gt;&gt; Ver como funciona com o Batista" >
+   <folder id="FOL822" populated="true" name="Columns" physicalName="Columns" type="1" >
+    <column id="COL823" populated="true" autoIncrement="false" autoIncrementSequenceName="maquinas_codigo_maquina_seq" defaultValue="" name="codigo_maquina" nullable="0" physicalName="codigo_maquina" precision="10" referenceCount="1" remarks="&gt;&gt;&gt; È o id da tabela. &gt;&gt;&gt; Precisa ser um campo texto ???" scale="0" type="12" />
+    <column id="COL824" populated="true" autoIncrement="false" autoIncrementSequenceName="maquinas_descricao_maquina_seq" defaultValue="" name="descricao_maquina" nullable="0" physicalName="descricao_maquina" precision="30" referenceCount="1" remarks="" scale="0" type="12" />
+    <column id="COL825" populated="true" autoIncrement="false" autoIncrementSequenceName="maquinas_centro_custo_seq" defaultValue="" name="centro_custo" nullable="0" physicalName="centro_custo" precision="5" referenceCount="1" remarks="" scale="0" type="12" />
+   </folder>
+   <folder id="FOL826" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3" >
+   </folder>
+   <folder id="FOL827" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2" >
+   </folder>
+   <folder id="FOL828" populated="true" name="Indices" physicalName="Indices" type="4" >
+   </folder>
+  </table>
+  <table id="TAB829" populated="true" name="posicao_diaria_estoque" objectType="TABLE" physicalName="posicao_diaria_estoque" remarks="" >
+   <folder id="FOL830" populated="true" name="Columns" physicalName="Columns" type="1" >
+    <column id="COL831" populated="true" autoIncrement="false" autoIncrementSequenceName="posicao_diaria_estoque_codigo_produto_seq" defaultValue="" name="codigo_produto" nullable="0" physicalName="codigo_produto" precision="8" referenceCount="1" remarks="" scale="0" type="4" />
+    <column id="COL832" populated="true" autoIncrement="false" autoIncrementSequenceName="posicao_diaria_estoque_dt_movimento_seq" defaultValue="" name="dt_movimento" nullable="0" physicalName="dt_movimento" precision="20" referenceCount="1" remarks="" scale="0" type="93" />
+    <column id="COL833" populated="true" autoIncrement="false" autoIncrementSequenceName="posicao_diaria_estoque_qtd_produto_seq" defaultValue="" name="qtd_produto" nullable="0" physicalName="qtd_produto" precision="8" referenceCount="1" remarks="" scale="0" type="4" />
+    <column id="COL834" populated="true" autoIncrement="false" autoIncrementSequenceName="posicao_diaria_estoque_qtd_produto_tnp_seq" defaultValue="" name="qtd_produto_tnp" nullable="0" physicalName="qtd_produto_tnp" precision="8" referenceCount="1" remarks="&gt;&gt;&gt; O que significa esse campo ???" scale="0" type="4" />
+    <column id="COL835" populated="true" autoIncrement="false" autoIncrementSequenceName="posicao_diaria_estoque_qtd_produto_npt_seq" defaultValue="" name="qtd_produto_npt" nullable="0" physicalName="qtd_produto_npt" precision="8" referenceCount="1" remarks="&gt;&gt;&gt; O que significa este campo ???" scale="0" type="4" />
+   </folder>
+   <folder id="FOL836" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3" >
+   </folder>
+   <folder id="FOL837" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2" >
+   </folder>
+   <folder id="FOL838" populated="true" name="Indices" physicalName="Indices" type="4" >
+   </folder>
+  </table>
+  <table id="TAB839" populated="true" name="produto_em_estoque" objectType="TABLE" physicalName="produto_em_estoque" remarks="&gt;&gt;&gt; Estudar em detalhe esta tabela com o Batista." >
+   <folder id="FOL840" populated="true" name="Columns" physicalName="Columns" type="1" >
+    <column id="COL841" populated="true" autoIncrement="false" autoIncrementSequenceName="produto_em_estoque_codigo_produto_seq" defaultValue="" name="codigo_produto" nullable="0" physicalName="codigo_produto" precision="8" referenceCount="1" remarks="&gt;&gt;&gt; Chave estrangeira." scale="0" type="4" />
+    <column id="COL842" populated="true" autoIncrement="false" autoIncrementSequenceName="produto_em_estoque_qtd_inicial_seq" defaultValue="" name="qtd_inicial" nullable="0" physicalName="qtd_inicial" precision="8" referenceCount="1" remarks="" scale="0" type="4" />
+    <column id="COL843" populated="true" autoIncrement="false" autoIncrementSequenceName="produto_em_estoque_qtd_anterior_seq" defaultValue="" name="qtd_anterior" nullable="0" physicalName="qtd_anterior" precision="8" referenceCount="1" remarks="" scale="0" type="4" />
+    <column id="COL844" populated="true" autoIncrement="false" autoIncrementSequenceName="produto_em_estoque_qtd_entrada_seq" defaultValue="" name="qtd_entrada" nullable="0" physicalName="qtd_entrada" precision="8" referenceCount="1" remarks="" scale="0" type="4" />
+    <column id="COL845" populated="true" autoIncrement="false" autoIncrementSequenceName="produto_em_estoque_qtd_saida_seq" defaultValue="" name="qtd_saida" nullable="0" physicalName="qtd_saida" precision="8" referenceCount="1" remarks="" scale="0" type="4" />
+    <column id="COL846" populated="true" autoIncrement="false" autoIncrementSequenceName="produto_em_estoque_qtd_atual_seq" defaultValue="" name="qtd_atual" nullable="0" physicalName="qtd_atual" precision="8" referenceCount="1" remarks="" scale="0" type="4" />
+    <column id="COL847" populated="true" autoIncrement="false" autoIncrementSequenceName="produto_em_estoque_qtd_acumulada_entrada_seq" defaultValue="" name="qtd_acumulada_entrada" nullable="0" physicalName="qtd_acumulada_entrada" precision="8" referenceCount="1" remarks="" scale="0" type="4" />
+    <column id="COL848" populated="true" autoIncrement="false" autoIncrementSequenceName="produto_em_estoque_qtd_acumulada_saida_seq" defaultValue="" name="qtd_acumulada_saida" nullable="0" physicalName="qtd_acumulada_saida" precision="8" referenceCount="1" remarks="" scale="0" type="4" />
+    <column id="COL849" populated="true" autoIncrement="false" autoIncrementSequenceName="produto_em_estoque_dt_movimento_seq" defaultValue="" name="dt_movimento" nullable="0" physicalName="dt_movimento" precision="20" referenceCount="1" remarks="" scale="0" type="93" />
+    <column id="COL850" populated="true" autoIncrement="false" autoIncrementSequenceName="produto_em_estoque_dt_inicial_seq" defaultValue="" name="dt_inicial" nullable="0" physicalName="dt_inicial" precision="20" referenceCount="1" remarks="" scale="0" type="93" />
+    <column id="COL851" populated="true" autoIncrement="false" autoIncrementSequenceName="produto_em_estoque_codigo_tipo_seq" defaultValue="" name="codigo_tipo" nullable="0" physicalName="codigo_tipo" precision="8" referenceCount="1" remarks="&gt;&gt;&gt; Chave estrangeira ???" scale="0" type="4" />
+    <column id="COL852" populated="true" autoIncrement="false" autoIncrementSequenceName="produto_em_estoque_codigo_grupo_seq" defaultValue="" name="codigo_grupo" nullable="0" physicalName="codigo_grupo" precision="8" referenceCount="1" remarks="&gt;&gt;&gt; Chave estrangeira ???" scale="0" type="4" />
+    <column id="COL853" populated="true" autoIncrement="false" autoIncrementSequenceName="produto_em_estoque_codigo_sub_grupo_seq" defaultValue="" name="codigo_sub_grupo" nullable="0" physicalName="codigo_sub_grupo" precision="8" referenceCount="1" remarks="" scale="0" type="4" />
+    <column id="COL854" populated="true" autoIncrement="false" autoIncrementSequenceName="produto_em_estoque_qtd_inicial_tp_seq" defaultValue="" name="qtd_inicial_tp" nullable="0" physicalName="qtd_inicial_tp" precision="8" referenceCount="1" remarks="&gt;&gt;&gt; Para que serve este campo ???" scale="0" type="4" />
+    <column id="COL855" populated="true" autoIncrement="false" autoIncrementSequenceName="produto_em_estoque_qtd_anterior_tp_seq" defaultValue="" name="qtd_anterior_tp" nullable="0" physicalName="qtd_anterior_tp" precision="8" referenceCount="1" remarks="" scale="0" type="4" />
+    <column id="COL856" populated="true" autoIncrement="false" autoIncrementSequenceName="produto_em_estoque_qtd_entrada_tp_seq" defaultValue="" name="qtd_entrada_tp" nullable="0" physicalName="qtd_entrada_tp" precision="8" referenceCount="1" remarks="" scale="0" type="4" />
+    <column id="COL857" populated="true" autoIncrement="false" autoIncrementSequenceName="produto_em_estoque_qtd_saida_tp_seq" defaultValue="" name="qtd_saida_tp" nullable="0" physicalName="qtd_saida_tp" precision="8" referenceCount="1" remarks="" scale="0" type="4" />
+    <column id="COL858" populated="true" autoIncrement="false" autoIncrementSequenceName="produto_em_estoque_qtd_atual_tp_seq" defaultValue="" name="qtd_atual_tp" nullable="0" physicalName="qtd_atual_tp" precision="8" referenceCount="1" remarks="" scale="0" type="4" />
+    <column id="COL859" populated="true" autoIncrement="false" autoIncrementSequenceName="produto_em_estoque_qtd_acumulada_entrada_tp_seq" defaultValue="" name="qtd_acumulada_entrada_tp" nullable="0" physicalName="qtd_acumulada_entrada_tp" precision="8" referenceCount="1" remarks="" scale="0" type="4" />
+    <column id="COL860" populated="true" autoIncrement="false" autoIncrementSequenceName="produto_em_estoque_qtd_acumulada_saida_tp_seq" defaultValue="" name="qtd_acumulada_saida_tp" nullable="0" physicalName="qtd_acumulada_saida_tp" precision="8" referenceCount="1" remarks="" scale="0" type="4" />
+    <column id="COL861" populated="true" autoIncrement="false" autoIncrementSequenceName="produto_em_estoque_qtd_inicial_pt_seq" defaultValue="" name="qtd_inicial_pt" nullable="0" physicalName="qtd_inicial_pt" precision="8" referenceCount="1" remarks="" scale="0" type="4" />
+    <column id="COL862" populated="true" autoIncrement="false" autoIncrementSequenceName="produto_em_estoque_qtd_anterior_pt_seq" defaultValue="" name="qtd_anterior_pt" nullable="0" physicalName="qtd_anterior_pt" precision="8" referenceCount="1" remarks="" scale="0" type="4" />
+    <column id="COL863" populated="true" autoIncrement="false" autoIncrementSequenceName="produto_em_estoque_qtd_entrada_pt_seq" defaultValue="" name="qtd_entrada_pt" nullable="0" physicalName="qtd_entrada_pt" precision="8" referenceCount="1" remarks="" scale="0" type="4" />
+    <column id="COL864" populated="true" autoIncrement="false" autoIncrementSequenceName="produto_em_estoque_qtd_saida_pt_seq" defaultValue="" name="qtd_saida_pt" nullable="0" physicalName="qtd_saida_pt" precision="8" referenceCount="1" remarks="" scale="0" type="4" />
+    <column id="COL865" populated="true" autoIncrement="false" autoIncrementSequenceName="produto_em_estoque_qtd_atual_pt_seq" defaultValue="" name="qtd_atual_pt" nullable="0" physicalName="qtd_atual_pt" precision="8" referenceCount="1" remarks="" scale="0" type="4" />
+    <column id="COL866" populated="true" autoIncrement="false" autoIncrementSequenceName="produto_em_estoque_qtd_acumulada_entrada_pt_seq" defaultValue="" name="qtd_acumulada_entrada_pt" nullable="0" physicalName="qtd_acumulada_entrada_pt" precision="8" referenceCount="1" remarks="" scale="0" type="4" />
+    <column id="COL867" populated="true" autoIncrement="false" autoIncrementSequenceName="produto_em_estoque_qtd_acumulada_saida_pt_seq" defaultValue="" name="qtd_acumulada_saida_pt" nullable="0" physicalName="qtd_acumulada_saida_pt" precision="8" referenceCount="1" remarks="" scale="0" type="4" />
+   </folder>
+   <folder id="FOL868" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3" >
+   </folder>
+   <folder id="FOL869" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2" >
+   </folder>
+   <folder id="FOL870" populated="true" name="Indices" physicalName="Indices" type="4" >
+   </folder>
+  </table>
   <relationships>
-   <relationship id="REL700" populated="true" deferrability="7" deleteRule="3" fk-table-ref="TAB48" fkCardinality="7" identifying="true" name="item_nota_fiscal_entrada_nota_fiscal_entrada_fk" physicalName="item_nota_fiscal_entrada_nota_fiscal_entrada_fk" pk-table-ref="TAB1" pkCardinality="2" updateRule="3" >
-    <column-mapping id="CMP701" populated="true" fk-column-ref="COL50" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL3" />
+   <relationship id="REL871" populated="true" deferrability="7" deleteRule="3" fk-table-ref="TAB48" fkCardinality="7" identifying="true" name="item_nota_fiscal_entrada_nota_fiscal_entrada_fk" physicalName="item_nota_fiscal_entrada_nota_fiscal_entrada_fk" pk-table-ref="TAB1" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP872" populated="true" fk-column-ref="COL50" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL3" />
    </relationship>
-   <relationship id="REL702" populated="true" deferrability="7" deleteRule="3" fk-table-ref="TAB1" fkCardinality="7" identifying="true" name="tipo_servico_notafiscal_entrada_fk" physicalName="tipo_servico_notafiscal_entrada_fk" pk-table-ref="TAB72" pkCardinality="2" updateRule="3" >
-    <column-mapping id="CMP703" populated="true" fk-column-ref="COL4" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL74" />
+   <relationship id="REL873" populated="true" deferrability="7" deleteRule="3" fk-table-ref="TAB1" fkCardinality="7" identifying="true" name="tipo_servico_notafiscal_entrada_fk" physicalName="tipo_servico_notafiscal_entrada_fk" pk-table-ref="TAB72" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP874" populated="true" fk-column-ref="COL4" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL74" />
    </relationship>
-   <reference ref-id="REL700" />
-   <reference ref-id="REL702" />
-   <relationship id="REL704" populated="true" deferrability="7" deleteRule="3" fk-table-ref="TAB129" fkCardinality="7" identifying="true" name="pedido_venda_itens_pedido_fk" physicalName="pedido_venda_itens_pedido_fk" pk-table-ref="TAB81" pkCardinality="2" updateRule="3" >
-    <column-mapping id="CMP705" populated="true" fk-column-ref="COL131" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL83" />
+   <reference ref-id="REL871" />
+   <reference ref-id="REL873" />
+   <relationship id="REL875" populated="true" deferrability="7" deleteRule="3" fk-table-ref="TAB129" fkCardinality="7" identifying="true" name="pedido_venda_itens_pedido_fk" physicalName="pedido_venda_itens_pedido_fk" pk-table-ref="TAB81" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP876" populated="true" fk-column-ref="COL131" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL83" />
    </relationship>
-   <reference ref-id="REL704" />
+   <reference ref-id="REL875" />
   </relationships>
  </target-database>
  <ddl-generator type="ca.sqlpower.architect.ddl.GenericDDLGenerator" allow-connection="true"> </ddl-generator>
  <create-kettle-job-settings filePath="" jobName="" schemaName="" kettleJoinType="0" savingToFile="true" />
- <play-pen zoom="0.7071067811865482" viewportX="0" viewportY="843" relationship-style="rectilinear" names-displayLogicalNames="true" showPrimaryTag="true" showForeignTag="true" showAlternateTag="true" columnVisibility="ALL" relationshipLabelVisibility="true">
+ <play-pen zoom="0.5946035575013617" viewportX="0" viewportY="1222" relationship-style="rectilinear" names-displayLogicalNames="true" showPrimaryTag="true" showForeignTag="true" showAlternateTag="true" columnVisibility="ALL" relationshipLabelVisibility="true">
   <table-pane table-ref="TAB1" x="28" y="23" bgColor="0xf0f0f0" fgColor="0x000000" rounded="true" dashed="false"/>
   <table-pane table-ref="TAB48" x="351" y="206" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
   <table-pane table-ref="TAB72" x="338" y="32" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
@@ -985,10 +1216,22 @@
   <table-pane table-ref="TAB657" x="713" y="1234" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
   <table-pane table-ref="TAB665" x="1028" y="1417" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
   <table-pane table-ref="TAB676" x="728" y="1414" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
-  <table-pane table-ref="TAB687" x="731" y="1678" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
-  <table-link relationship-ref="REL700" pk-x="261" pk-y="506" fk-x="0" fk-y="289" rLineColor="0x333333" pkLabelText="" fkLabelText="" orientation="33"/>
-  <table-link relationship-ref="REL702" pk-x="83" pk-y="96" fk-x="261" fk-y="135" rLineColor="0x333333" pkLabelText="" fkLabelText="" orientation="20"/>
-  <table-link relationship-ref="REL704" pk-x="237" pk-y="507" fk-x="0" fk-y="284" rLineColor="0x333333" pkLabelText="" fkLabelText="" orientation="33"/>
+  <table-pane table-ref="TAB687" x="739" y="1661" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB700" x="1046" y="1685" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB711" x="388" y="1772" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB723" x="771" y="1966" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB731" x="1049" y="1958" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB746" x="45" y="2085" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB765" x="321" y="2105" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB776" x="548" y="2107" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB792" x="820" y="2125" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB803" x="297" y="2367" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB821" x="585" y="2509" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB829" x="871" y="2401" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB839" x="1130" y="2361" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-link relationship-ref="REL871" pk-x="273" pk-y="506" fk-x="0" fk-y="289" rLineColor="0x333333" pkLabelText="" fkLabelText="" orientation="33"/>
+  <table-link relationship-ref="REL873" pk-x="83" pk-y="96" fk-x="273" fk-y="135" rLineColor="0x333333" pkLabelText="" fkLabelText="" orientation="20"/>
+  <table-link relationship-ref="REL875" pk-x="244" pk-y="385" fk-x="0" fk-y="404" rLineColor="0x333333" pkLabelText="" fkLabelText="" orientation="33"/>
  </play-pen>
  <profiles topNCount="10">
   </profiles>
