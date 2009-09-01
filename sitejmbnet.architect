@@ -1185,8 +1185,7 @@
     <column id="COL896" populated="true" autoIncrement="false" autoIncrementSequenceName="produto_baixa_automatica_seq" defaultValue="" name="baixa_automatica" nullable="0" physicalName="baixa_automatica" precision="3" referenceCount="1" remarks="&gt;&gt;&gt; Ver com Batista como funciona este campo." scale="0" type="12" />
     <column id="COL897" populated="true" autoIncrement="false" autoIncrementSequenceName="produto_codigo_composicao_01_seq" defaultValue="" name="codigo_composicao_01" nullable="0" physicalName="codigo_composicao_01" precision="8" referenceCount="1" remarks="&gt;&gt;&gt; Chave estrangeira ???" scale="0" type="4" />
     <column id="COL898" populated="true" autoIncrement="false" autoIncrementSequenceName="produto_codigo_composicao_02_seq" defaultValue="" name="codigo_composicao_02" nullable="0" physicalName="codigo_composicao_02" precision="8" referenceCount="1" remarks="" scale="0" type="4" />
-    <column id="COL899" populated="true" autoIncrement="false" autoIncrementSequenceName="produto_tipo_produto_acabado_seq" defaultValue="" name="tipo_produto_acabado" nullable="0" physicalName="tipo_produto_acabado" precision="6" referenceCount="1" remarks="&gt;&gt;&gt; Olha Batista, a útlima vez que eu ouvi falar deste nome de campo foi num sistema ERP que estudei no Paraná em 12/2008.
-&gt;&gt;&gt; Estudar com o Batista sobre este campo. " scale="0" type="12" />
+    <column id="COL899" populated="true" autoIncrement="false" autoIncrementSequenceName="produto_tipo_produto_acabado_seq" defaultValue="" name="tipo_produto_acabado" nullable="0" physicalName="tipo_produto_acabado" precision="6" referenceCount="1" remarks="&gt;&gt;&gt; Olha Batista, a útlima vez que eu ouvi falar deste nome de campo foi num sistema ERP que estudei no Paraná em 12/2008. &gt;&gt;&gt; Estudar com o Batista sobre este campo. " scale="0" type="12" />
    </folder>
    <folder id="FOL900" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3" >
    </folder>
@@ -1201,8 +1200,7 @@
   <table id="TAB905" populated="true" name="produto_com_substituicao" objectType="TABLE" physicalName="produto_com_substituicao" remarks="" >
    <folder id="FOL906" populated="true" name="Columns" physicalName="Columns" type="1" >
     <column id="COL907" populated="true" autoIncrement="false" autoIncrementSequenceName="produto_com_substituicao_codigo_produto_seq" defaultValue="" name="codigo_produto" nullable="0" physicalName="codigo_produto" precision="8" referenceCount="1" remarks="&gt;&gt;&gt; Chave estrangeira." scale="0" type="4" />
-    <column id="COL908" populated="true" autoIncrement="false" autoIncrementSequenceName="produto_com_substituicao_descricao_produto_seq" defaultValue="" name="descricao_produto" nullable="0" physicalName="descricao_produto" precision="40" referenceCount="1" remarks="&gt;&gt;&gt; Esse campo nao viria da tabela produto ??? Falar com o Batista.
-" scale="0" type="12" />
+    <column id="COL908" populated="true" autoIncrement="false" autoIncrementSequenceName="produto_com_substituicao_descricao_produto_seq" defaultValue="" name="descricao_produto" nullable="0" physicalName="descricao_produto" precision="40" referenceCount="1" remarks="&gt;&gt;&gt; Esse campo nao viria da tabela produto ??? Falar com o Batista. " scale="0" type="12" />
     <column id="COL909" populated="true" autoIncrement="false" autoIncrementSequenceName="produto_com_substituicao_unidade_produto_seq" defaultValue="" name="unidade_produto" nullable="0" physicalName="unidade_produto" precision="4" referenceCount="1" remarks="" scale="0" type="12" />
     <column id="COL910" populated="true" autoIncrement="false" autoIncrementSequenceName="produto_com_substituicao_aliquota_no_estado_seq" defaultValue="" name="aliquota_no_estado" nullable="0" physicalName="aliquota_no_estado" precision="10" referenceCount="1" remarks="" scale="2" type="3" />
     <column id="COL911" populated="true" autoIncrement="false" autoIncrementSequenceName="produto_com_substituicao_aliquota_fora_estado_seq" defaultValue="" name="aliquota_fora_estado" nullable="0" physicalName="aliquota_fora_estado" precision="10" referenceCount="1" remarks="" scale="2" type="3" />
@@ -1237,8 +1235,7 @@
     </index>
    </folder>
   </table>
-  <table id="TAB932" populated="true" name="tipo_entrada" objectType="TABLE" physicalName="tipo_entrada" remarks="&gt;&gt;&gt; Não fasso idéia de como funciona este tabela.
-&gt;&gt;&gt; Falar com Batista." >
+  <table id="TAB932" populated="true" name="tipo_entrada" objectType="TABLE" physicalName="tipo_entrada" remarks="&gt;&gt;&gt; Não fasso idéia de como funciona este tabela. &gt;&gt;&gt; Falar com Batista." >
    <folder id="FOL933" populated="true" name="Columns" physicalName="Columns" type="1" >
     <column id="COL934" populated="true" autoIncrement="false" autoIncrementSequenceName="tipo_entrada_codigo_tipo_seq" defaultValue="" name="codigo_tipo" nullable="0" physicalName="codigo_tipo" precision="8" primaryKeySeq="0" referenceCount="1" remarks="" scale="0" type="4" />
     <column id="COL935" populated="true" autoIncrement="false" autoIncrementSequenceName="tipo_entrada_nome_tipo_entrada_seq" defaultValue="" name="nome_tipo_entrada" nullable="0" physicalName="nome_tipo_entrada" precision="30" referenceCount="1" remarks="" scale="0" type="12" />
@@ -1292,9 +1289,7 @@
   </table>
   <table id="TAB966" populated="true" name="tipo_produto_acabado" objectType="TABLE" physicalName="tipo_produto_acabado" remarks="&gt;&gt;&gt; Estudar com Batista esta tabela." >
    <folder id="FOL967" populated="true" name="Columns" physicalName="Columns" type="1" >
-    <column id="COL968" populated="true" autoIncrement="false" autoIncrementSequenceName="tipo_produto_acabado_codigo_tipo_seq" defaultValue="" name="codigo_tipo" nullable="0" physicalName="codigo_tipo" precision="6" referenceCount="1" remarks="&gt;&gt;&gt; Este campo é chave primaria ???
-&gt;&gt;&gt; Prq é um campo texto ???
-" scale="0" type="12" />
+    <column id="COL968" populated="true" autoIncrement="false" autoIncrementSequenceName="tipo_produto_acabado_codigo_tipo_seq" defaultValue="" name="codigo_tipo" nullable="0" physicalName="codigo_tipo" precision="6" referenceCount="1" remarks="&gt;&gt;&gt; Este campo é chave primaria ??? &gt;&gt;&gt; Prq é um campo texto ??? " scale="0" type="12" />
     <column id="COL969" populated="true" autoIncrement="false" autoIncrementSequenceName="tipo_produto_acabado_nome_tipo_seq" defaultValue="" name="nome_tipo" nullable="0" physicalName="nome_tipo" precision="40" referenceCount="1" remarks="" scale="0" type="12" />
     <column id="COL970" populated="true" autoIncrement="false" autoIncrementSequenceName="tipo_produto_acabado_grupo_produto_seq" defaultValue="" name="grupo_produto" nullable="0" physicalName="grupo_produto" precision="2" referenceCount="1" remarks="&gt;&gt;&gt; Chave estrangeira ???" scale="0" type="4" />
    </folder>
@@ -1305,24 +1300,105 @@
    <folder id="FOL973" populated="true" name="Indices" physicalName="Indices" type="4" >
    </folder>
   </table>
+  <table id="TAB974" populated="true" name="cadastro_frete" objectType="TABLE" physicalName="cadastro_frete" remarks="" >
+   <folder id="FOL975" populated="true" name="Columns" physicalName="Columns" type="1" >
+    <column id="COL976" populated="true" autoIncrement="false" autoIncrementSequenceName="cadastro_frete_tipo_frete_seq" defaultValue="" name="tipo_frete" nullable="0" physicalName="tipo_frete" precision="10" referenceCount="1" remarks="" scale="0" type="12" />
+    <column id="COL977" populated="true" autoIncrement="false" autoIncrementSequenceName="cadastro_frete_numero_nota_fiscal_seq" defaultValue="" name="numero_nota_fiscal" nullable="0" physicalName="numero_nota_fiscal" precision="8" referenceCount="1" remarks="&gt;&gt;&gt; Chave estrangeira." scale="0" type="4" />
+    <column id="COL978" populated="true" autoIncrement="false" autoIncrementSequenceName="cadastro_frete_numero_pedido_seq" defaultValue="" name="numero_pedido" nullable="0" physicalName="numero_pedido" precision="10" referenceCount="1" remarks="&gt;&gt;&gt; Chave estrangeira ???" scale="0" type="12" />
+    <column id="COL979" populated="true" autoIncrement="false" autoIncrementSequenceName="cadastro_frete_codigo_cliente_fornecedor_seq" defaultValue="" name="codigo_cliente_fornecedor" nullable="0" physicalName="codigo_cliente_fornecedor" precision="8" referenceCount="1" remarks="&gt;&gt;&gt; Chave estrangeira ???" scale="0" type="4" />
+    <column id="COL980" populated="true" autoIncrement="false" autoIncrementSequenceName="cadastro_frete_nome_cliente_fornecedor_seq" defaultValue="" name="nome_cliente_fornecedor" nullable="0" physicalName="nome_cliente_fornecedor" precision="40" referenceCount="1" remarks="&gt;&gt;&gt; Esse campo não vem de uma outra tabela ???" scale="0" type="12" />
+    <column id="COL981" populated="true" autoIncrement="false" autoIncrementSequenceName="cadastro_frete_numero_conhecimento_seq" defaultValue="" name="numero_conhecimento" nullable="0" physicalName="numero_conhecimento" precision="8" referenceCount="1" remarks="&gt;&gt;&gt; Eu já desenhei uma tabela com esse nome. Provalvelmento vem dela." scale="0" type="4" />
+    <column id="COL982" populated="true" autoIncrement="false" autoIncrementSequenceName="cadastro_frete_dt_movimento_seq" defaultValue="" name="dt_movimento" nullable="0" physicalName="dt_movimento" precision="20" referenceCount="1" remarks="" scale="0" type="93" />
+    <column id="COL983" populated="true" autoIncrement="false" autoIncrementSequenceName="cadastro_frete_dt_conhecimento_seq" defaultValue="" name="dt_conhecimento" nullable="0" physicalName="dt_conhecimento" precision="20" referenceCount="1" remarks="" scale="0" type="93" />
+    <column id="COL984" populated="true" autoIncrement="false" autoIncrementSequenceName="cadastro_frete_codigo_transportadora_seq" defaultValue="" name="codigo_transportadora" nullable="0" physicalName="codigo_transportadora" precision="8" referenceCount="1" remarks="&gt;&gt;&gt; Está com cara de chave estrangeira." scale="0" type="4" />
+    <column id="COL985" populated="true" autoIncrement="false" autoIncrementSequenceName="cadastro_frete_nome_transportadora_seq" defaultValue="" name="nome_transportadora" nullable="0" physicalName="nome_transportadora" precision="40" referenceCount="1" remarks="" scale="0" type="12" />
+    <column id="COL986" populated="true" autoIncrement="false" autoIncrementSequenceName="cadastro_frete_valor_nota_fiscal_seq" defaultValue="" name="valor_nota_fiscal" nullable="0" physicalName="valor_nota_fiscal" precision="10" referenceCount="1" remarks="&gt;&gt;&gt; Que nota fiscal é esta ??? Esse campo vem de alguma tabela ???" scale="2" type="3" />
+    <column id="COL987" populated="true" autoIncrement="false" autoIncrementSequenceName="cadastro_frete_valor_frete_seq" defaultValue="" name="valor_frete" nullable="0" physicalName="valor_frete" precision="10" referenceCount="1" remarks="" scale="2" type="3" />
+    <column id="COL988" populated="true" autoIncrement="false" autoIncrementSequenceName="cadastro_frete_tipo_movimento_seq" defaultValue="" name="tipo_movimento" nullable="0" physicalName="tipo_movimento" precision="10" referenceCount="1" remarks="" scale="0" type="12" />
+    <column id="COL989" populated="true" autoIncrement="false" autoIncrementSequenceName="cadastro_frete_frete_faturado_seq" defaultValue="" name="frete_faturado" nullable="0" physicalName="frete_faturado" precision="3" referenceCount="1" remarks="&gt;&gt;&gt; Ver com Batista do que se trata." scale="0" type="12" />
+    <column id="COL990" populated="true" autoIncrement="false" autoIncrementSequenceName="cadastro_frete_frete_checkup_seq" defaultValue="" name="frete_checkup" nullable="0" physicalName="frete_checkup" precision="3" referenceCount="1" remarks="&gt;&gt;&gt; Ver com Batista do que se trata este campo." scale="0" type="12" />
+    <column id="COL991" populated="true" autoIncrement="false" autoIncrementSequenceName="cadastro_frete_base_calculo_icms_seq" defaultValue="" name="base_calculo_icms" nullable="0" physicalName="base_calculo_icms" precision="10" referenceCount="1" remarks="&gt;&gt;&gt; Este campo é preenchido ou vem de outra tabela ???" scale="2" type="3" />
+    <column id="COL992" populated="true" autoIncrement="false" autoIncrementSequenceName="cadastro_frete_aliquota_icms_seq" defaultValue="" name="aliquota_icms" nullable="0" physicalName="aliquota_icms" precision="10" referenceCount="1" remarks="&gt;&gt;&gt; Este campo é preenchido ou vem de outra tabela ???" scale="2" type="3" />
+    <column id="COL993" populated="true" autoIncrement="false" autoIncrementSequenceName="cadastro_frete_valor_icms_seq" defaultValue="" name="valor_icms" nullable="0" physicalName="valor_icms" precision="10" referenceCount="1" remarks="" scale="2" type="3" />
+    <column id="COL994" populated="true" autoIncrement="false" autoIncrementSequenceName="cadastro_frete_sequencia_seq" defaultValue="" name="sequencia" nullable="0" physicalName="sequencia" precision="4" referenceCount="1" remarks="" scale="0" type="4" />
+   </folder>
+   <folder id="FOL995" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3" >
+   </folder>
+   <folder id="FOL996" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2" >
+   </folder>
+   <folder id="FOL997" populated="true" name="Indices" physicalName="Indices" type="4" >
+   </folder>
+  </table>
+  <table id="TAB998" populated="true" name="checkup_conhecimento" objectType="TABLE" physicalName="checkup_conhecimento" remarks="&gt;&gt;&gt; Estudar toda esta tabela com o Batista." >
+   <folder id="FOL999" populated="true" name="Columns" physicalName="Columns" type="1" >
+    <column id="COL1000" populated="true" autoIncrement="false" autoIncrementSequenceName="checkup_conhecimento_tipo_frete_seq" defaultValue="" name="tipo_frete" nullable="0" physicalName="tipo_frete" precision="10" referenceCount="1" remarks="&gt;&gt;&gt; Cheve estrangeira ???" scale="0" type="12" />
+    <column id="COL1001" populated="true" autoIncrement="false" autoIncrementSequenceName="checkup_conhecimento_numero_nota_fiscal_seq" defaultValue="" name="numero_nota_fiscal" nullable="0" physicalName="numero_nota_fiscal" precision="8" referenceCount="1" remarks="&gt;&gt;&gt; Cheve estrangeira ???" scale="0" type="4" />
+    <column id="COL1002" populated="true" autoIncrement="false" autoIncrementSequenceName="checkup_conhecimento_numero_conhecimento_seq" defaultValue="" name="numero_conhecimento" nullable="0" physicalName="numero_conhecimento" precision="8" referenceCount="1" remarks="&gt;&gt;&gt; Ver com Batista do que se trata este campo." scale="0" type="4" />
+    <column id="COL1003" populated="true" autoIncrement="false" autoIncrementSequenceName="checkup_conhecimento_dt_movimento_seq" defaultValue="" name="dt_movimento" nullable="0" physicalName="dt_movimento" precision="20" referenceCount="1" remarks="" scale="0" type="93" />
+    <column id="COL1004" populated="true" autoIncrement="false" autoIncrementSequenceName="checkup_conhecimento_dt_conhecimento_seq" defaultValue="" name="dt_conhecimento" nullable="0" physicalName="dt_conhecimento" precision="20" referenceCount="1" remarks="" scale="0" type="93" />
+    <column id="COL1005" populated="true" autoIncrement="false" autoIncrementSequenceName="checkup_conhecimento_codigo_transportadora_seq" defaultValue="" name="codigo_transportadora" nullable="0" physicalName="codigo_transportadora" precision="8" referenceCount="1" remarks="" scale="0" type="4" />
+    <column id="COL1006" populated="true" autoIncrement="false" autoIncrementSequenceName="checkup_conhecimento_nome_transportadora_seq" defaultValue="" name="nome_transportadora" nullable="0" physicalName="nome_transportadora" precision="40" referenceCount="1" remarks="" scale="0" type="12" />
+    <column id="COL1007" populated="true" autoIncrement="false" autoIncrementSequenceName="checkup_conhecimento_valor_nota_fiscal_seq" defaultValue="" name="valor_nota_fiscal" nullable="0" physicalName="valor_nota_fiscal" precision="10" referenceCount="1" remarks="" scale="2" type="3" />
+    <column id="COL1008" populated="true" autoIncrement="false" autoIncrementSequenceName="checkup_conhecimento_valor_frete_seq" defaultValue="" name="valor_frete" nullable="0" physicalName="valor_frete" precision="10" referenceCount="1" remarks="" scale="2" type="3" />
+    <column id="COL1009" populated="true" autoIncrement="false" autoIncrementSequenceName="checkup_conhecimento_sequencial_seq" defaultValue="" name="sequencial" nullable="0" physicalName="sequencial" precision="4" referenceCount="1" remarks="" scale="0" type="4" />
+   </folder>
+   <folder id="FOL1010" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3" >
+   </folder>
+   <folder id="FOL1011" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2" >
+   </folder>
+   <folder id="FOL1012" populated="true" name="Indices" physicalName="Indices" type="4" >
+   </folder>
+  </table>
+  <table id="TAB1013" populated="true" name="transportadora" objectType="TABLE" physicalName="transportadora" remarks="" >
+   <folder id="FOL1014" populated="true" name="Columns" physicalName="Columns" type="1" >
+    <column id="COL1015" populated="true" autoIncrement="false" autoIncrementSequenceName="transportadora_codigo_transportadora_seq" defaultValue="" name="codigo_transportadora" nullable="0" physicalName="codigo_transportadora" precision="8" primaryKeySeq="0" referenceCount="1" remarks="&gt;&gt;&gt; Este campo no mdb do Batista se chama apenas Código.
+&gt;&gt;&gt; Chave primaria ???" scale="0" type="4" />
+    <column id="COL1016" populated="true" autoIncrement="false" autoIncrementSequenceName="transportadora_nome_seq" defaultValue="" name="nome" nullable="0" physicalName="nome" precision="40" referenceCount="1" remarks="&gt;&gt;&gt; Nao seria melhor dar o nome de &quot;nome_transportadora&quot; ??? Falar com Batista." scale="0" type="12" />
+    <column id="COL1017" populated="true" autoIncrement="false" autoIncrementSequenceName="transportadora_nome_fantasia_seq" defaultValue="" name="nome_fantasia" nullable="0" physicalName="nome_fantasia" precision="15" referenceCount="1" remarks="" scale="0" type="12" />
+    <column id="COL1018" populated="true" autoIncrement="false" autoIncrementSequenceName="transportadora_endereco_seq" defaultValue="" name="endereco" nullable="0" physicalName="endereco" precision="30" referenceCount="1" remarks="&gt;&gt;&gt; Virá da tabela &quot;logradouro&quot; ???" scale="0" type="12" />
+    <column id="COL1019" populated="true" autoIncrement="false" autoIncrementSequenceName="transportadora_numero_seq" defaultValue="" name="numero" nullable="0" physicalName="numero" precision="7" referenceCount="1" remarks="" scale="0" type="12" />
+    <column id="COL1020" populated="true" autoIncrement="false" autoIncrementSequenceName="transportadora_complemento_seq" defaultValue="" name="complemento" nullable="0" physicalName="complemento" precision="10" referenceCount="1" remarks="" scale="0" type="12" />
+    <column id="COL1021" populated="true" autoIncrement="false" autoIncrementSequenceName="transportadora_bairro_seq" defaultValue="" name="bairro" nullable="0" physicalName="bairro" precision="25" referenceCount="1" remarks="&gt;&gt;&gt; Veirá da tabela bairro ??? " scale="0" type="12" />
+    <column id="COL1022" populated="true" autoIncrement="false" autoIncrementSequenceName="transportadora_cidade_seq" defaultValue="" name="cidade" nullable="0" physicalName="cidade" precision="20" referenceCount="1" remarks="&gt;&gt;&gt; Virá da tabela cidade ???" scale="0" type="12" />
+    <column id="COL1023" populated="true" autoIncrement="false" autoIncrementSequenceName="transportadora_uf_seq" defaultValue="" name="uf" nullable="0" physicalName="uf" precision="2" referenceCount="1" remarks="" scale="0" type="12" />
+    <column id="COL1024" populated="true" autoIncrement="false" autoIncrementSequenceName="transportadora_cep_seq" defaultValue="" name="cep" nullable="0" physicalName="cep" precision="9" referenceCount="1" remarks="" scale="0" type="12" />
+    <column id="COL1025" populated="true" autoIncrement="false" autoIncrementSequenceName="transportadora_telefone_seq" defaultValue="" name="telefone" nullable="0" physicalName="telefone" precision="50" referenceCount="1" remarks="" scale="0" type="12" />
+    <column id="COL1026" populated="true" autoIncrement="false" autoIncrementSequenceName="transportadora_fax_seq" defaultValue="" name="fax" nullable="0" physicalName="fax" precision="20" referenceCount="1" remarks="" scale="0" type="12" />
+    <column id="COL1027" populated="true" autoIncrement="false" autoIncrementSequenceName="transportadora_email_seq" defaultValue="" name="email" nullable="0" physicalName="email" precision="50" referenceCount="1" remarks="" scale="0" type="12" />
+    <column id="COL1028" populated="true" autoIncrement="false" autoIncrementSequenceName="transportadora_home_page_seq" defaultValue="" name="home_page" nullable="0" physicalName="home_page" precision="40" referenceCount="1" remarks="" scale="0" type="12" />
+    <column id="COL1029" populated="true" autoIncrement="false" autoIncrementSequenceName="transportadora_cnpj_seq" defaultValue="" name="cnpj" nullable="0" physicalName="cnpj" precision="18" referenceCount="1" remarks="" scale="0" type="12" />
+    <column id="COL1030" populated="true" autoIncrement="false" autoIncrementSequenceName="transportadora_inscricao_seq" defaultValue="" name="inscricao" nullable="0" physicalName="inscricao" precision="14" referenceCount="1" remarks="&gt;&gt;&gt; Estadual ou municipal ???" scale="0" type="12" />
+    <column id="COL1031" populated="true" autoIncrement="false" autoIncrementSequenceName="transportadora_contatos_seq" defaultValue="" name="contatos" nullable="0" physicalName="contatos" precision="100" referenceCount="1" remarks="" scale="0" type="12" />
+    <column id="COL1032" populated="true" autoIncrement="false" autoIncrementSequenceName="transportadora_status_transportadora_seq" defaultValue="" name="status_transportadora" nullable="0" physicalName="status_transportadora" precision="10" referenceCount="1" remarks="" scale="0" type="12" />
+   </folder>
+   <folder id="FOL1033" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3" >
+   </folder>
+   <folder id="FOL1034" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2" >
+   </folder>
+   <folder id="FOL1035" populated="true" name="Indices" physicalName="Indices" type="4" >
+    <index id="IDX1036" populated="true" clustered="false" name="transportadora_pk" physicalName="transportadora_pk" primaryKeyIndex="true" unique="true" >
+     <index-column id="IDC1037" populated="true" ascendingOrDescending="UNSPECIFIED" column-ref="COL1015" name="codigo_transportadora" physicalName="codigo_transportadora" />
+    </index>
+   </folder>
+  </table>
   <relationships>
-   <relationship id="REL974" populated="true" deferrability="7" deleteRule="3" fk-table-ref="TAB48" fkCardinality="7" identifying="true" name="item_nota_fiscal_entrada_nota_fiscal_entrada_fk" physicalName="item_nota_fiscal_entrada_nota_fiscal_entrada_fk" pk-table-ref="TAB1" pkCardinality="2" updateRule="3" >
-    <column-mapping id="CMP975" populated="true" fk-column-ref="COL50" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL3" />
+   <relationship id="REL1038" populated="true" deferrability="7" deleteRule="3" fk-table-ref="TAB48" fkCardinality="7" identifying="true" name="item_nota_fiscal_entrada_nota_fiscal_entrada_fk" physicalName="item_nota_fiscal_entrada_nota_fiscal_entrada_fk" pk-table-ref="TAB1" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP1039" populated="true" fk-column-ref="COL50" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL3" />
    </relationship>
-   <relationship id="REL976" populated="true" deferrability="7" deleteRule="3" fk-table-ref="TAB1" fkCardinality="7" identifying="true" name="tipo_servico_notafiscal_entrada_fk" physicalName="tipo_servico_notafiscal_entrada_fk" pk-table-ref="TAB72" pkCardinality="2" updateRule="3" >
-    <column-mapping id="CMP977" populated="true" fk-column-ref="COL4" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL74" />
+   <relationship id="REL1040" populated="true" deferrability="7" deleteRule="3" fk-table-ref="TAB1" fkCardinality="7" identifying="true" name="tipo_servico_notafiscal_entrada_fk" physicalName="tipo_servico_notafiscal_entrada_fk" pk-table-ref="TAB72" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP1041" populated="true" fk-column-ref="COL4" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL74" />
    </relationship>
-   <reference ref-id="REL974" />
-   <reference ref-id="REL976" />
-   <relationship id="REL978" populated="true" deferrability="7" deleteRule="3" fk-table-ref="TAB129" fkCardinality="7" identifying="true" name="pedido_venda_itens_pedido_fk" physicalName="pedido_venda_itens_pedido_fk" pk-table-ref="TAB81" pkCardinality="2" updateRule="3" >
-    <column-mapping id="CMP979" populated="true" fk-column-ref="COL131" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL83" />
+   <reference ref-id="REL1038" />
+   <reference ref-id="REL1040" />
+   <relationship id="REL1042" populated="true" deferrability="7" deleteRule="3" fk-table-ref="TAB129" fkCardinality="7" identifying="true" name="pedido_venda_itens_pedido_fk" physicalName="pedido_venda_itens_pedido_fk" pk-table-ref="TAB81" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP1043" populated="true" fk-column-ref="COL131" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL83" />
    </relationship>
-   <reference ref-id="REL978" />
+   <reference ref-id="REL1042" />
   </relationships>
  </target-database>
  <ddl-generator type="ca.sqlpower.architect.ddl.GenericDDLGenerator" allow-connection="true"> </ddl-generator>
  <create-kettle-job-settings filePath="" jobName="" schemaName="" kettleJoinType="0" savingToFile="true" />
- <play-pen zoom="0.21022410381342913" viewportX="0" viewportY="4" relationship-style="rectilinear" names-displayLogicalNames="true" showPrimaryTag="true" showForeignTag="true" showAlternateTag="true" columnVisibility="ALL" relationshipLabelVisibility="true">
+ <play-pen zoom="0.5946035575013617" viewportX="502" viewportY="1225" relationship-style="rectilinear" names-displayLogicalNames="true" showPrimaryTag="true" showForeignTag="true" showAlternateTag="true" columnVisibility="ALL" relationshipLabelVisibility="true">
   <table-pane table-ref="TAB1" x="28" y="23" bgColor="0xf0f0f0" fgColor="0x000000" rounded="true" dashed="false"/>
   <table-pane table-ref="TAB48" x="351" y="206" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
   <table-pane table-ref="TAB72" x="338" y="32" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
@@ -1384,9 +1460,12 @@
   <table-pane table-ref="TAB941" x="1715" y="2694" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
   <table-pane table-ref="TAB953" x="1712" y="2934" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
   <table-pane table-ref="TAB966" x="2056" y="1927" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
-  <table-link relationship-ref="REL974" pk-x="227" pk-y="506" fk-x="0" fk-y="289" rLineColor="0x333333" pkLabelText="" fkLabelText="" orientation="33"/>
-  <table-link relationship-ref="REL976" pk-x="83" pk-y="96" fk-x="227" fk-y="135" rLineColor="0x333333" pkLabelText="" fkLabelText="" orientation="20"/>
-  <table-link relationship-ref="REL978" pk-x="189" pk-y="385" fk-x="0" fk-y="404" rLineColor="0x333333" pkLabelText="" fkLabelText="" orientation="33"/>
+  <table-pane table-ref="TAB974" x="2078" y="2112" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB998" x="2100" y="2742" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB1013" x="2405" y="2125" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-link relationship-ref="REL1038" pk-x="273" pk-y="506" fk-x="0" fk-y="289" rLineColor="0x333333" pkLabelText="" fkLabelText="" orientation="33"/>
+  <table-link relationship-ref="REL1040" pk-x="83" pk-y="96" fk-x="273" fk-y="135" rLineColor="0x333333" pkLabelText="" fkLabelText="" orientation="20"/>
+  <table-link relationship-ref="REL1042" pk-x="244" pk-y="385" fk-x="0" fk-y="404" rLineColor="0x333333" pkLabelText="" fkLabelText="" orientation="33"/>
  </play-pen>
  <profiles topNCount="10">
   </profiles>
