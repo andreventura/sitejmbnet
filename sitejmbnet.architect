@@ -1629,24 +1629,86 @@
    <folder id="FOL1213" populated="true" name="Indices" physicalName="Indices" type="4" >
    </folder>
   </table>
+  <table id="TAB1214" populated="true" name="tabela_nota_fiscal_entrada" objectType="TABLE" physicalName="tabela_nota_fiscal_entrada" remarks="" >
+   <folder id="FOL1215" populated="true" name="Columns" physicalName="Columns" type="1" >
+    <column id="COL1216" populated="true" autoIncrement="false" autoIncrementSequenceName="tabela_nota_fiscal_entrada_codigo_tipo_seq" defaultValue="" name="codigo_tipo" nullable="0" physicalName="codigo_tipo" precision="8" referenceCount="1" remarks="" scale="0" type="4" />
+    <column id="COL1217" populated="true" autoIncrement="false" autoIncrementSequenceName="tabela_nota_fiscal_entrada_descricao_seq" defaultValue="" name="descricao" nullable="0" physicalName="descricao" precision="20" referenceCount="1" remarks="" scale="0" type="12" />
+    <column id="COL1218" populated="true" autoIncrement="false" autoIncrementSequenceName="tabela_nota_fiscal_entrada_conta_debito_seq" defaultValue="" name="conta_debito" nullable="0" physicalName="conta_debito" precision="8" referenceCount="1" remarks="" scale="0" type="4" />
+    <column id="COL1219" populated="true" autoIncrement="false" autoIncrementSequenceName="tabela_nota_fiscal_entrada_conta_credito_seq" defaultValue="" name="conta_credito" nullable="0" physicalName="conta_credito" precision="8" referenceCount="1" remarks="" scale="0" type="4" />
+    <column id="COL1220" populated="true" autoIncrement="false" autoIncrementSequenceName="tabela_nota_fiscal_entrada_numro_lancamento_seq" defaultValue="" name="numro_lancamento" nullable="0" physicalName="numro_lancamento" precision="8" referenceCount="1" remarks="" scale="0" type="4" />
+    <column id="COL1221" populated="true" autoIncrement="false" autoIncrementSequenceName="tabela_nota_fiscal_entrada_numero_historico_seq" defaultValue="" name="numero_historico" nullable="0" physicalName="numero_historico" precision="8" referenceCount="1" remarks="" scale="0" type="4" />
+    <column id="COL1222" populated="true" autoIncrement="false" autoIncrementSequenceName="tabela_nota_fiscal_entrada_centro_custo_seq" defaultValue="" name="centro_custo" nullable="0" physicalName="centro_custo" precision="8" referenceCount="1" remarks="" scale="0" type="4" />
+    <column id="COL1223" populated="true" autoIncrement="false" autoIncrementSequenceName="tabela_nota_fiscal_entrada_sequencial_seq" defaultValue="" name="sequencial" nullable="0" physicalName="sequencial" precision="4" referenceCount="1" remarks="" scale="0" type="4" />
+   </folder>
+   <folder id="FOL1224" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3" >
+   </folder>
+   <folder id="FOL1225" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2" >
+   </folder>
+   <folder id="FOL1226" populated="true" name="Indices" physicalName="Indices" type="4" >
+   </folder>
+  </table>
+  <table id="TAB1227" populated="true" name="tabela_nota_fiscal_saida" objectType="TABLE" physicalName="tabela_nota_fiscal_saida" remarks="" >
+   <folder id="FOL1228" populated="true" name="Columns" physicalName="Columns" type="1" >
+    <column id="COL1229" populated="true" autoIncrement="false" autoIncrementSequenceName="tabela_nota_fiscal_saida_codigo_tipo_seq" defaultValue="" name="codigo_tipo" nullable="0" physicalName="codigo_tipo" precision="8" referenceCount="1" remarks="" scale="0" type="4" />
+    <column id="COL1230" populated="true" autoIncrement="false" autoIncrementSequenceName="tabela_nota_fiscal_saida_descricao_seq" defaultValue="" name="descricao" nullable="0" physicalName="descricao" precision="20" referenceCount="1" remarks="" scale="0" type="12" />
+    <column id="COL1231" populated="true" autoIncrement="false" autoIncrementSequenceName="tabela_nota_fiscal_saida_conta_debito_seq" defaultValue="" name="conta_debito" nullable="0" physicalName="conta_debito" precision="4" referenceCount="1" remarks="" scale="0" type="4" />
+    <column id="COL1232" populated="true" autoIncrement="false" autoIncrementSequenceName="tabela_nota_fiscal_saida_conta_credito_seq" defaultValue="" name="conta_credito" nullable="0" physicalName="conta_credito" precision="8" referenceCount="1" remarks="" scale="0" type="4" />
+    <column id="COL1233" populated="true" autoIncrement="false" autoIncrementSequenceName="tabela_nota_fiscal_saida_numero_lancamento_seq" defaultValue="" name="numero_lancamento" nullable="0" physicalName="numero_lancamento" precision="8" referenceCount="1" remarks="" scale="0" type="4" />
+    <column id="COL1234" populated="true" autoIncrement="false" autoIncrementSequenceName="tabela_nota_fiscal_saida_codigo_historico_seq" defaultValue="" name="codigo_historico" nullable="0" physicalName="codigo_historico" precision="8" referenceCount="1" remarks="" scale="0" type="4" />
+    <column id="COL1235" populated="true" autoIncrement="false" autoIncrementSequenceName="tabela_nota_fiscal_saida_numero_historico_seq" defaultValue="" name="numero_historico" nullable="0" physicalName="numero_historico" precision="8" referenceCount="1" remarks="" scale="0" type="4" />
+   </folder>
+   <folder id="FOL1236" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3" >
+   </folder>
+   <folder id="FOL1237" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2" >
+   </folder>
+   <folder id="FOL1238" populated="true" name="Indices" physicalName="Indices" type="4" >
+   </folder>
+  </table>
+  <table id="TAB1239" populated="true" name="tipo_eventos" objectType="TABLE" physicalName="tipo_eventos" remarks="" >
+   <folder id="FOL1240" populated="true" name="Columns" physicalName="Columns" type="1" >
+    <column id="COL1241" populated="true" autoIncrement="false" autoIncrementSequenceName="tipo_eventos_nome_evento_seq" defaultValue="" name="nome_evento" nullable="0" physicalName="nome_evento" precision="20" referenceCount="1" remarks="" scale="0" type="12" />
+   </folder>
+   <folder id="FOL1242" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3" >
+   </folder>
+   <folder id="FOL1243" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2" >
+   </folder>
+   <folder id="FOL1244" populated="true" name="Indices" physicalName="Indices" type="4" >
+   </folder>
+  </table>
+  <table id="TAB1245" populated="true" name="tipo_lancamento_conta_corrente" objectType="TABLE" physicalName="tipo_lancamento_conta_corrente" remarks="" >
+   <folder id="FOL1246" populated="true" name="Columns" physicalName="Columns" type="1" >
+    <column id="COL1247" populated="true" autoIncrement="false" autoIncrementSequenceName="tipo_lancamento_conta_corrente_codigo_tipo_seq" defaultValue="" name="codigo_tipo" nullable="0" physicalName="codigo_tipo" precision="8" referenceCount="1" remarks="" scale="0" type="4" />
+    <column id="COL1248" populated="true" autoIncrement="false" autoIncrementSequenceName="tipo_lancamento_conta_corrente_descricao_seq" defaultValue="" name="descricao" nullable="0" physicalName="descricao" precision="20" referenceCount="1" remarks="" scale="0" type="12" />
+    <column id="COL1249" populated="true" autoIncrement="false" autoIncrementSequenceName="tipo_lancamento_conta_corrente_indice_contabilidade_seq" defaultValue="" name="indice_contabilidade" nullable="0" physicalName="indice_contabilidade" precision="3" referenceCount="1" remarks="" scale="0" type="-3" />
+    <column id="COL1250" populated="true" autoIncrement="false" autoIncrementSequenceName="tipo_lancamento_conta_corrente_conta_debito_seq" defaultValue="" name="conta_debito" nullable="0" physicalName="conta_debito" precision="5" referenceCount="1" remarks="" scale="0" type="12" />
+    <column id="COL1251" populated="true" autoIncrement="false" autoIncrementSequenceName="tipo_lancamento_conta_corrente_conta_credito_seq" defaultValue="" name="conta_credito" nullable="0" physicalName="conta_credito" precision="5" referenceCount="1" remarks="" scale="0" type="12" />
+    <column id="COL1252" populated="true" autoIncrement="false" autoIncrementSequenceName="tipo_lancamento_conta_corrente_alterar_valor_seq" defaultValue="" name="alterar_valor" nullable="0" physicalName="alterar_valor" precision="5" referenceCount="1" remarks="" scale="0" type="16" />
+   </folder>
+   <folder id="FOL1253" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3" >
+   </folder>
+   <folder id="FOL1254" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2" >
+   </folder>
+   <folder id="FOL1255" populated="true" name="Indices" physicalName="Indices" type="4" >
+   </folder>
+  </table>
   <relationships>
-   <relationship id="REL1214" populated="true" deferrability="7" deleteRule="3" fk-table-ref="TAB48" fkCardinality="7" identifying="true" name="item_nota_fiscal_entrada_nota_fiscal_entrada_fk" physicalName="item_nota_fiscal_entrada_nota_fiscal_entrada_fk" pk-table-ref="TAB1" pkCardinality="2" updateRule="3" >
-    <column-mapping id="CMP1215" populated="true" fk-column-ref="COL50" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL3" />
+   <relationship id="REL1256" populated="true" deferrability="7" deleteRule="3" fk-table-ref="TAB48" fkCardinality="7" identifying="true" name="item_nota_fiscal_entrada_nota_fiscal_entrada_fk" physicalName="item_nota_fiscal_entrada_nota_fiscal_entrada_fk" pk-table-ref="TAB1" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP1257" populated="true" fk-column-ref="COL50" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL3" />
    </relationship>
-   <relationship id="REL1216" populated="true" deferrability="7" deleteRule="3" fk-table-ref="TAB1" fkCardinality="7" identifying="true" name="tipo_servico_notafiscal_entrada_fk" physicalName="tipo_servico_notafiscal_entrada_fk" pk-table-ref="TAB72" pkCardinality="2" updateRule="3" >
-    <column-mapping id="CMP1217" populated="true" fk-column-ref="COL4" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL74" />
+   <relationship id="REL1258" populated="true" deferrability="7" deleteRule="3" fk-table-ref="TAB1" fkCardinality="7" identifying="true" name="tipo_servico_notafiscal_entrada_fk" physicalName="tipo_servico_notafiscal_entrada_fk" pk-table-ref="TAB72" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP1259" populated="true" fk-column-ref="COL4" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL74" />
    </relationship>
-   <reference ref-id="REL1214" />
-   <reference ref-id="REL1216" />
-   <relationship id="REL1218" populated="true" deferrability="7" deleteRule="3" fk-table-ref="TAB129" fkCardinality="7" identifying="true" name="pedido_venda_itens_pedido_fk" physicalName="pedido_venda_itens_pedido_fk" pk-table-ref="TAB81" pkCardinality="2" updateRule="3" >
-    <column-mapping id="CMP1219" populated="true" fk-column-ref="COL131" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL83" />
+   <reference ref-id="REL1256" />
+   <reference ref-id="REL1258" />
+   <relationship id="REL1260" populated="true" deferrability="7" deleteRule="3" fk-table-ref="TAB129" fkCardinality="7" identifying="true" name="pedido_venda_itens_pedido_fk" physicalName="pedido_venda_itens_pedido_fk" pk-table-ref="TAB81" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP1261" populated="true" fk-column-ref="COL131" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL83" />
    </relationship>
-   <reference ref-id="REL1218" />
+   <reference ref-id="REL1260" />
   </relationships>
  </target-database>
  <ddl-generator type="ca.sqlpower.architect.ddl.GenericDDLGenerator" allow-connection="true"> </ddl-generator>
  <create-kettle-job-settings filePath="" jobName="" schemaName="" kettleJoinType="0" savingToFile="true" />
- <play-pen zoom="0.6097274745289848" viewportX="774" viewportY="1032" relationship-style="rectilinear" names-displayLogicalNames="true" showPrimaryTag="true" showForeignTag="true" showAlternateTag="true" columnVisibility="ALL" relationshipLabelVisibility="true">
+ <play-pen zoom="0.26301369863013707" viewportX="0" viewportY="0" relationship-style="rectilinear" names-displayLogicalNames="true" showPrimaryTag="true" showForeignTag="true" showAlternateTag="true" columnVisibility="ALL" relationshipLabelVisibility="true">
   <table-pane table-ref="TAB1" x="28" y="23" bgColor="0xf0f0f0" fgColor="0x000000" rounded="true" dashed="false"/>
   <table-pane table-ref="TAB48" x="351" y="206" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
   <table-pane table-ref="TAB72" x="338" y="32" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
@@ -1713,9 +1775,9 @@
   <table-pane table-ref="TAB1013" x="2357" y="1796" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
   <table-pane table-ref="TAB1038" x="2421" y="2401" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
   <table-pane table-ref="TAB1052" x="2737" y="713" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
-  <table-pane table-ref="TAB1079" x="2716" y="1436" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
-  <table-pane table-ref="TAB1086" x="2725" y="1617" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
-  <table-pane table-ref="TAB1096" x="2640" y="1798" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB1079" x="2764" y="1429" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB1086" x="2764" y="1608" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB1096" x="2760" y="1821" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
   <table-pane table-ref="TAB1101" x="2692" y="1925" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
   <table-pane table-ref="TAB1120" x="2714" y="2379" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
   <table-pane table-ref="TAB1142" x="2408" y="2761" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
@@ -1725,9 +1787,13 @@
   <table-pane table-ref="TAB1182" x="3048" y="2683" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
   <table-pane table-ref="TAB1191" x="3050" y="2396" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
   <table-pane table-ref="TAB1203" x="3035" y="2102" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
-  <table-link relationship-ref="REL1214" pk-x="266" pk-y="506" fk-x="0" fk-y="289" rLineColor="0x333333" pkLabelText="" fkLabelText="" orientation="33"/>
-  <table-link relationship-ref="REL1216" pk-x="83" pk-y="96" fk-x="266" fk-y="135" rLineColor="0x333333" pkLabelText="" fkLabelText="" orientation="20"/>
-  <table-link relationship-ref="REL1218" pk-x="238" pk-y="385" fk-x="0" fk-y="404" rLineColor="0x333333" pkLabelText="" fkLabelText="" orientation="33"/>
+  <table-pane table-ref="TAB1214" x="3030" y="1709" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB1227" x="3051" y="1395" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB1239" x="3075" y="1262" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB1245" x="3072" y="980" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-link relationship-ref="REL1256" pk-x="289" pk-y="506" fk-x="0" fk-y="289" rLineColor="0x333333" pkLabelText="" fkLabelText="" orientation="33"/>
+  <table-link relationship-ref="REL1258" pk-x="83" pk-y="96" fk-x="289" fk-y="135" rLineColor="0x333333" pkLabelText="" fkLabelText="" orientation="20"/>
+  <table-link relationship-ref="REL1260" pk-x="258" pk-y="385" fk-x="0" fk-y="404" rLineColor="0x333333" pkLabelText="" fkLabelText="" orientation="33"/>
  </play-pen>
  <profiles topNCount="10">
   </profiles>
