@@ -2119,8 +2119,7 @@
   </table>
   <table id="TAB1575" populated="true" name="preco_medio_venda" objectType="TABLE" physicalName="preco_medio_venda" remarks="" >
    <folder id="FOL1576" populated="true" name="Columns" physicalName="Columns" type="1" >
-    <column id="COL1577" populated="true" autoIncrement="false" autoIncrementSequenceName="preco_medio_venda_codigo_representante_seq" defaultValue="" name="codigo_representante" nullable="0" physicalName="codigo_representante" precision="8" referenceCount="1" remarks="&gt;&gt;&gt; Chave estrangeira ???
-&gt;&gt;&gt; Representante ou vendedor ???" scale="0" type="4" />
+    <column id="COL1577" populated="true" autoIncrement="false" autoIncrementSequenceName="preco_medio_venda_codigo_representante_seq" defaultValue="" name="codigo_representante" nullable="0" physicalName="codigo_representante" precision="8" referenceCount="1" remarks="&gt;&gt;&gt; Chave estrangeira ??? &gt;&gt;&gt; Representante ou vendedor ???" scale="0" type="4" />
     <column id="COL1578" populated="true" autoIncrement="false" autoIncrementSequenceName="preco_medio_venda_codigo_setor_seq" defaultValue="" name="codigo_setor" nullable="0" physicalName="codigo_setor" precision="8" referenceCount="1" remarks="&gt;&gt;&gt; Chave estrangeira ???" scale="0" type="4" />
     <column id="COL1579" populated="true" autoIncrement="false" autoIncrementSequenceName="preco_medio_venda_codigo_area_seq" defaultValue="" name="codigo_area" nullable="0" physicalName="codigo_area" precision="8" referenceCount="1" remarks="&gt;&gt;&gt; Chave estrangeira ???" scale="0" type="4" />
     <column id="COL1580" populated="true" autoIncrement="false" autoIncrementSequenceName="preco_medio_venda_uf_estado_seq" defaultValue="" name="uf_estado" nullable="0" physicalName="uf_estado" precision="2" referenceCount="1" remarks="" scale="0" type="12" />
@@ -2150,24 +2149,179 @@
    <folder id="FOL1601" populated="true" name="Indices" physicalName="Indices" type="4" >
    </folder>
   </table>
+  <table id="TAB1602" populated="true" name="adicional_comissao" objectType="TABLE" physicalName="adicional_comissao" remarks="" >
+   <folder id="FOL1603" populated="true" name="Columns" physicalName="Columns" type="1" >
+    <column id="COL1604" populated="true" autoIncrement="false" autoIncrementSequenceName="adicional_comissao_mes_seq" defaultValue="" name="mes" nullable="0" physicalName="mes" precision="10" referenceCount="1" remarks="" scale="0" type="12" />
+    <column id="COL1605" populated="true" autoIncrement="false" autoIncrementSequenceName="adicional_comissao_ano_seq" defaultValue="" name="ano" nullable="0" physicalName="ano" precision="10" referenceCount="1" remarks="" scale="0" type="4" />
+    <column id="COL1606" populated="true" autoIncrement="false" autoIncrementSequenceName="adicional_comissao_codigo_produto_seq" defaultValue="" name="codigo_produto" nullable="0" physicalName="codigo_produto" precision="8" referenceCount="1" remarks="&gt;&gt;&gt; Chave estrangeira ???" scale="0" type="4" />
+    <column id="COL1607" populated="true" autoIncrement="false" autoIncrementSequenceName="adicional_comissao_descricao_produto_seq" defaultValue="" name="descricao_produto" nullable="0" physicalName="descricao_produto" precision="40" referenceCount="1" remarks="&gt;&gt;&gt; Este campo é preenchido ou vem de outra tabela ???" scale="0" type="12" />
+    <column id="COL1608" populated="true" autoIncrement="false" autoIncrementSequenceName="adicional_comissao_unidade_produto_seq" defaultValue="" name="unidade_produto" nullable="0" physicalName="unidade_produto" precision="4" referenceCount="1" remarks="&gt;&gt;&gt; Este campo é preenchido ou vem de outra tabela ???" scale="0" type="12" />
+    <column id="COL1609" populated="true" autoIncrement="false" autoIncrementSequenceName="adicional_comissao_qtd_de_seq" defaultValue="" name="qtd_de" nullable="0" physicalName="qtd_de" precision="10" referenceCount="1" remarks="&gt;&gt;&gt; Ver com Batista do que se trata este campo." scale="0" type="4" />
+    <column id="COL1610" populated="true" autoIncrement="false" autoIncrementSequenceName="adicional_comissao_qtd_ate_seq" defaultValue="" name="qtd_ate" nullable="0" physicalName="qtd_ate" precision="10" referenceCount="1" remarks="" scale="0" type="4" />
+    <column id="COL1611" populated="true" autoIncrement="false" autoIncrementSequenceName="adicional_comissao_percentual_seq" defaultValue="" name="percentual" nullable="0" physicalName="percentual" precision="10" referenceCount="1" remarks="&gt;&gt;&gt; Do que se trata esse campo ???" scale="2" type="3" />
+    <column id="COL1612" populated="true" autoIncrement="false" autoIncrementSequenceName="adicional_comissao_mes_ano_seq" defaultValue="" name="mes_ano" nullable="0" physicalName="mes_ano" precision="10" referenceCount="1" remarks="" scale="0" type="4" />
+   </folder>
+   <folder id="FOL1613" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3" >
+   </folder>
+   <folder id="FOL1614" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2" >
+   </folder>
+   <folder id="FOL1615" populated="true" name="Indices" physicalName="Indices" type="4" >
+   </folder>
+  </table>
+  <table id="TAB1616" populated="true" name="caminho_permissao" objectType="TABLE" physicalName="caminho_permissao" remarks="" >
+   <folder id="FOL1617" populated="true" name="Columns" physicalName="Columns" type="1" >
+    <column id="COL1618" populated="true" autoIncrement="false" autoIncrementSequenceName="caminho_permissao_descricao_seq" defaultValue="" name="descricao" nullable="0" physicalName="descricao" precision="40" referenceCount="1" remarks="" scale="0" type="12" />
+   </folder>
+   <folder id="FOL1619" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3" >
+   </folder>
+   <folder id="FOL1620" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2" >
+   </folder>
+   <folder id="FOL1621" populated="true" name="Indices" physicalName="Indices" type="4" >
+   </folder>
+  </table>
+  <table id="TAB1622" populated="true" name="codigos_ddd" objectType="TABLE" physicalName="codigos_ddd" remarks="" >
+   <folder id="FOL1623" populated="true" name="Columns" physicalName="Columns" type="1" >
+    <column id="COL1624" populated="true" autoIncrement="false" autoIncrementSequenceName="codigos_ddd_cidade_seq" defaultValue="" name="cidade" nullable="0" physicalName="cidade" precision="20" referenceCount="1" remarks="" scale="0" type="12" />
+    <column id="COL1625" populated="true" autoIncrement="false" autoIncrementSequenceName="codigos_ddd_uf_seq" defaultValue="" name="uf" nullable="0" physicalName="uf" precision="2" referenceCount="1" remarks="&gt;&gt;&gt; Será uma tabela ???" scale="0" type="12" />
+    <column id="COL1626" populated="true" autoIncrement="false" autoIncrementSequenceName="codigos_ddd_numero_ddd_seq" defaultValue="" name="numero_ddd" nullable="0" physicalName="numero_ddd" precision="4" referenceCount="1" remarks="" scale="0" type="5" />
+   </folder>
+   <folder id="FOL1627" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3" >
+   </folder>
+   <folder id="FOL1628" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2" >
+   </folder>
+   <folder id="FOL1629" populated="true" name="Indices" physicalName="Indices" type="4" >
+   </folder>
+  </table>
+  <table id="TAB1630" populated="true" name="dolar" objectType="TABLE" physicalName="dolar" remarks="" >
+   <folder id="FOL1631" populated="true" name="Columns" physicalName="Columns" type="1" >
+    <column id="COL1632" populated="true" autoIncrement="false" autoIncrementSequenceName="dolar_data_dolar_seq" defaultValue="" name="data_dolar" nullable="0" physicalName="data_dolar" precision="20" referenceCount="1" remarks="" scale="0" type="93" />
+    <column id="COL1633" populated="true" autoIncrement="false" autoIncrementSequenceName="dolar_valor_dolar_seq" defaultValue="" name="valor_dolar" nullable="0" physicalName="valor_dolar" precision="10" referenceCount="1" remarks="" scale="2" type="3" />
+   </folder>
+   <folder id="FOL1634" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3" >
+   </folder>
+   <folder id="FOL1635" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2" >
+   </folder>
+   <folder id="FOL1636" populated="true" name="Indices" physicalName="Indices" type="4" >
+   </folder>
+  </table>
+  <table id="TAB1637" populated="true" name="empresa" objectType="TABLE" physicalName="empresa" remarks="" >
+   <folder id="FOL1638" populated="true" name="Columns" physicalName="Columns" type="1" >
+    <column id="COL1639" populated="true" autoIncrement="false" autoIncrementSequenceName="empresa_codigo_produto_seq" defaultValue="" name="codigo_produto" nullable="0" physicalName="codigo_produto" precision="8" primaryKeySeq="0" referenceCount="1" remarks="" scale="0" type="4" />
+    <column id="COL1640" populated="true" autoIncrement="false" autoIncrementSequenceName="empresa_nome_seq" defaultValue="" name="nome" nullable="0" physicalName="nome" precision="40" referenceCount="1" remarks="" scale="0" type="12" />
+    <column id="COL1641" populated="true" autoIncrement="false" autoIncrementSequenceName="empresa_nome_fantasia_seq" defaultValue="" name="nome_fantasia" nullable="0" physicalName="nome_fantasia" precision="20" referenceCount="1" remarks="" scale="0" type="12" />
+    <column id="COL1642" populated="true" autoIncrement="false" autoIncrementSequenceName="empresa_endereco_seq" defaultValue="" name="endereco" nullable="0" physicalName="endereco" precision="30" referenceCount="1" remarks="" scale="0" type="12" />
+    <column id="COL1643" populated="true" autoIncrement="false" autoIncrementSequenceName="empresa_numero_seq" defaultValue="" name="numero" nullable="0" physicalName="numero" precision="7" referenceCount="1" remarks="" scale="0" type="12" />
+    <column id="COL1644" populated="true" autoIncrement="false" autoIncrementSequenceName="empresa_complemento_seq" defaultValue="" name="complemento" nullable="0" physicalName="complemento" precision="10" referenceCount="1" remarks="" scale="0" type="12" />
+    <column id="COL1645" populated="true" autoIncrement="false" autoIncrementSequenceName="empresa_bairro_seq" defaultValue="" name="bairro" nullable="0" physicalName="bairro" precision="20" referenceCount="1" remarks="" scale="0" type="12" />
+    <column id="COL1646" populated="true" autoIncrement="false" autoIncrementSequenceName="empresa_cidade_seq" defaultValue="" name="cidade" nullable="0" physicalName="cidade" precision="16" referenceCount="1" remarks="" scale="0" type="12" />
+    <column id="COL1647" populated="true" autoIncrement="false" autoIncrementSequenceName="empresa_uf_seq" defaultValue="" name="uf" nullable="0" physicalName="uf" precision="2" referenceCount="1" remarks="" scale="0" type="12" />
+    <column id="COL1648" populated="true" autoIncrement="false" autoIncrementSequenceName="empresa_cep_seq" defaultValue="" name="cep" nullable="0" physicalName="cep" precision="9" referenceCount="1" remarks="" scale="0" type="12" />
+    <column id="COL1649" populated="true" autoIncrement="false" autoIncrementSequenceName="empresa_telefone_seq" defaultValue="" name="telefone" nullable="0" physicalName="telefone" precision="20" referenceCount="1" remarks="" scale="0" type="4" />
+    <column id="COL1650" populated="true" autoIncrement="false" autoIncrementSequenceName="empresa_email_seq" defaultValue="" name="email" nullable="0" physicalName="email" precision="50" referenceCount="1" remarks="" scale="0" type="12" />
+    <column id="COL1651" populated="true" autoIncrement="false" autoIncrementSequenceName="empresa_cnpj_seq" defaultValue="" name="cnpj" nullable="0" physicalName="cnpj" precision="18" referenceCount="1" remarks="" scale="0" type="12" />
+    <column id="COL1652" populated="true" autoIncrement="false" autoIncrementSequenceName="empresa_inscricao_municipal_seq" defaultValue="" name="inscricao_municipal" nullable="0" physicalName="inscricao_municipal" precision="16" referenceCount="1" remarks="" scale="0" type="12" />
+    <column id="COL1653" populated="true" autoIncrement="false" autoIncrementSequenceName="empresa_inscricao_estadual_seq" defaultValue="" name="inscricao_estadual" nullable="0" physicalName="inscricao_estadual" precision="16" referenceCount="1" remarks="" scale="0" type="12" />
+    <column id="COL1654" populated="true" autoIncrement="false" autoIncrementSequenceName="empresa_registro_cartorio_seq" defaultValue="" name="registro_cartorio" nullable="0" physicalName="registro_cartorio" precision="12" referenceCount="1" remarks="" scale="0" type="12" />
+    <column id="COL1655" populated="true" autoIncrement="false" autoIncrementSequenceName="empresa_valor_capital_seq" defaultValue="" name="valor_capital" nullable="0" physicalName="valor_capital" precision="10" referenceCount="1" remarks="" scale="2" type="3" />
+    <column id="COL1656" populated="true" autoIncrement="false" autoIncrementSequenceName="empresa_dt_inicio_seq" defaultValue="" name="dt_inicio" nullable="0" physicalName="dt_inicio" precision="20" referenceCount="1" remarks="" scale="0" type="93" />
+    <column id="COL1657" populated="true" autoIncrement="false" autoIncrementSequenceName="empresa_cnae_seq" defaultValue="" name="cnae" nullable="0" physicalName="cnae" precision="9" referenceCount="1" remarks="" scale="0" type="12" />
+    <column id="COL1658" populated="true" autoIncrement="false" autoIncrementSequenceName="empresa_natureza_juridica_seq" defaultValue="" name="natureza_juridica" nullable="0" physicalName="natureza_juridica" precision="5" referenceCount="1" remarks="" scale="0" type="12" />
+    <column id="COL1659" populated="true" autoIncrement="false" autoIncrementSequenceName="empresa_numero_registro_junta_seq" defaultValue="" name="numero_registro_junta" nullable="0" physicalName="numero_registro_junta" precision="12" referenceCount="1" remarks="" scale="0" type="12" />
+    <column id="COL1660" populated="true" autoIncrement="false" autoIncrementSequenceName="empresa_dt_cadastro_seq" defaultValue="" name="dt_cadastro" nullable="0" physicalName="dt_cadastro" precision="20" referenceCount="1" remarks="" scale="0" type="93" />
+    <column id="COL1661" populated="true" autoIncrement="false" autoIncrementSequenceName="empresa_numero_nota_fiscal_saida_seq" defaultValue="" name="numero_nota_fiscal_saida" nullable="0" physicalName="numero_nota_fiscal_saida" precision="10" referenceCount="1" remarks="" scale="0" type="4" />
+    <column id="COL1662" populated="true" autoIncrement="false" autoIncrementSequenceName="empresa_numero_nota_fiscal_entrada_seq" defaultValue="" name="numero_nota_fiscal_entrada" nullable="0" physicalName="numero_nota_fiscal_entrada" precision="10" referenceCount="1" remarks="" scale="0" type="4" />
+    <column id="COL1663" populated="true" autoIncrement="false" autoIncrementSequenceName="empresa_taxa_financeira_seq" defaultValue="" name="taxa_financeira" nullable="0" physicalName="taxa_financeira" precision="10" referenceCount="1" remarks="" scale="2" type="3" />
+    <column id="COL1664" populated="true" autoIncrement="false" autoIncrementSequenceName="empresa_permissao_uso_seq" defaultValue="" name="permissao_uso" nullable="0" physicalName="permissao_uso" precision="15" referenceCount="1" remarks="" scale="0" type="12" />
+    <column id="COL1665" populated="true" autoIncrement="false" autoIncrementSequenceName="empresa_observacao_seq" defaultValue="" name="observacao" nullable="0" physicalName="observacao" precision="60" referenceCount="1" remarks="" scale="0" type="12" />
+    <column id="COL1666" populated="true" autoIncrement="false" autoIncrementSequenceName="empresa_tipo_numero_pedido_seq" defaultValue="" name="tipo_numero_pedido" nullable="0" physicalName="tipo_numero_pedido" precision="3" referenceCount="1" remarks="&gt;&gt;&gt; Ver com Batista do que se trata este campo.
+&gt;&gt;&gt; Chave estrangeira ???" scale="0" type="12" />
+    <column id="COL1667" populated="true" autoIncrement="false" autoIncrementSequenceName="empresa_ultimo_numero_pedido_seq" defaultValue="" name="ultimo_numero_pedido" nullable="0" physicalName="ultimo_numero_pedido" precision="8" referenceCount="1" remarks="" scale="0" type="4" />
+    <column id="COL1668" populated="true" autoIncrement="false" autoIncrementSequenceName="empresa_estoque_on_line_seq" defaultValue="" name="estoque_on_line" nullable="0" physicalName="estoque_on_line" precision="3" referenceCount="1" remarks="&gt;&gt;&gt; Ver com Batista do que se trata este campo." scale="0" type="12" />
+   </folder>
+   <folder id="FOL1669" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3" >
+   </folder>
+   <folder id="FOL1670" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2" >
+   </folder>
+   <folder id="FOL1671" populated="true" name="Indices" physicalName="Indices" type="4" >
+    <index id="IDX1672" populated="true" clustered="false" name="empresa_pk" physicalName="empresa_pk" primaryKeyIndex="true" unique="true" >
+     <index-column id="IDC1673" populated="true" ascendingOrDescending="UNSPECIFIED" column-ref="COL1639" name="codigo_produto" physicalName="codigo_produto" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB1674" populated="true" name="estados" objectType="TABLE" physicalName="estados" remarks="" >
+   <folder id="FOL1675" populated="true" name="Columns" physicalName="Columns" type="1" >
+    <column id="COL1676" populated="true" autoIncrement="false" autoIncrementSequenceName="estados_sigla_estado_seq" defaultValue="" name="sigla_estado" nullable="0" physicalName="sigla_estado" precision="2" referenceCount="1" remarks="" scale="0" type="12" />
+    <column id="COL1677" populated="true" autoIncrement="false" autoIncrementSequenceName="estados_nome_estado_seq" defaultValue="" name="nome_estado" nullable="0" physicalName="nome_estado" precision="20" referenceCount="1" remarks="" scale="0" type="12" />
+    <column id="COL1678" populated="true" autoIncrement="false" autoIncrementSequenceName="estados_percentual_frete_seq" defaultValue="" name="percentual_frete" nullable="0" physicalName="percentual_frete" precision="10" referenceCount="1" remarks="" scale="2" type="3" />
+    <column id="COL1679" populated="true" autoIncrement="false" autoIncrementSequenceName="estados_percentual_icms_seq" defaultValue="" name="percentual_icms" nullable="0" physicalName="percentual_icms" precision="10" referenceCount="1" remarks="" scale="2" type="3" />
+   </folder>
+   <folder id="FOL1680" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3" >
+   </folder>
+   <folder id="FOL1681" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2" >
+   </folder>
+   <folder id="FOL1682" populated="true" name="Indices" physicalName="Indices" type="4" >
+   </folder>
+  </table>
+  <table id="TAB1683" populated="true" name="etiqueta_embalagem" objectType="TABLE" physicalName="etiqueta_embalagem" remarks="" >
+   <folder id="FOL1684" populated="true" name="Columns" physicalName="Columns" type="1" >
+    <column id="COL1685" populated="true" autoIncrement="false" autoIncrementSequenceName="etiqueta_embalagem_descricao_produto_seq" defaultValue="" name="descricao_produto" nullable="0" physicalName="descricao_produto" precision="35" referenceCount="1" remarks="" scale="0" type="12" />
+    <column id="COL1686" populated="true" autoIncrement="false" autoIncrementSequenceName="etiqueta_embalagem_medida_produto_seq" defaultValue="" name="medida_produto" nullable="0" physicalName="medida_produto" precision="15" referenceCount="1" remarks="&gt;&gt;&gt; Ver com Batista do que se trata este campo." scale="0" type="12" />
+    <column id="COL1687" populated="true" autoIncrement="false" autoIncrementSequenceName="etiqueta_embalagem_qtd_embalagem_seq" defaultValue="" name="qtd_embalagem" nullable="0" physicalName="qtd_embalagem" precision="15" referenceCount="1" remarks="" scale="0" type="12" />
+   </folder>
+   <folder id="FOL1688" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3" >
+   </folder>
+   <folder id="FOL1689" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2" >
+   </folder>
+   <folder id="FOL1690" populated="true" name="Indices" physicalName="Indices" type="4" >
+   </folder>
+  </table>
+  <table id="TAB1691" populated="true" name="historico" objectType="TABLE" physicalName="historico" remarks="" >
+   <folder id="FOL1692" populated="true" name="Columns" physicalName="Columns" type="1" >
+    <column id="COL1693" populated="true" autoIncrement="false" autoIncrementSequenceName="historico_codigo_historico_seq" defaultValue="" name="codigo_historico" nullable="0" physicalName="codigo_historico" precision="8" primaryKeySeq="0" referenceCount="1" remarks="" scale="0" type="4" />
+    <column id="COL1694" populated="true" autoIncrement="false" autoIncrementSequenceName="historico_descricao_historico_seq" defaultValue="" name="descricao_historico" nullable="0" physicalName="descricao_historico" precision="50" referenceCount="1" remarks="" scale="0" type="12" />
+    <column id="COL1695" populated="true" autoIncrement="false" autoIncrementSequenceName="historico_tipo_movimento_seq" defaultValue="" name="tipo_movimento" nullable="0" physicalName="tipo_movimento" precision="10" referenceCount="1" remarks="" scale="0" type="12" />
+   </folder>
+   <folder id="FOL1696" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3" >
+   </folder>
+   <folder id="FOL1697" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2" >
+   </folder>
+   <folder id="FOL1698" populated="true" name="Indices" physicalName="Indices" type="4" >
+    <index id="IDX1699" populated="true" clustered="false" name="historico_pk" physicalName="historico_pk" primaryKeyIndex="true" unique="true" >
+     <index-column id="IDC1700" populated="true" ascendingOrDescending="UNSPECIFIED" column-ref="COL1693" name="codigo_historico" physicalName="codigo_historico" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB1701" populated="true" name="logradouro" objectType="TABLE" physicalName="logradouro" remarks="" >
+   <folder id="FOL1702" populated="true" name="Columns" physicalName="Columns" type="1" >
+    <column id="COL1703" populated="true" autoIncrement="false" autoIncrementSequenceName="logradouro_nome_logradouro_seq" defaultValue="" name="nome_logradouro" nullable="0" physicalName="nome_logradouro" precision="30" referenceCount="1" remarks="" scale="0" type="12" />
+    <column id="COL1704" populated="true" autoIncrement="false" autoIncrementSequenceName="logradouro_cep_logradouro_seq" defaultValue="" name="cep_logradouro" nullable="0" physicalName="cep_logradouro" precision="9" referenceCount="1" remarks="" scale="0" type="12" />
+    <column id="COL1705" populated="true" autoIncrement="false" autoIncrementSequenceName="logradouro_nome_bairro_seq" defaultValue="" name="nome_bairro" nullable="0" physicalName="nome_bairro" precision="25" referenceCount="1" remarks="" scale="0" type="12" />
+   </folder>
+   <folder id="FOL1706" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3" >
+   </folder>
+   <folder id="FOL1707" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2" >
+   </folder>
+   <folder id="FOL1708" populated="true" name="Indices" physicalName="Indices" type="4" >
+   </folder>
+  </table>
   <relationships>
-   <relationship id="REL1602" populated="true" deferrability="7" deleteRule="3" fk-table-ref="TAB48" fkCardinality="7" identifying="true" name="item_nota_fiscal_entrada_nota_fiscal_entrada_fk" physicalName="item_nota_fiscal_entrada_nota_fiscal_entrada_fk" pk-table-ref="TAB1" pkCardinality="2" updateRule="3" >
-    <column-mapping id="CMP1603" populated="true" fk-column-ref="COL50" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL3" />
+   <relationship id="REL1709" populated="true" deferrability="7" deleteRule="3" fk-table-ref="TAB48" fkCardinality="7" identifying="true" name="item_nota_fiscal_entrada_nota_fiscal_entrada_fk" physicalName="item_nota_fiscal_entrada_nota_fiscal_entrada_fk" pk-table-ref="TAB1" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP1710" populated="true" fk-column-ref="COL50" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL3" />
    </relationship>
-   <relationship id="REL1604" populated="true" deferrability="7" deleteRule="3" fk-table-ref="TAB1" fkCardinality="7" identifying="true" name="tipo_servico_notafiscal_entrada_fk" physicalName="tipo_servico_notafiscal_entrada_fk" pk-table-ref="TAB72" pkCardinality="2" updateRule="3" >
-    <column-mapping id="CMP1605" populated="true" fk-column-ref="COL4" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL74" />
+   <relationship id="REL1711" populated="true" deferrability="7" deleteRule="3" fk-table-ref="TAB1" fkCardinality="7" identifying="true" name="tipo_servico_notafiscal_entrada_fk" physicalName="tipo_servico_notafiscal_entrada_fk" pk-table-ref="TAB72" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP1712" populated="true" fk-column-ref="COL4" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL74" />
    </relationship>
-   <reference ref-id="REL1602" />
-   <reference ref-id="REL1604" />
-   <relationship id="REL1606" populated="true" deferrability="7" deleteRule="3" fk-table-ref="TAB129" fkCardinality="7" identifying="true" name="pedido_venda_itens_pedido_fk" physicalName="pedido_venda_itens_pedido_fk" pk-table-ref="TAB81" pkCardinality="2" updateRule="3" >
-    <column-mapping id="CMP1607" populated="true" fk-column-ref="COL131" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL83" />
+   <reference ref-id="REL1709" />
+   <reference ref-id="REL1711" />
+   <relationship id="REL1713" populated="true" deferrability="7" deleteRule="3" fk-table-ref="TAB129" fkCardinality="7" identifying="true" name="pedido_venda_itens_pedido_fk" physicalName="pedido_venda_itens_pedido_fk" pk-table-ref="TAB81" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP1714" populated="true" fk-column-ref="COL131" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL83" />
    </relationship>
-   <reference ref-id="REL1606" />
+   <reference ref-id="REL1713" />
   </relationships>
  </target-database>
  <ddl-generator type="ca.sqlpower.architect.ddl.GenericDDLGenerator" allow-connection="true"> </ddl-generator>
  <create-kettle-job-settings filePath="" jobName="" schemaName="" kettleJoinType="0" savingToFile="true" />
- <play-pen zoom="0.312777761754141" viewportX="25" viewportY="0" relationship-style="rectilinear" names-displayLogicalNames="true" showPrimaryTag="true" showForeignTag="true" showAlternateTag="true" columnVisibility="ALL" relationshipLabelVisibility="true">
+ <play-pen zoom="0.7439150793853019" viewportX="1938" viewportY="542" relationship-style="rectilinear" names-displayLogicalNames="true" showPrimaryTag="true" showForeignTag="true" showAlternateTag="true" columnVisibility="ALL" relationshipLabelVisibility="true">
   <table-pane table-ref="TAB1" x="28" y="23" bgColor="0xf0f0f0" fgColor="0x000000" rounded="true" dashed="false"/>
   <table-pane table-ref="TAB48" x="351" y="206" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
   <table-pane table-ref="TAB72" x="338" y="32" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
@@ -2272,9 +2426,18 @@
   <table-pane table-ref="TAB1542" x="367" y="2695" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
   <table-pane table-ref="TAB1562" x="653" y="2703" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
   <table-pane table-ref="TAB1575" x="888" y="2624" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
-  <table-link relationship-ref="REL1602" pk-x="243" pk-y="506" fk-x="0" fk-y="289" rLineColor="0x333333" pkLabelText="" fkLabelText="" orientation="33"/>
-  <table-link relationship-ref="REL1604" pk-x="83" pk-y="96" fk-x="243" fk-y="135" rLineColor="0x333333" pkLabelText="" fkLabelText="" orientation="20"/>
-  <table-link relationship-ref="REL1606" pk-x="218" pk-y="385" fk-x="0" fk-y="404" rLineColor="0x333333" pkLabelText="" fkLabelText="" orientation="33"/>
+  <table-pane table-ref="TAB1602" x="3732" y="2253" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB1616" x="3710" y="2621" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB1622" x="3713" y="2759" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB1630" x="3718" y="2947" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB1637" x="3992" y="2459" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB1674" x="4001" y="2220" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB1683" x="4055" y="1985" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB1691" x="4020" y="1748" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB1701" x="4011" y="1524" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-link relationship-ref="REL1709" pk-x="248" pk-y="506" fk-x="0" fk-y="289" rLineColor="0x333333" pkLabelText="" fkLabelText="" orientation="33"/>
+  <table-link relationship-ref="REL1711" pk-x="83" pk-y="96" fk-x="248" fk-y="135" rLineColor="0x333333" pkLabelText="" fkLabelText="" orientation="20"/>
+  <table-link relationship-ref="REL1713" pk-x="225" pk-y="385" fk-x="0" fk-y="404" rLineColor="0x333333" pkLabelText="" fkLabelText="" orientation="33"/>
  </play-pen>
  <profiles topNCount="10">
   </profiles>
