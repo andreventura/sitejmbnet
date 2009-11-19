@@ -2081,12 +2081,12 @@
   </table>
   <table id="TAB1522" populated="true" name="adicional_comissao" objectType="TABLE" physicalName="adicional_comissao" remarks="" >
    <folder id="FOL1523" populated="true" name="Columns" physicalName="Columns" type="1" >
-    <column id="COL1524" populated="true" autoIncrement="false" autoIncrementSequenceName="adicional_comissao_adicioanl_comissao_id_seq" defaultValue="" name="adicioanl_comissao_id" nullable="1" physicalName="adicioanl_comissao_id" precision="8" primaryKeySeq="0" referenceCount="1" remarks="" scale="0" type="4" />
-    <column id="COL1525" populated="true" autoIncrement="false" autoIncrementSequenceName="adicional_comissao_codigo_produto_seq" defaultValue="" name="codigo_produto" nullable="1" physicalName="codigo_produto" precision="8" referenceCount="1" remarks="&gt;&gt;&gt; Chave estrangeira ???" scale="0" type="4" />
-    <column id="COL1526" populated="true" autoIncrement="false" autoIncrementSequenceName="adicional_comissao_mes_ano_seq" defaultValue="" name="mes_ano" nullable="1" physicalName="mes_ano" precision="7" referenceCount="1" remarks="" scale="0" type="12" />
-    <column id="COL1527" populated="true" autoIncrement="false" autoIncrementSequenceName="adicional_comissao_qtd_de_seq" defaultValue="" name="qtd_de" nullable="1" physicalName="qtd_de" precision="10" referenceCount="1" remarks="&gt;&gt;&gt; Ver com Batista do que se trata este campo." scale="0" type="4" />
-    <column id="COL1528" populated="true" autoIncrement="false" autoIncrementSequenceName="adicional_comissao_qtd_ate_seq" defaultValue="" name="qtd_ate" nullable="1" physicalName="qtd_ate" precision="10" referenceCount="1" remarks="" scale="0" type="4" />
-    <column id="COL1529" populated="true" autoIncrement="false" autoIncrementSequenceName="adicional_comissao_percentual_seq" defaultValue="" name="percentual" nullable="1" physicalName="percentual" precision="10" referenceCount="1" remarks="&gt;&gt;&gt; Do que se trata esse campo ???" scale="2" type="3" />
+    <column id="COL1524" populated="true" autoIncrement="false" autoIncrementSequenceName="adicional_comissao_adicioanl_comissao_id_seq" defaultValue="" name="adicioanl_comissao_id" nullable="0" physicalName="adicioanl_comissao_id" precision="8" primaryKeySeq="0" referenceCount="1" remarks="" scale="0" type="4" />
+    <column id="COL1525" populated="true" autoIncrement="false" autoIncrementSequenceName="adicional_comissao_codigo_produto_seq" defaultValue="" name="codigo_produto" nullable="0" physicalName="codigo_produto" precision="8" referenceCount="1" remarks="&gt;&gt;&gt; Chave estrangeira ???" scale="0" type="4" />
+    <column id="COL1526" populated="true" autoIncrement="false" autoIncrementSequenceName="adicional_comissao_mes_ano_seq" defaultValue="" name="mes_ano" nullable="0" physicalName="mes_ano" precision="7" referenceCount="1" remarks="" scale="0" type="12" />
+    <column id="COL1527" populated="true" autoIncrement="false" autoIncrementSequenceName="adicional_comissao_qtd_de_seq" defaultValue="" name="qtd_de" nullable="0" physicalName="qtd_de" precision="10" referenceCount="1" remarks="&gt;&gt;&gt; Ver com Batista do que se trata este campo." scale="0" type="4" />
+    <column id="COL1528" populated="true" autoIncrement="false" autoIncrementSequenceName="adicional_comissao_qtd_ate_seq" defaultValue="" name="qtd_ate" nullable="0" physicalName="qtd_ate" precision="10" referenceCount="1" remarks="" scale="0" type="4" />
+    <column id="COL1529" populated="true" autoIncrement="false" autoIncrementSequenceName="adicional_comissao_percentual_seq" defaultValue="" name="percentual" nullable="0" physicalName="percentual" precision="10" referenceCount="1" remarks="&gt;&gt;&gt; Do que se trata esse campo ???" scale="2" type="3" />
    </folder>
    <folder id="FOL1530" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3" >
    </folder>
@@ -2417,7 +2417,7 @@
  </target-database>
  <ddl-generator type="ca.sqlpower.architect.ddl.PostgresDDLGenerator" allow-connection="true" target-schema="public"> </ddl-generator>
  <create-kettle-job-settings filePath="" jobName="" schemaName="" kettleJoinType="0" savingToFile="true" />
- <play-pen zoom="0.9242472266244056" viewportX="0" viewportY="13" relationship-style="rectilinear" names-displayLogicalNames="true" showPrimaryTag="true" showForeignTag="true" showAlternateTag="true" columnVisibility="ALL" relationshipLabelVisibility="true">
+ <play-pen zoom="1.0" viewportX="2699" viewportY="1773" relationship-style="rectilinear" names-displayLogicalNames="true" showPrimaryTag="true" showForeignTag="true" showAlternateTag="true" columnVisibility="ALL" relationshipLabelVisibility="true">
   <table-pane table-ref="TAB1545" x="4030" y="2310" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
   <table-pane table-ref="TAB1" x="28" y="23" bgColor="0xf0f0f0" fgColor="0x000000" rounded="true" dashed="false"/>
   <table-pane table-ref="TAB33" x="359" y="188" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>

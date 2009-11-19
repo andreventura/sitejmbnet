@@ -4,16 +4,6 @@
  <print-settings printerName="LaserJet-1005" numCopies="1" zoom="0.47" pageNumbersPrinted="true" orientation="0" paperWidth="595.0" paperHeight="842.0" leftBorder="50.0" rightBorder="35.0" topBorder="35.0" bottomBorder="36.0" />
  <project-data-sources>
   <data-source id="DS0">
-   <property key="Connection Type" value="PostgreSQL" />
-   <property key="Logical" value="Jmbnetdb" />
-   <property key="JDBC URL" value="jdbc:postgresql://localhost:5432/jmbnetdb" />
-   <property key="UID" value="ventura" />
-   <property key="PWD" value="172349" />
-   <property key="ca.sqlpower.architect.etl.kettle.database" value="" />
-   <property key="ca.sqlpower.architect.etl.kettle.port" value="" />
-   <property key="ca.sqlpower.architect.etl.kettle.hostname" value="" />
-   <property key="ca.sqlpower.architect.etl.kettle.repos.login" value="" />
-   <property key="ca.sqlpower.architect.etl.kettle.repos.password" value="" />
   </data-source>
  </project-data-sources>
  <source-databases>
@@ -2425,7 +2415,7 @@
    <reference ref-id="REL1713" />
   </relationships>
  </target-database>
- <ddl-generator type="ca.sqlpower.architect.ddl.PostgresDDLGenerator" allow-connection="false" target-schema="public"> </ddl-generator>
+ <ddl-generator type="ca.sqlpower.architect.ddl.PostgresDDLGenerator" allow-connection="true" target-schema="public"> </ddl-generator>
  <create-kettle-job-settings filePath="" jobName="" schemaName="" kettleJoinType="0" savingToFile="true" />
  <play-pen zoom="0.9242472266244056" viewportX="0" viewportY="13" relationship-style="rectilinear" names-displayLogicalNames="true" showPrimaryTag="true" showForeignTag="true" showAlternateTag="true" columnVisibility="ALL" relationshipLabelVisibility="true">
   <table-pane table-ref="TAB1545" x="4030" y="2310" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
