@@ -1,0 +1,36 @@
+#geral {
+    width:1200px;
+    margin:0 auto;
+    border:1px solid black;
+}
+
+#cabecalho h1, #rodape h1 {
+    background:purple;
+    margin:0;
+    padding:15px;
+    font:bold 18px Verdana, Arial, tahoma, sans-serif;
+    color:#FFF;
+}
+
+#bloco_central {
+    width:1200px;
+    height:460px;
+}
+
+#menu_lateral {
+    float:left;
+    width:150px;
+    height:460px;
+    font:12px verdana, arial, tahoma, sans-serif;
+    background:green;
+}
+
+#conteudo {
+    float:left;
+    width:1050px;
+    height:460px;
+    background:gray;  
+}
+
+#rodape {clear:both;}
+

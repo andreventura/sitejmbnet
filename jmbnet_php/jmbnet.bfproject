@@ -1,0 +1,12 @@
+name: Jmbnet
+files: /home/ventura/Documents/php/jmbnet_php/jmbnet001.css
+files: /home/ventura/Documents/php/jmbnet_php/teste.html
+basedir: /home/ventura/Documents/php/jmbnet_php/
+webdir: 
+template: 
+word_wrap: 0
+savedir: /home/ventura/Documents/php/jmbnet_php
+view_html_toolbar: 1
+view_custom_menu: 1
+view_main_toolbar: 1
+view_left_panel: 1
