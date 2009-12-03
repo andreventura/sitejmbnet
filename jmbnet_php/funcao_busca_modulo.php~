@@ -8,6 +8,6 @@
     //criando a string com a versátil função php implode
     $string_array = implode(“|”, $result);
     echo $string_array;
-    return $stryng_array;
+    /*return $stryng_array;*/
 /*}*/
 ?>
