@@ -1,0 +1,96 @@
+#geral {
+    width:1200px;
+    margin:0 auto;
+    border:1px solid black;
+}
+
+#cabecalho h1, #rodape {
+    background:#A8D6ED;
+    margin:0;
+    padding:15px;
+    font:bold 18px Verdana, Arial, tahoma, sans-serif;
+    color:##000000;
+}
+
+#bloco_central {
+    width:1200px;
+    height:460px;
+}
+
+#menu_lateral {
+    float:left;
+    width:150px;
+    height:460px;
+    font:12px verdana, arial, tahoma, sans-serif;
+    background:#ffffff;
+}
+
+#conteudo {
+    float:left;
+    width:1053px;
+    height:460px;
+    background:#E5E5E5;  
+}
+/*
+#rodape {clear:both;}
+*/
+/* Menu lateral da tela principal */
+
+h1 {
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:16px;
+	font-weight:bold;
+	margin:0;
+	padding:0;
+	}
+
+hr {
+	border:none;
+	border-top:1px solid #CCCCCC;
+	height:1px;
+	margin-bottom:25px;
+	}
+/*
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	}
+*/
+/*
+img {
+	border: none;
+	}
+	*/
+#menu {
+   background:#A8D6ED;
+   float:left;
+	width: 145px;
+	height:460px;
+	margin: 0px;
+	border-style: solid solid none solid;
+	border-color: #D8D5D1;
+	border-size: 1px;
+	border-width: 1px;
+	}
+	
+#menu li a {
+	height: 32px;
+  	voice-family: "\"}\""; 
+  	voice-family: inherit;
+  	height: 24px;
+	text-decoration: none;
+	}	
+	
+#menu li a:link, #menu li a:visited {
+	color: #3688BA;
+	display: block;
+	background:  url(menu.gif);
+	padding: 8px 0 0 30px;
+	}
+
+#menu li a:hover {
+	color: #3688BA;
+	background:  url(menu.gif) 0 -32px;
+	padding: 8px 0 0 32px;
+	}
