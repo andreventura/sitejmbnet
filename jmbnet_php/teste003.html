@@ -9,22 +9,21 @@
 <body>
 <div id="geral"> 
     <div id="cabecalho">
-        <h1>Cabecalho</h1>
+        <h1></h1>
     </div>
     <div id="bloco_central">
         <!--  <div id="menu_lateral"> --> 
         <div id="menu">
             <?php include "funcao_busca_modulo.inc" ?>            
         </div>
-                
         <div id="conteudo">
-            <h1>Conteudo</h1>
-            <p>Atividades Exercidas: Atendimento receptivo e ativo aos clientes do Banco,
-            orientação referente a conta corrente , pagamentos através da conta , abertura
-            de reclamações, sugestões e elogios, transferências para outros setores do
-            Banco.
-            </p>
+            <form method="POST" action="login.php">
+                <center><p>Username: <input type="text" name="username" size="10"></p></center>
+                <center><p>Senha: <input type="password" name="senha"  size="10"></p></center>
+                <center><p><input type="submit" value="Login" name="login"></p></center>
+            </form>
         </div>
+        
     </div>
     <div id="rodape">
         <h1>Rodape</h1>

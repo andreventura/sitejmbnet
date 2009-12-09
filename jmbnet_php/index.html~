@@ -12,18 +12,14 @@
         <h1></h1>
     </div>
     <div id="bloco_central">
-        <!--  <div id="menu_lateral"> --> 
-        
-        <div id="conteudo">
+        <div id="conteudo_inicial">
             <form method="POST" action="login.php">
                 <center><p>Username: <input type="text" name="username" size="10"></p></center>
                 <center><p>Senha: <input type="password" name="senha"  size="10"></p></center>
                 <center><p><input type="submit" value="Login" name="login"></p></center>
             </form>
         </div>
-        <div id="menu">
-            <?php include "funcao_busca_modulo.inc" ?>            
-        </div>
+        
     </div>
     <div id="rodape">
         <h1>Rodape</h1>
