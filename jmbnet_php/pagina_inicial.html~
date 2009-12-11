@@ -14,7 +14,7 @@
     <div id="bloco_central">
         <!--  <div id="menu_lateral"> --> 
         <div id="menu">
-            <?php include "funcao_busca_modulo.inc" ?>            
+            <?php include "busca_modulo.inc" ?>            
         </div>
         <div id="conteudo">
         </div>
