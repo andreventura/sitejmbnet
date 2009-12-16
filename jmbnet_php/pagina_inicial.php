@@ -1,4 +1,4 @@
-<?php include "valida_cookies_pgsql.inc" ?> 
+<?php include "valida_cookies_pgsql.inc" ?>  
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
@@ -9,13 +9,13 @@
 </head>
 <body>
 <div id="geral"> 
-    <div id="cabecalho">
-        <h1></h1>
-    </div>
+    <?php include "div_cabecalho.inc"; ?>
     <div id="bloco_central">
         <!--  <div id="menu_lateral"> --> 
         <div id="menu">
-            <?php include "busca_modulo.inc" ?>            
+            <ul>
+                <?php include "busca_modulo.inc"; ?>
+            </ul>                          
         </div>
         <div id="conteudo">
         </div>

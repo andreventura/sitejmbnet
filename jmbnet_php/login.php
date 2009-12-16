@@ -1,5 +1,5 @@
 <?php
-// Obtem os dados digitados
+// Obtem os dados digitados para criar a sessao
 $username = $_POST["username"];
 $senha = $_POST["senha"];
 
@@ -18,10 +18,16 @@ else
 {
     if ($senha != pg_result($result,0,"senha")) // confere senha
     {   
+        /*
         echo "<html><body>";
 		  echo "<p align=\"center\">A senha está incorreta!</p>";
 		  echo "<p align=\"center\"><a href=\"login.html\">Voltar</a></p>";
 		  echo "</body></html>";
+		  */
+		  // echo "<script language=\"javascript\">alert(\"A senha está incorreta!\")</script>";
+		  include "index.html";
+        echo "<p align=\"center\">A senha está incorreta!</p>";
+        
     }   
     else // usuario e senha coretos. Criar cookies/sessao
     {

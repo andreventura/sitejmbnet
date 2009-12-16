@@ -13,7 +13,8 @@
         //$array[] = $row[0];
         if ($row_modulo[1] == 10)
         {
-            echo "<li><a href=\"index.html\" >$row_modulo[0]</a></li>\n";
+            // echo "<li><a href=\"index.html\" >$row_modulo[0]</a></li>\n";
+            echo "<li><a style=\"color:red\" href=\"logout.php\" >$row_modulo[0]</a></li>\n"; 
         }
         else
         {
@@ -26,8 +27,10 @@
             //}
         }        
     }  
+    /*
     session_start();
     echo "<li><a href=\"#\" >$_SESSION['nome_usuario']</a></li>\n";
     echo "<li><a href=\"#\" >$_SESSION['senha_usuario']</a></li>\n";
+    */
     pg_close($conexao);
 ?>

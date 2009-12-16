@@ -1,6 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<?php session_start(); ?>
+
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
 <head>
     <title>JMBNet</title>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
@@ -9,24 +10,27 @@
 
 <body>
 <div id="geral"> 
+    <?php include "div_cabecalho.inc"; ?>
+    <!-- 
     <div id="cabecalho">
-        <h1></h1>
+        <h1><?php include "data.inc" ?></h1>
     </div>
+     -->
     <div id="bloco_central">
         <div id="conteudo_inicial">
+            
             <form method="POST" action="login.php">
+                <select>
+                    <option>Empresa 1</option>
+                    <option>Empresa 2</option>
+                    <option>Empresa 3</option>
+                </select>
                 <center><p>Usuário: <input type="text" name="username" size="10"></p></center>
                 <center><p>Senha: <input type="password" name="senha"  size="10"></p></center>
-                <select>
-                    <option >Volvo</option>
-                    <option>Saab</option>
-                    <option>Mercedes</option>
-                    <option>Audi</option>
-                </select>
                 <center><p><input type="submit" value="Login" name="login"></p></center>
             </form>
+             
         </div>
-        
     </div>
     <div id="rodape">
         <h1>Rodape</h1>

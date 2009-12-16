@@ -1,0 +1,176 @@
+<html>
+  <head>
+        <title>Ficha Dados Perinatais</title>
+        <link href="css/estilos.css" rel="stylesheet" type="text/css" />        
+        
+        <!-- Início do Javascript -->
+        <script language="javascript">
+
+          //Início da função que valida os campos de preenchimento obrigatório do formulário.
+          function valida_campo()
+                {
+                  if (document.cadastrar.per_prontuario.value=="")
+                        {
+                          alert("O campo PRONTUÁRIO deve ser preenchido!!");
+                          document.cadastrar.per_prontuario.focus();
+                          return false;
+                        }
+                if (document.cadastrar.per_tipo_parto[0].checked!=true && document.cadastrar.per_tipo_parto[1].checked!=true)
+                   { 
+                          alert("Selecione uma das opções do campo TIPO DO PARTO!!");
+                          return false;
+                   }
+                if (document.cadastrar.per_tipo_parto[0].checked!=true && document.cadastrar.per_desc_cesareo.value=='')
+                  {
+                        alert("O campo DESCREVER PARTO CESÁRIO deve ser preenchido!!");
+                        document.cadastrar.per_desc_cesareo.focus();
+                        return false;
+                  }
+                if (document.cadastrar.per_fratura_nasc[0].checked!=true && document.cadastrar.per_fratura_nasc[1].checked!=true && document.cadastrar.per_fratura_nasc[2].checked!=true)
+                  { 
+                         alert("O campo FRATURA AO NASCIMENTO deve ser preenchido!!");
+                         return false;
+                  }
+                  return true;
+                }
+          //Fim da função.
+          
+[b]       //Início da função que alerta o não preenchimento de determinados campos.
+          function alerta_campo()
+                {
+                  if ((document.cadastrar.per_peso.value=='') || (document.cadastrar.per_comprimento.value=='') ||
+                          (document.cadastrar.per_perimetro_cefalico.value=='') || (document.cadastrar.per_apgar1=='') ||
+                          (document.cadastrar.per_apgar5==''))
+                        {
+                           return confirm("Atenção, alguns campos não foram preenchidos. Deseja continuar??");
+                        }
+                }
+          //Fim da função.[/b]    
+          //Início da função para impedir que letras e símbolos sejam digitados em campos execlusivamente numéricos.      
+          function somente_numeros(campo)
+                {
+                  var digits=".0123456789"
+                  var campo_temp 
+                  for (var i=0;i<campo.value.length;i++)
+                        {
+                          campo_temp=campo.value.substring(i,i+1)       
+                          if (digits.indexOf(campo_temp)==-1)
+                                {
+                                  campo.value = campo.value.substring(0,i);
+                                  break;
+                                }
+                        }
+                }
+          //Fim da função.
+
+          //Início das funções que habilitam ou desabilitam o campo descrição do parto cesáreo.
+          function exibe_desc_cesareo(opcao)
+                {
+                  document.cadastrar.per_desc_cesareo.disabled = false;
+                  document.cadastrar.per_desc_cesareo.focus();
+                }
+         function inibe_desc_cesareo(opcao)
+                {
+                  document.cadastrar.per_desc_cesareo.value='';
+                  document.cadastrar.per_desc_cesareo.disabled = true;
+                }
+          //Fim da função.
+          
+          //Início da função para impedir que letras e símbolos sejam digitados em campos execlusivamente numéricos.
+         
+        </script>
+        <!-- Fim do Javascript -->
+  
+  </head>
+  
+        <div align="center">
+        <table width="779" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+        <td>
+          <h1 align="center">Ficha Dados Perinatais</h1>
+          <center><font class="titulos_obs"><b>Data Atual do Sistema: <?=date("d/m/Y", time());?></b></font></center>
+        </td>
+        </tr>
+        <tr>
+        <td>
+        
+        <!-- Inicio do formulário -->
+        <form name="cadastrar" id="cadastrar" method="post" action="cad_perinatais.php" onsubmit="return valida_campo(); return false;">
+          <table width="700" border="0" align="center" cellpadding="2" cellspacing="2" class="titulos_campos">
+                <tr>
+                  <td colspan="2" align="center"><hr></td>
+                </tr>
+                <tr>
+                  <td width="343" align="right">Prontuário*:</td>
+                  <td width="343"><input type="text" name="per_prontuario" size="9" onkeyup="java script:somente_numeros(this);"></td>
+                </tr>
+                <tr>
+                  <td align="right">Tipo do Parto*:</td>
+                  <td class="titulos_opcoes">
+                        <input type="radio" name="per_tipo_parto" value="0" onclick="inibe_desc_cesareo(this)">Normal
+                        <input type="radio" name="per_tipo_parto" value="1" onclick="exibe_desc_cesareo(this)">Cesáreo
+                  </td>
+                </tr>
+                <tr>
+                  <td align="right">Descrever Parto Cesáreo*:</td>
+                  <td><input type="text" name="per_desc_cesareo" size="60" disabled="true"></td>
+                </tr>
+                <tr>
+                  <td align="right">Peso:</td>
+                  <td>
+                        <input type="text" name="per_peso" id='peso' size="3" maxlength="6" onkeyup="java script:somente_numeros(this);">
+                        <font class="titulos_ajudas">g</font>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="right">Comprimento:</td>
+                  <td>
+                        <input type="text" name="per_comprimento" size="3" maxlength="4" onkeyup="java script:somente_numeros(this);">
+                        <font class="titulos_ajudas">cm</font>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="right">Perímetro Cefálico:</td>
+                  <td>
+                        <input type="text" name="per_perimetro_cefalico" size="3" maxlength="4" onkeyup="java script:somente_numeros(this);">
+                        <font class="titulos_ajudas">cm</font>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="right">Apgar 1':</td>
+                  <td><input type="text" name="per_apgar1" size="3" maxlength="2" onkeyup="java script:somente_numeros(this);"></td>
+                </tr>
+                <tr>
+                  <td align="right">Apgar 5':</td>
+                  <td><input type="text" name="per_apgar5" size="3" maxlength="2" onkeyup="java script:somente_numeros(this);"></td>
+                </tr>
+                <tr>
+                  <td align="right">Fratura ao Nascimento*:</td>
+                  <td class="titulos_opcoes">
+                        <input type="radio" name="per_fratura_nasc" value="0">Sim
+                        <input type="radio" name="per_fratura_nasc" value="1">Não
+                        <input type="radio" name="per_fratura_nasc" value="2">Não Sabe
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2" align="center"><hr></td>
+                </tr>
+                <tr>
+                  <td align="center" colspan="2">
+                        <input type="submit" name="enviar" value="Enviar Dados" [b]onclick="alerta_campo()">[/b]
+                        <input type="reset" name="limpar" value="Limpar Dados">
+                  </td>
+                </tr>
+          </table>
+        </form>
+        <!-- Fim do formulário -->
+
+        <div align="center">
+          <a href="index.html" title="Voltar para Página Inicial">PÁGINA INICIAL</a>
+        </div>
+        </td>
+        </tr>
+        </table>
+        </div>
+  </body>
+</html>

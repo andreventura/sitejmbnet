@@ -16,13 +16,6 @@
     */
 }
 
-#cabecalho h1 {
-    text-align: right; 
-    font:bold 12px Verdana, Arial, tahoma, sans-serif;
-    padding-right:25px;
-    color:##000000;
-}
-
 #rodape h1 {
     background:#A8D6ED;
     margin:0;
@@ -109,16 +102,16 @@ img {
 	text-decoration: none;
 	}	
 
-#menu li a:link, li a:visited{
-	/* color: #BFBFBF; */
-	color: #3688BA; 	
+#menu li a:link, #menu li a:visited {
+	/*color: #BFBFBF;*/
+	color: #3688BA;	
 	display: block;
 	background:  url(menu.gif);
 	padding: 8px 0 0 30px;
 	}
 
 #menu li a:hover {
-   color: #3688BA; 
+	color: #3688BA;
 	background:  url(menu.gif) 0 -32px;
 	padding: 8px 0 0 32px;
 	}

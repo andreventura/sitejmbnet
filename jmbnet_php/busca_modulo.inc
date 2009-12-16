@@ -13,7 +13,8 @@
         //$array[] = $row[0];
         if ($row_modulo[1] == 10)
         {
-            echo "<li><a href=\"index.html\" >$row_modulo[0]</a></li>\n";
+            // echo "<li><a href=\"index.html\" >$row_modulo[0]</a></li>\n";
+            echo "<li><a style=\"color:#BFBFBF\" href=\"logout.php\" >$row_modulo[0]</a></li>\n"; 
         }
         else
         {

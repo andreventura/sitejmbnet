@@ -1,0 +1,4 @@
+<div id="rodape">
+        <h1>Rodape</h1>
+        <?php echo $mensagem; ?>
+</div>
