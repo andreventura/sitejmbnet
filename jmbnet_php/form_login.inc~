@@ -1,0 +1,18 @@
+<?php
+echo "\" <form method=\"POST\" action=\"\">";
+echo "  <select>";
+echo "    <option>Empresa 1</option>";
+echo "        <option>Empresa 2</option>";
+echo "        <option>Empresa 3</option>";
+echo "    </select>";
+echo "    <center><p>Usuário: <input id=\"username\" type=\"text\" name=\"username\" size=\"10\"></p></center>";
+echo "    <center><p>Senha: <input id=\"senha\" type=\"password\" name=\"senha\"  size=\"10\"></p></center>";
+echo "    <button type=\"button\" onclick=\"Processa();\">Enviar</button>";
+echo "    <hr>Msg:<input type=\"text\" id=\"resultado\" readonly=\"true\" size=\"60\"></input></hr>";
+echo " \" </form>";
+die();
+
+?>
+
+
+

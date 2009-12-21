@@ -4,6 +4,52 @@
 
 <head>
     <title>JMBNet</title>
+    <script>
+var ajax;
+
+function IniciaAjax(){
+	var ajax;
+	if(window.XMLHttpRequest){	  // Mozilla, Safari,...
+		ajax = new XMLHttpRequest();
+	} else if (window.ActiveXObject){	// IE
+		ajax = new ActiveXObject("Msxml2.XMLHTTP");
+		if (!ajax) {
+			ajax = new ActiveXObject("Microsoft.XMLHTTP");
+		}
+    } 
+	else {
+        alert("Seu navegador não possui suporte a essa aplicação!");
+	}
+	return ajax;
+}
+
+function Processa()
+{
+   ajax = IniciaAjax();
+	if(ajax)
+	{
+		ajax.onreadystatechange = function(){
+			if(ajax.readyState == 4) {
+				if(ajax.status == 200) {
+					document.getElementById("resultado").value = ajax.responseText;
+				} else {
+					alert(ajax.statusText);
+				}
+			}
+		}
+		
+		username = document.getElementById("username").value;
+		senha = document.getElementById("senha").value;
+		
+		// Monta a QueryString
+		dados = 'username='+username+"&senha="+senha;
+	
+		ajax.open('POST', 'login.php', true);
+		ajax.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+		ajax.send(dados);
+	}
+}
+</script>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
     <link rel="stylesheet" type="text/css" href="css/jmbnet002.css" />
 </head>
@@ -13,18 +59,20 @@
     <?php include "div_cabecalho.inc"; ?>
     <div id="bloco_central">
         <div id="conteudo_inicial">
-            
-            <form method="POST" action="login.php">
+            <form method="POST" action="">
                 <select>
                     <option>Empresa 1</option>
                     <option>Empresa 2</option>
                     <option>Empresa 3</option>
                 </select>
-                <center><p>Usuário: <input type="text" name="username" size="10"></p></center>
-                <center><p>Senha: <input type="password" name="senha"  size="10"></p></center>
+                <center><p>Usuário: <input id="username" type="text" name="username" size="10"></p></center>
+                <center><p>Senha: <input id="senha" type="password" name="senha"  size="10"></p></center>
+                <button type="button" onclick="Processa();">Enviar</button>
+                <hr>Msg:<input type="text" id="resultado" readonly="true" size="60"></input></hr>
+                <!-- 
                 <center><p><input type="submit" value="Login" name="login"></p></center>
+                 -->
             </form>
-             
         </div>
     </div>
     <div id="rodape">

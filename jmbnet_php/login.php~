@@ -9,25 +9,14 @@ $query = "SELECT * FROM usuario WHERE username='$username'";
 $result = pg_query($conexao,$query);
 if ($result==0) // testa se a consulta voltou alguma linha
 {
-    echo "<html><body>";
-	 echo "<p align=\"center\">Usuário não encontrado!$result</p>";
-	 echo "<p align=\"center\"><a href=\"login.html\">Voltar</a></p>";
-	 echo "</body></html>";
+ 	 echo "Usuário não encontrado!";
 }
 else
 {
     if ($senha != pg_result($result,0,"senha")) // confere senha
     {   
-        /*
-        echo "<html><body>";
-		  echo "<p align=\"center\">A senha está incorreta!</p>";
-		  echo "<p align=\"center\"><a href=\"login.html\">Voltar</a></p>";
-		  echo "</body></html>";
-		  */
-		  // echo "<script language=\"javascript\">alert(\"A senha está incorreta!\")</script>";
-		  echo "index.html";
-        echo "<p align=\"center\">A senha está incorreta!</p>";
-        
+        // echo "A senha está incorreta!";
+        Aviso(1);
     }   
     else // usuario e senha coretos. Criar cookies/sessao
     {
