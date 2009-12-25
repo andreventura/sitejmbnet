@@ -31,7 +31,7 @@ function iniciaRequisicao(tipo,url,bool){
 	ajax.onreadystatechange=trataResposta;
 	ajax.open(tipo,url,bool);
 	ajax.setRequestHeader("Content-Type", "application/x-www-form-urlencoded; charset=UTF-8");
-	// ajax.overrideMimeType("text/XML");   /* usado somente no Mozilla */
+	ajax.overrideMimeType("text/XML");   /* usado somente no Mozilla */
 	ajax.send(dadosUsuario);
 }
 

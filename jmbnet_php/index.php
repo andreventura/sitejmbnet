@@ -16,9 +16,7 @@
     <?php include "div_cabecalho.inc"; ?>
     <div id="bloco_central">
         <div id="menu"></div>
-        <div id="conteudo">
-        </div>
-        
+        <div id="conteudo"></div>
     </div>
     <div id="rodape">
         <span id="avisos" ></span>

@@ -58,6 +58,11 @@
     background:#E5E5E5;  
 }
 
+.erro {
+	font-size: 14pt;
+	color:#FF0000;
+}
+
 /*
 #rodape {clear:both;}
 */

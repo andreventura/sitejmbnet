@@ -31,7 +31,7 @@ function iniciaRequisicao(tipo,url,bool){
 	ajax.onreadystatechange=trataResposta;
 	ajax.open(tipo,url,bool);
 	ajax.setRequestHeader("Content-Type", "application/x-www-form-urlencoded; charset=UTF-8");
-	// ajax.overrideMimeType("text/XML");   /* usado somente no Mozilla */
+	ajax.overrideMimeType("text/XML");   /* usado somente no Mozilla */
 	ajax.send(dadosUsuario);
 }
 
@@ -62,7 +62,7 @@ function trataResposta(){
 	if(ajax.readyState == 4){
 		if(ajax.status == 200){
 		   //alert("criar essa função no seu programa");
-		   trataDados();  // criar essa função no seu programa
+		   trataDados(1);  // criar essa função no seu programa
 		} else {
 			alert("Problema na comunicação com o objeto XMLHttpRequest.");
 		}

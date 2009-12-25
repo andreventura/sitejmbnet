@@ -17,8 +17,7 @@
 }
 
 #cabecalho h1 {
-    text-align: right;
-    /* background:#A8D6ED; */
+    text-align: right; 
     font:bold 12px Verdana, Arial, tahoma, sans-serif;
     padding-right:25px;
     color:##000000;
@@ -57,6 +56,11 @@
     width:1053px;
     height:460px;
     background:#E5E5E5;  
+}
+
+.erro {
+	font-size: 30pt;
+	color:#FF0000;
 }
 
 /*
