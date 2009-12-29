@@ -62,7 +62,8 @@ function trataResposta(){
 	if(ajax.readyState == 4){
 		if(ajax.status == 200){
 		   //alert("criar essa função no seu programa");
-		   trataDados();  // criar essa função no seu programa
+		   var wNomeDaDiv = "bloco_central"; 
+		   trataDados(wNomeDaDiv);  // criar essa função no seu programa
 		} else {
 			alert("Problema na comunicação com o objeto XMLHttpRequest.");
 		}

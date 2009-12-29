@@ -1,11 +1,9 @@
 // exibe a resposta do servidor
-
-function trataDados(){
+function trataDados(wNomeDaDiv){
 	var info = ajax.responseText;
-	var saida = document.getElementById("conteudo");
+	var saida = document.getElementById(wNomeDaDiv);
 	saida.innerHTML = info;
 }
-
 
 function CarregaFormLogin(){
     var secao = "carregaFormLogin";
@@ -13,7 +11,6 @@ function CarregaFormLogin(){
     var url="jmbnet.php?"+secao+"="+encodeURIComponent(parametro);
     requisicaoHTTP("GET",url,true);
 }
-
 
 // exibe ou oculta a mensagem de espera
 function Aviso(exibir) {

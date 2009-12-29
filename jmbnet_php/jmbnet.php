@@ -13,7 +13,7 @@ if(isset($_GET["inicio"]) || isset($_GET["busca"]) || isset($_GET["categoria"]))
 elseif(isset($_GET["carregaFormLogin"]))	// carrega formulario de login 
 
  	include "form_login.php";
- 	
+	
 elseif(isset($_GET["novoUsuario"]))	// criação de novo usuário
 
 	include "novoUsuario.php";

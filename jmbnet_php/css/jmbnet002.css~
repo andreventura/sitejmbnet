@@ -34,6 +34,7 @@
 #bloco_central {
     width:1200px;
     height:460px;
+    background:#E5E5E5;  
 }
 
 #menu_lateral {
@@ -59,8 +60,10 @@
 }
 
 .erro {
-	font-size: 30pt;
+	font-size: 14pt;
 	color:#FF0000;
+	margin:0;
+
 }
 
 /*

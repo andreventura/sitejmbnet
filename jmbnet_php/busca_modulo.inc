@@ -2,35 +2,48 @@
     include "conecta_postgresql.inc";
     $query_modulo = "SELECT nome_modulo,codigo_modulo_id FROM modulo";
     $result_modulo = pg_query($conexao,$query_modulo);
-          
+    
     if (!$result_modulo) {
-      echo "An error occured.\n";
+      echo "Erro ao tentar selecionar a tabela modulo.\n";
       exit;
     }  
     
-    while ($row_modulo = pg_fetch_row($result_modulo)) {
-        // echo "<br />\n";
-        //$array[] = $row[0];
-        if ($row_modulo[1] == 10)
-        {
-            // echo "<li><a href=\"index.html\" >$row_modulo[0]</a></li>\n";
-            echo "<li><a style=\"color:#BFBFBF\" href=\"logout.php\" >$row_modulo[0]</a></li>\n"; 
+    $num_rows = pg_num_rows($result_modulo);
+
+    for($i=0;$i<$num_rows;$i++){
+        $r = pg_fetch_row($result_modulo, $i);
+        switch($r[0]){
+            case "Compras":
+                echo "<li><a href=\"#\" >$r[0]</a></li>\n";
+                break;
+            case "Finaceiro":
+                echo "<li><a style=\"color:#BFBFBF\" href=\"#\" >$r[0]</a></li>\n";
+                break;
+            case "Vendas":
+                echo "<li><a href=\"#\" >$r[0]</a></li>\n";
+                break;
+            case "Estoque":
+                echo "<li><a href=\"#\" >$r[0]</a></li>\n";
+                break;
+            case "Custos":
+                echo "<li><a href=\"#\" >$r[0]</a></li>\n";
+                break;
+            case "Contabil":
+                echo "<li><a href=\"#\" >$r[0]</a></li>\n";
+                break;
+            case "Fretes":
+                echo "<li><a href=\"#\" >$r[0]</a></li>\n";
+                break;
+            case "Gerencial":
+                echo "<li><a href=\"#\" >$r[0]</a></li>\n";
+                break;
+            case "Configuração":
+                echo "<li><a href=\"#\" >$r[0]</a></li>\n";
+                break;
+            case "Logout":
+                echo "<li><a style=\"color:#BFBFBF\" href=\"logout.php\" >$r[0]</a></li>\n";
+                break;
         }
-        else
-        {
-            echo "<li><a href=\"#\" >$row_modulo[0]</a></li>\n";
-            // Busca opcoes para cada modulo
-            // $query_opcao_menu = "SELECT om.nome_opcao,om.codigo_opcao_menu_id FROM opcao_menu om WHERE om.codigo_modulo_id =$row_modulo[1]";
-            // $result_opcao_menu = pg_query($conexao,$query_opcao_menu);
-            // while ($row_opcao_menu = pg_fetch_row($result_opcao_menu)) {
-            //       echo "<ol><a href=\"#\">$row_opcao_menu[0]</a></ol>\n";
-            //}
-        }        
-    }  
-    /*
-    session_start();
-    echo "<li><a href=\"#\" >$_SESSION['nome_usuario']</a></li>\n";
-    echo "<li><a href=\"#\" >$_SESSION['senha_usuario']</a></li>\n";
-    */
+    }   
     pg_close($conexao);
 ?>
