@@ -1,4 +1,5 @@
 <?php
+$info = "";
 if(isset($_POST["username1"]) && isset($_POST["senha1"])) {
     // Obtem os dados digitados para criar a sessao
     $username = $_POST["username1"];
@@ -11,7 +12,9 @@ if(isset($_POST["username1"]) && isset($_POST["senha1"])) {
     // testa se a consulta voltou alguma linha
     // if ($result==0){
     if ($num_rows==0){
-        echo "<center><p class=\"erro\">Usuário não encontrado!</p></center>";
+        // echo "<center><p class=\"erro\">Usuário não encontrado!</p></center>";
+        echo "var newElement = document.createElement('hr');";
+        echo "document.getElementById('bloco_central').appendChild(newElement);";
     }else{
         // confere senha 
         if($senha != pg_result($result,0,"senha")){   
@@ -35,9 +38,7 @@ if(isset($_POST["username1"]) && isset($_POST["senha1"])) {
 <form id="formAjax" action="javascript:void%200" onSubmit="enviaDados('form_login.php'); return false;" >
 <!-- <form method="POST" action="login.php"> -->
 <!-- <form >  -->
-    	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp; &nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;  	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;
-  	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;
-  	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;
+   &nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;
   <center><select>
     <option>Empresa 1</option>
         <option>Empresa 2</option>
@@ -47,3 +48,4 @@ if(isset($_POST["username1"]) && isset($_POST["senha1"])) {
     <center><p>Senha: <input id="senha1" type="password" name="senha1"  size="10"></p></center>
     <center><p><input type="submit" value="Login" name="login"></p></center>
 </form>
+

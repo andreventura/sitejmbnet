@@ -1,4 +1,5 @@
 <?php
+$info = "";
 if(isset($_POST["username1"]) && isset($_POST["senha1"])) {
     // Obtem os dados digitados para criar a sessao
     $username = $_POST["username1"];
@@ -45,3 +46,4 @@ if(isset($_POST["username1"]) && isset($_POST["senha1"])) {
     <center><p>Senha: <input id="senha1" type="password" name="senha1"  size="10"></p></center>
     <center><p><input type="submit" value="Login" name="login"></p></center>
 </form>
+

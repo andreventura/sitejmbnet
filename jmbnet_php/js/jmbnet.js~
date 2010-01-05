@@ -1,7 +1,16 @@
 // exibe a resposta do servidor
+/*
 function trataDados(wNomeDaDiv){
 	var info = ajax.responseText;
 	var saida = document.getElementById(wNomeDaDiv);
+	saida.innerHTML = info;
+}
+*/
+
+function trataDados(wNomeDaDiv){
+	var info = ajax.responseText;
+	var newElement = document.createElement("hr");
+	var saida = document.getElementById(wNomeDaDiv).appendChild(newElement);
 	saida.innerHTML = info;
 }
 

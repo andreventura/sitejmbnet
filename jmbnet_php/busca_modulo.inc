@@ -12,11 +12,12 @@
 
     for($i=0;$i<$num_rows;$i++){
         $r = pg_fetch_row($result_modulo, $i);
+        // O estilo deverá ser controlado pelo login do usuario.
         switch($r[0]){
             case "Compras":
                 echo "<li><a href=\"#\" >$r[0]</a></li>\n";
                 break;
-            case "Finaceiro":
+            case "Financeiro":
                 echo "<li><a style=\"color:#BFBFBF\" href=\"#\" >$r[0]</a></li>\n";
                 break;
             case "Vendas":
@@ -26,13 +27,13 @@
                 echo "<li><a href=\"#\" >$r[0]</a></li>\n";
                 break;
             case "Custos":
-                echo "<li><a href=\"#\" >$r[0]</a></li>\n";
+                echo "<li><a style=\"color:#BFBFBF\" href=\"#\" >$r[0]</a></li>\n";
                 break;
             case "Contabil":
                 echo "<li><a href=\"#\" >$r[0]</a></li>\n";
                 break;
             case "Fretes":
-                echo "<li><a href=\"#\" >$r[0]</a></li>\n";
+                echo "<li><a style=\"color:#BFBFBF\" href=\"#\" >$r[0]</a></li>\n";
                 break;
             case "Gerencial":
                 echo "<li><a href=\"#\" >$r[0]</a></li>\n";
@@ -41,7 +42,7 @@
                 echo "<li><a href=\"#\" >$r[0]</a></li>\n";
                 break;
             case "Logout":
-                echo "<li><a style=\"color:#BFBFBF\" href=\"logout.php\" >$r[0]</a></li>\n";
+                echo "<li><a href=\"logout.php\" >$r[0]</a></li>\n";
                 break;
         }
     }   
