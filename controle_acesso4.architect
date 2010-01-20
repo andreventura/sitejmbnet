@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<architect-project version="1.0" appversion="0.9.13">
+ <project-name>controle_acesso4</project-name>
+ <print-settings numCopies="1" zoom="1.0" pageNumbersPrinted="true" orientation="1" paperWidth="612.0" paperHeight="792.0" leftBorder="50.0" rightBorder="50.0" topBorder="50.0" bottomBorder="50.0" />
+ <project-data-sources>
+  <data-source id="DS0">
+  </data-source>
+  <data-source id="DS2">
+   <property key="Connection Type" value="PostgreSQL" />
+   <property key="Logical" value="New Connection" />
+   <property key="JDBC URL" value="jdbc:postgresql://localhost:5432/jmbnetdb" />
+   <property key="UID" value="ventura" />
+   <property key="PWD" value="172349" />
+   <property key="ca.sqlpower.architect.etl.kettle.database" value="" />
+   <property key="ca.sqlpower.architect.etl.kettle.port" value="" />
+   <property key="ca.sqlpower.architect.etl.kettle.hostname" value="" />
+   <property key="ca.sqlpower.architect.etl.kettle.repos.login" value="" />
+   <property key="ca.sqlpower.architect.etl.kettle.repos.password" value="" />
+  </data-source>
+  <data-source id="DS4">
+   <property key="Connection Type" value="PostgreSQL" />
+   <property key="Logical" value="testedb" />
+   <property key="JDBC URL" value="jdbc:postgresql://localhost:5432/testedb" />
+   <property key="UID" value="ventura" />
+   <property key="PWD" value="172349av" />
+   <property key="ca.sqlpower.architect.etl.kettle.database" value="" />
+   <property key="ca.sqlpower.architect.etl.kettle.port" value="" />
+   <property key="ca.sqlpower.architect.etl.kettle.hostname" value="" />
+   <property key="ca.sqlpower.architect.etl.kettle.repos.login" value="" />
+   <property key="ca.sqlpower.architect.etl.kettle.repos.password" value="" />
+  </data-source>
+ </project-data-sources>
+ <source-databases>
+  <database id="DB0" populated="true" dbcs-ref="DS2" name="New Connection" physicalName="New Connection" sql-exception="Couldn&apos;t connect to database: FATAL: password authentication failed for user &quot;ventura&quot;" >
+   <relationships>
+   </relationships>
+  </database>
+  <database id="DB1" populated="true" dbcs-ref="DS4" name="testedb" physicalName="testedb" >
+   <catalog id="CAT2" populated="true" name="testedb" nativeTerm="database" physicalName="testedb" >
+    <schema id="SCH3" populated="true" name="information_schema" nativeTerm="schema" physicalName="information_schema" >
+    </schema>
+    <schema id="SCH4" populated="true" name="pg_catalog" nativeTerm="schema" physicalName="pg_catalog" >
+    </schema>
+    <schema id="SCH5" populated="true" name="pg_toast_temp_1" nativeTerm="schema" physicalName="pg_toast_temp_1" >
+    </schema>
+    <schema id="SCH6" populated="true" name="public" nativeTerm="schema" physicalName="public" >
+    </schema>
+   </catalog>
+   <relationships>
+   </relationships>
+  </database>
+ </source-databases>
+ <target-database id="ppdb" dbcs-ref="DS0">
+  <table id="TAB8" populated="true" name="usuario" objectType="TABLE" physicalName="usuario" remarks="" >
+   <folder id="FOL9" populated="true" name="Columns" physicalName="Columns" type="1" >
+    <column id="COL10" populated="true" autoIncrement="true" autoIncrementSequenceName="usuario_usuario_id_seq" defaultValue="" name="usuario_id" nullable="0" physicalName="usuario_id" precision="8" primaryKeySeq="0" referenceCount="1" remarks="" scale="0" type="4" />
+    <column id="COL11" populated="true" autoIncrement="false" autoIncrementSequenceName="usuario_nome_usuario_seq" defaultValue="" name="nome_usuario" nullable="1" physicalName="nome_usuario" precision="30" referenceCount="1" remarks="" scale="0" type="12" />
+    <column id="COL12" populated="true" autoIncrement="false" autoIncrementSequenceName="usuario_login_seq" defaultValue="" name="login" nullable="0" physicalName="login" precision="20" referenceCount="1" remarks="" scale="0" type="12" />
+    <column id="COL13" populated="true" autoIncrement="false" autoIncrementSequenceName="usuario_senha_seq" defaultValue="" name="senha" nullable="0" physicalName="senha" precision="20" referenceCount="1" remarks="" scale="0" type="12" />
+    <column id="COL14" populated="true" autoIncrement="false" autoIncrementSequenceName="usuario_dt_cadastro_seq" defaultValue="" name="dt_cadastro" nullable="1" physicalName="dt_cadastro" precision="20" referenceCount="1" remarks="" scale="0" type="93" />
+    <column id="COL15" populated="true" autoIncrement="false" autoIncrementSequenceName="usuario_dt_limite_seq" defaultValue="" name="dt_limite" nullable="1" physicalName="dt_limite" precision="20" referenceCount="1" remarks="" scale="0" type="93" />
+    <column id="COL16" populated="true" autoIncrement="false" autoIncrementSequenceName="usuario_status_usuario_seq" defaultValue="" name="status_usuario" nullable="1" physicalName="status_usuario" precision="1" referenceCount="1" remarks="" scale="0" type="16" />
+   </folder>
+   <folder id="FOL17" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3" >
+   </folder>
+   <folder id="FOL18" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2" >
+   </folder>
+   <folder id="FOL19" populated="true" name="Indices" physicalName="Indices" type="4" >
+    <index id="IDX20" populated="true" clustered="false" name="usuario_pk" physicalName="usuario_pk" primaryKeyIndex="true" unique="true" >
+     <index-column id="IDC21" populated="true" ascendingOrDescending="UNSPECIFIED" column-ref="COL10" name="usuario_id" physicalName="usuario_id" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB22" populated="true" name="modulo" objectType="TABLE" physicalName="modulo" remarks="Ex: Compra, Venda, Financeiro, Estoque etc." >
+   <folder id="FOL23" populated="true" name="Columns" physicalName="Columns" type="1" >
+    <column id="COL24" populated="true" autoIncrement="true" autoIncrementSequenceName="modulo_modulo_id_seq" defaultValue="" name="modulo_id" nullable="0" physicalName="modulo_id" precision="8" primaryKeySeq="0" referenceCount="1" remarks="" scale="0" type="4" />
+    <column id="COL25" populated="true" autoIncrement="false" autoIncrementSequenceName="modulo_nome_modulo_seq" defaultValue="" name="nome_modulo" nullable="0" physicalName="nome_modulo" precision="15" referenceCount="1" remarks="" scale="0" type="12" />
+    <column id="COL26" populated="true" autoIncrement="false" autoIncrementSequenceName="modulo_descricao_seq" defaultValue="" name="descricao" nullable="0" physicalName="descricao" precision="50" referenceCount="1" remarks="" scale="0" type="12" />
+   </folder>
+   <folder id="FOL27" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3" >
+   </folder>
+   <folder id="FOL28" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2" >
+   </folder>
+   <folder id="FOL29" populated="true" name="Indices" physicalName="Indices" type="4" >
+    <index id="IDX30" populated="true" clustered="false" name="modulo_pk" physicalName="modulo_pk" primaryKeyIndex="true" unique="true" >
+     <index-column id="IDC31" populated="true" ascendingOrDescending="UNSPECIFIED" column-ref="COL24" name="modulo_id" physicalName="codigo_modulo_id" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB32" populated="true" name="grupo" objectType="TABLE" physicalName="grupo" remarks="Ex: Administrador, Consultor, Digitador, Diretor, Comprador, Faturista, Metalurgico  etc   " >
+   <folder id="FOL33" populated="true" name="Columns" physicalName="Columns" type="1" >
+    <column id="COL34" populated="true" autoIncrement="true" autoIncrementSequenceName="grupo_id_grupo_seq" defaultValue="" name="grupo_id" nullable="0" physicalName="grupo_id" precision="8" primaryKeySeq="0" referenceCount="1" remarks="" scale="0" type="4" />
+    <column id="COL35" populated="true" autoIncrement="false" autoIncrementSequenceName="modulo_nome_grupo_seq" defaultValue="" name="nome_grupo" nullable="0" physicalName="nome_grupo" precision="15" referenceCount="1" remarks="" scale="0" type="12" />
+    <column id="COL36" populated="true" autoIncrement="false" autoIncrementSequenceName="grupo_descricao_seq" defaultValue="" name="descricao" nullable="0" physicalName="descricao" precision="20" referenceCount="1" remarks="Ex: Admin, Consultor, Digitador, Diretor, Comprador, Faturista, Metalurgico  etc" scale="0" type="12" />
+   </folder>
+   <folder id="FOL37" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3" >
+   </folder>
+   <folder id="FOL38" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2" >
+   </folder>
+   <folder id="FOL39" populated="true" name="Indices" physicalName="Indices" type="4" >
+    <index id="IDX40" populated="true" clustered="false" name="grupo_pk" physicalName="grupo_usuario_pk" primaryKeyIndex="true" unique="true" >
+     <index-column id="IDC41" populated="true" ascendingOrDescending="UNSPECIFIED" column-ref="COL34" name="grupo_id" physicalName="grupo_usuario_id" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB42" populated="true" name="opcao_menu" objectType="TABLE" physicalName="opcao_menu" remarks="Ex: Cadastro, Consulta, Relatorio etc." >
+   <folder id="FOL43" populated="true" name="Columns" physicalName="Columns" type="1" >
+    <column id="COL44" populated="true" autoIncrement="true" autoIncrementSequenceName="opcao_menu_opcao_menu_id_seq" defaultValue="" name="opcao_menu_id" nullable="0" physicalName="opcao_menu_id" precision="8" primaryKeySeq="0" referenceCount="1" remarks="" scale="0" type="4" />
+    <column id="COL45" populated="true" autoIncrement="false" autoIncrementSequenceName="permissao_permissao_id_seq" defaultValue="" name="permissao_id" nullable="0" physicalName="permissao_id" precision="8" primaryKeySeq="1" referenceCount="1" remarks="" scale="0" type="4" />
+    <column id="COL46" populated="true" autoIncrement="false" autoIncrementSequenceName="modulo_modulo_id_seq" defaultValue="" name="modulo_id" nullable="0" physicalName="modulo_id" precision="8" primaryKeySeq="2" referenceCount="1" remarks="" scale="0" type="4" />
+    <column id="COL47" populated="true" autoIncrement="false" autoIncrementSequenceName="modulo_nome_opcao_menu_seq" defaultValue="" name="nome_opcao_menu" nullable="0" physicalName="nome_opcao_menu" precision="15" referenceCount="1" remarks="" scale="0" type="12" />
+    <column id="COL48" populated="true" autoIncrement="false" autoIncrementSequenceName="opcao_menu_descricao_seq" defaultValue="" name="descricao" nullable="0" physicalName="descricao" precision="50" referenceCount="1" remarks="" scale="0" type="12" />
+   </folder>
+   <folder id="FOL49" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3" >
+   </folder>
+   <folder id="FOL50" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2" >
+   </folder>
+   <folder id="FOL51" populated="true" name="Indices" physicalName="Indices" type="4" >
+    <index id="IDX52" populated="true" clustered="false" name="opcao_menu_pk" physicalName="opcao_menu_pk" primaryKeyIndex="true" unique="true" >
+     <index-column id="IDC53" populated="true" ascendingOrDescending="UNSPECIFIED" column-ref="COL44" name="opcao_menu_id" physicalName="opcao_menu_id" />
+     <index-column id="IDC54" populated="true" ascendingOrDescending="UNSPECIFIED" column-ref="COL45" name="permissao_id" physicalName="permissao_id" />
+     <index-column id="IDC55" populated="true" ascendingOrDescending="UNSPECIFIED" column-ref="COL46" name="modulo_id" physicalName="modulo_id" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB56" populated="true" name="usuario_empresa" objectType="TABLE" physicalName="usuario_empresa" remarks="" >
+   <folder id="FOL57" populated="true" name="Columns" physicalName="Columns" type="1" >
+    <column id="COL58" populated="true" autoIncrement="false" autoIncrementSequenceName="usuario_usuario_id_seq" defaultValue="" name="usuario_id" nullable="0" physicalName="usuario_id" precision="8" primaryKeySeq="0" referenceCount="1" remarks="" scale="0" type="4" />
+    <column id="COL59" populated="true" autoIncrement="false" autoIncrementSequenceName="empresa_codigo_empresa_seq" defaultValue="" name="codigo_empresa" nullable="0" physicalName="codigo_empresa" precision="8" primaryKeySeq="1" referenceCount="1" remarks="" scale="0" type="4" />
+   </folder>
+   <folder id="FOL60" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3" >
+   </folder>
+   <folder id="FOL61" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2" >
+   </folder>
+   <folder id="FOL62" populated="true" name="Indices" physicalName="Indices" type="4" >
+    <index id="IDX63" populated="true" clustered="false" name="usuario_empresa_pk" physicalName="usuario_empresa_pk" primaryKeyIndex="true" unique="true" >
+     <index-column id="IDC64" populated="true" ascendingOrDescending="UNSPECIFIED" column-ref="COL58" name="usuario_id" physicalName="usuario_id" />
+     <index-column id="IDC65" populated="true" ascendingOrDescending="UNSPECIFIED" column-ref="COL59" name="codigo_empresa" physicalName="codigo_empresa" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB66" populated="true" name="permissao" objectType="TABLE" physicalName="permissao" remarks="Ex: Lê, escreve, nada, tudo ect." >
+   <folder id="FOL67" populated="true" name="Columns" physicalName="Columns" type="1" >
+    <column id="COL68" populated="true" autoIncrement="true" autoIncrementSequenceName="permissao_permissao_id_seq" defaultValue="" name="permissao_id" nullable="0" physicalName="permissao_id" precision="8" primaryKeySeq="0" referenceCount="1" remarks="" scale="0" type="4" />
+    <column id="COL69" populated="true" autoIncrement="false" autoIncrementSequenceName="permissao_permite_seq" defaultValue="" name="permite" nullable="0" physicalName="permite" precision="1" referenceCount="1" remarks="" scale="0" type="16" />
+   </folder>
+   <folder id="FOL70" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3" >
+   </folder>
+   <folder id="FOL71" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2" >
+   </folder>
+   <folder id="FOL72" populated="true" name="Indices" physicalName="Indices" type="4" >
+    <index id="IDX73" populated="true" clustered="false" name="permissao_pk" physicalName="permissao_pk" primaryKeyIndex="true" unique="true" >
+     <index-column id="IDC74" populated="true" ascendingOrDescending="UNSPECIFIED" column-ref="COL68" name="permissao_id" physicalName="permissao_id" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB75" populated="true" name="empresa" objectType="TABLE" physicalName="empresa" remarks="Tabela externa." >
+   <folder id="FOL76" populated="true" name="Columns" physicalName="Columns" type="1" >
+    <column id="COL77" populated="true" autoIncrement="false" autoIncrementSequenceName="empresa_codigo_empresa_seq" defaultValue="" name="codigo_empresa" nullable="0" physicalName="codigo_empresa" precision="8" primaryKeySeq="0" referenceCount="1" remarks="" scale="0" type="4" />
+   </folder>
+   <folder id="FOL78" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3" >
+   </folder>
+   <folder id="FOL79" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2" >
+   </folder>
+   <folder id="FOL80" populated="true" name="Indices" physicalName="Indices" type="4" >
+    <index id="IDX81" populated="true" clustered="false" name="empresa_pk" physicalName="empresa_pk" primaryKeyIndex="true" unique="true" >
+     <index-column id="IDC82" populated="true" ascendingOrDescending="UNSPECIFIED" column-ref="COL77" name="codigo_empresa" physicalName="codigo_empresa" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB83" populated="true" name="usuario_grupo" objectType="TABLE" physicalName="usuario_grupo" remarks="" >
+   <folder id="FOL84" populated="true" name="Columns" physicalName="Columns" type="1" >
+    <column id="COL85" populated="true" autoIncrement="false" autoIncrementSequenceName="empresa_codigo_empresa_seq" defaultValue="" name="codigo_empresa" nullable="0" physicalName="codigo_empresa" precision="8" primaryKeySeq="0" referenceCount="1" remarks="" scale="0" type="4" />
+    <column id="COL86" populated="true" autoIncrement="false" autoIncrementSequenceName="usuario_usuario_id_seq" defaultValue="" name="usuario_id" nullable="0" physicalName="usuario_id" precision="8" primaryKeySeq="1" referenceCount="1" remarks="" scale="0" type="4" />
+    <column id="COL87" populated="true" autoIncrement="false" autoIncrementSequenceName="grupo_id_grupo_seq" defaultValue="" name="grupo_id" nullable="0" physicalName="grupo_usuario_id" precision="8" primaryKeySeq="2" referenceCount="1" remarks="" scale="0" type="4" />
+   </folder>
+   <folder id="FOL88" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3" >
+   </folder>
+   <folder id="FOL89" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2" >
+   </folder>
+   <folder id="FOL90" populated="true" name="Indices" physicalName="Indices" type="4" >
+    <index id="IDX91" populated="true" clustered="false" name="usuario_grupo_pk" physicalName="usuario_grupo_pk" primaryKeyIndex="true" unique="true" >
+     <index-column id="IDC92" populated="true" ascendingOrDescending="UNSPECIFIED" column-ref="COL85" name="codigo_empresa" physicalName="codigo_empresa" />
+     <index-column id="IDC93" populated="true" ascendingOrDescending="UNSPECIFIED" column-ref="COL86" name="usuario_id" physicalName="usuario_id" />
+     <index-column id="IDC94" populated="true" ascendingOrDescending="UNSPECIFIED" column-ref="COL87" name="grupo_id" physicalName="grupo_id" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB95" populated="true" name="grupo_modulo" objectType="TABLE" physicalName="grupo_modulo" remarks="" >
+   <folder id="FOL96" populated="true" name="Columns" physicalName="Columns" type="1" >
+    <column id="COL97" populated="true" autoIncrement="false" autoIncrementSequenceName="grupo_id_grupo_seq" defaultValue="" name="grupo_id" nullable="0" physicalName="grupo_id" precision="8" primaryKeySeq="0" referenceCount="1" remarks="" scale="0" type="4" />
+    <column id="COL98" populated="true" autoIncrement="false" autoIncrementSequenceName="modulo_modulo_id_seq" defaultValue="" name="modulo_id" nullable="0" physicalName="modulo_id" precision="8" primaryKeySeq="1" referenceCount="1" remarks="" scale="0" type="4" />
+   </folder>
+   <folder id="FOL99" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3" >
+   </folder>
+   <folder id="FOL100" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2" >
+   </folder>
+   <folder id="FOL101" populated="true" name="Indices" physicalName="Indices" type="4" >
+    <index id="IDX102" populated="true" clustered="false" name="grupo_modulo_pk" physicalName="grupo_modulo_pk" primaryKeyIndex="true" unique="true" >
+     <index-column id="IDC103" populated="true" ascendingOrDescending="UNSPECIFIED" column-ref="COL97" name="grupo_id" physicalName="grupo_id" />
+     <index-column id="IDC104" populated="true" ascendingOrDescending="UNSPECIFIED" column-ref="COL98" name="modulo_id" physicalName="modulo_id" />
+    </index>
+   </folder>
+  </table>
+  <relationships>
+   <relationship id="REL105" populated="true" deferrability="7" deleteRule="3" fk-table-ref="TAB56" fkCardinality="7" identifying="true" name="usuario_usuario_empresa_fk" physicalName="usuario_usuario_empresa_fk" pk-table-ref="TAB8" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP106" populated="true" fk-column-ref="COL58" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL10" />
+   </relationship>
+   <relationship id="REL107" populated="true" deferrability="7" deleteRule="3" fk-table-ref="TAB42" fkCardinality="7" identifying="false" name="modulo_opcao_menu_fk" physicalName="modulo_opcao_menu_fk" pk-table-ref="TAB22" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP108" populated="true" fk-column-ref="COL46" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL24" />
+   </relationship>
+   <relationship id="REL109" populated="true" deferrability="7" deleteRule="3" fk-table-ref="TAB95" fkCardinality="7" identifying="true" name="modulo_grupo_modulo_fk" physicalName="modulo_grupo_modulo_fk" pk-table-ref="TAB22" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP110" populated="true" fk-column-ref="COL98" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL24" />
+   </relationship>
+   <relationship id="REL111" populated="true" deferrability="7" deleteRule="3" fk-table-ref="TAB83" fkCardinality="7" identifying="true" name="grupo_usuario_grupo_fk" physicalName="grupo_usuario_grupo_fk" pk-table-ref="TAB32" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP112" populated="true" fk-column-ref="COL87" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL34" />
+   </relationship>
+   <relationship id="REL113" populated="true" deferrability="7" deleteRule="3" fk-table-ref="TAB95" fkCardinality="7" identifying="true" name="grupo_grupo_modulo_fk" physicalName="grupo_grupo_modulo_fk" pk-table-ref="TAB32" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP114" populated="true" fk-column-ref="COL97" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL34" />
+   </relationship>
+   <reference ref-id="REL107" />
+   <relationship id="REL115" populated="true" deferrability="7" deleteRule="3" fk-table-ref="TAB42" fkCardinality="7" identifying="true" name="permissao_opcao_menu_fk" physicalName="permissao_opcao_menu_fk" pk-table-ref="TAB66" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP116" populated="true" fk-column-ref="COL45" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL68" />
+   </relationship>
+   <relationship id="REL117" populated="true" deferrability="7" deleteRule="3" fk-table-ref="TAB83" fkCardinality="7" identifying="true" name="usuario_empresa_usuario_grupo_fk" physicalName="usuario_empresa_usuario_grupo_fk" pk-table-ref="TAB56" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP118" populated="true" fk-column-ref="COL86" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL58" />
+    <column-mapping id="CMP119" populated="true" fk-column-ref="COL85" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL59" />
+   </relationship>
+   <reference ref-id="REL105" />
+   <relationship id="REL120" populated="true" deferrability="7" deleteRule="3" fk-table-ref="TAB56" fkCardinality="7" identifying="true" name="empresa_usuario_empresa_fk" physicalName="empresa_usuario_empresa_fk" pk-table-ref="TAB75" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP121" populated="true" fk-column-ref="COL59" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL77" />
+   </relationship>
+   <reference ref-id="REL115" />
+   <reference ref-id="REL120" />
+   <reference ref-id="REL117" />
+   <reference ref-id="REL111" />
+   <reference ref-id="REL113" />
+   <reference ref-id="REL109" />
+  </relationships>
+ </target-database>
+ <ddl-generator type="ca.sqlpower.architect.ddl.PostgresDDLGenerator" allow-connection="true" target-schema="public"> </ddl-generator>
+ <create-kettle-job-settings filePath="" jobName="" schemaName="" kettleJoinType="0" savingToFile="true" />
+ <play-pen zoom="1.0" viewportX="0" viewportY="0" relationship-style="rectilinear" names-displayLogicalNames="true" showPrimaryTag="true" showForeignTag="true" showAlternateTag="true" columnVisibility="ALL" relationshipLabelVisibility="true">
+  <table-pane table-ref="TAB8" x="17" y="92" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB22" x="806" y="346" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB32" x="239" y="408" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB42" x="856" y="506" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB56" x="264" y="135" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB66" x="573" y="524" bgColor="0xf0f0f0" fgColor="0xcc0000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB75" x="232" y="18" bgColor="0xeec994" fgColor="0x000000" rounded="false" dashed="true"/>
+  <table-pane table-ref="TAB83" x="236" y="260" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB95" x="531" y="405" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-link relationship-ref="REL105" pk-x="183" pk-y="65" fk-x="0" fk-y="30" rLineColor="0x333333" pkLabelText="" fkLabelText="" orientation="33"/>
+  <table-link relationship-ref="REL120" pk-x="120" pk-y="43" fk-x="90" fk-y="0" rLineColor="0x333333" pkLabelText="" fkLabelText="" orientation="132"/>
+  <table-link relationship-ref="REL117" pk-x="115" pk-y="57" fk-x="95" fk-y="0" rLineColor="0x333333" pkLabelText="" fkLabelText="" orientation="132"/>
+  <table-link relationship-ref="REL111" pk-x="125" pk-y="0" fk-x="91" fk-y="71" rLineColor="0x333333" pkLabelText="" fkLabelText="" orientation="72"/>
+  <table-link relationship-ref="REL107" pk-x="150" pk-y="71" fk-x="64" fk-y="0" rLineColor="0x333333" pkLabelText="" fkLabelText="" orientation="132"/>
+  <table-link relationship-ref="REL113" pk-x="173" pk-y="37" fk-x="0" fk-y="26" rLineColor="0x333333" pkLabelText="" fkLabelText="" orientation="33"/>
+  <table-link relationship-ref="REL109" pk-x="0" pk-y="19" fk-x="175" fk-y="37" rLineColor="0x333333" pkLabelText="" fkLabelText="" orientation="18"/>
+  <table-link relationship-ref="REL115" pk-x="187" pk-y="39" fk-x="0" fk-y="57" rLineColor="0x333333" pkLabelText="" fkLabelText="" orientation="33"/>
+ </play-pen>
+ <profiles topNCount="10">
+  </profiles>
+  <olap>
+  </olap>
+  <olap-gui>
+  </olap-gui>
+</architect-project>
